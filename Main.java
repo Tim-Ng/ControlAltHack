@@ -121,7 +121,7 @@ public class Main extends Application {
         };
     }
 	public void start() {
-		background.playMusic();
+		//background.playMusic();
     	createTimer();
         timer.start();
     }
@@ -136,7 +136,7 @@ public class Main extends Application {
     		  int d = n / 10;
     		  int k = n - d * 10;
     		  n = d;
-    		  background.add(new Digit(k, 30, 360 - shift, 25));
+    		  background.add(new Digit(k, 30, 560 - shift, 25));
     		  shift+=30;
     		}
     }
