@@ -90,7 +90,7 @@ public class Main extends Application {
 		background.add(new Obstacle("file:src/p4_group_8_repo/truck2Right.png", 0, 540, 1, 200, 200));
 		background.add(new Obstacle("file:src/p4_group_8_repo/truck2Right.png", 500, 540, 1, 200, 200));
 		background.add(new Obstacle("file:src/p4_group_8_repo/car1Left.png", 500, 490, -5, 50, 50));
-		background.add(new Digit(0, 30, 360, 25));
+		background.add(new Digit(0, 30, 570, 25));
 		//background.add(obstacle);
 		//background.add(obstacle1);
 		//background.add(obstacle2);
@@ -136,7 +136,7 @@ public class Main extends Application {
     		  int d = n / 10;
     		  int k = n - d * 10;
     		  n = d;
-    		  background.add(new Digit(k, 30, 560 - shift, 25));
+    		  background.add(new Digit(k, 30, 570 - shift, 25));
     		  shift+=30;
     		}
     }
