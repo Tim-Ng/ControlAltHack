@@ -1,12 +1,13 @@
-package p4_group_8_repo;
+package p4_group_8_repo.Object_Controlers;
 
 import java.io.File;
 
 import javafx.scene.media.Media;
 import javafx.scene.media.MediaPlayer;
 import javafx.util.Duration;
+import p4_group_8_repo.World;
 
-public class MyStage extends World{
+public class MyStage extends World {
 	MediaPlayer mediaPlayer;
 	@Override
 	public void act(long now) {
@@ -29,7 +30,7 @@ public class MyStage extends World{
 	}
 	
 	public void playMusic() {
-		String musicFile = "src/p4_group_8_repo/Frogger Main Song Theme (loop).mp3";   
+		String musicFile = "src/p4_group_8_repo/Assets/Frogger Main Song Theme (loop).mp3";
 		Media sound = new Media(new File(musicFile).toURI().toString());
 		mediaPlayer = new MediaPlayer(sound);
 		mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);

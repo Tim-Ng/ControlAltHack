@@ -1,6 +1,7 @@
-package p4_group_8_repo;
+package p4_group_8_repo.Object_Controlers;
 
 import javafx.scene.image.Image;
+import p4_group_8_repo.Object_Controlers.Actor;
 
 public class Obstacle extends Actor {
 	private int speed;
