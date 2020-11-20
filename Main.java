@@ -17,10 +17,12 @@ public class Main extends Application {
 	main_page MainPageScene = new main_page(this);
 	stage1 Stage1 = new stage1(this);
 	info_page infopageScene = new info_page(this);
+	highScorePage HighSchool;
 
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		this.primaryStage = primaryStage;
+		highScorePage HighSchool = new highScorePage(this);
 		setScene("Main_Scene");
 	}
 	public void setScene(String whichScene){

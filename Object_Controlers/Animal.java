@@ -38,14 +38,14 @@ public class Animal extends Actor {
 		setImage(new Image(imageLink, imgSize, imgSize, true, true));
 		setX(300);
 		setY(679.8+movement);
-		imgW1 = new Image("file:src/p4_group_8_repo/Assets/froggerUp.png", imgSize, imgSize, true, true);
-		imgA1 = new Image("file:src/p4_group_8_repo/Assets/froggerLeft.png", imgSize, imgSize, true, true);
-		imgS1 = new Image("file:src/p4_group_8_repo/Assets/froggerDown.png", imgSize, imgSize, true, true);
-		imgD1 = new Image("file:src/p4_group_8_repo/Assets/froggerRight.png", imgSize, imgSize, true, true);
-		imgW2 = new Image("file:src/p4_group_8_repo/Assets/froggerUpJump.png", imgSize, imgSize, true, true);
-		imgA2 = new Image("file:src/p4_group_8_repo/Assets/froggerLeftJump.png", imgSize, imgSize, true, true);
-		imgS2 = new Image("file:src/p4_group_8_repo/Assets/froggerDownJump.png", imgSize, imgSize, true, true);
-		imgD2 = new Image("file:src/p4_group_8_repo/Assets/froggerRightJump.png", imgSize, imgSize, true, true);
+		imgW1 = new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/froggerUp.png", imgSize, imgSize, true, true);
+		imgA1 = new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/froggerLeft.png", imgSize, imgSize, true, true);
+		imgS1 = new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/froggerDown.png", imgSize, imgSize, true, true);
+		imgD1 = new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/froggerRight.png", imgSize, imgSize, true, true);
+		imgW2 = new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/froggerUpJump.png", imgSize, imgSize, true, true);
+		imgA2 = new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/froggerLeftJump.png", imgSize, imgSize, true, true);
+		imgS2 = new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/froggerDownJump.png", imgSize, imgSize, true, true);
+		imgD2 = new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/froggerRightJump.png", imgSize, imgSize, true, true);
 		setOnKeyPressed(new EventHandler<KeyEvent>() {
 			public void handle(KeyEvent event){
 				if (noMove) {
@@ -137,14 +137,14 @@ public class Animal extends Actor {
 		setImage(new Image(imageLink, imgSize, imgSize, true, true));
 		setX(450);
 		setY(200);
-		imgW1 = new Image("file:src/p4_group_8_repo/Assets/froggerUp.png", imgSize, imgSize, true, true);
-		imgA1 = new Image("file:src/p4_group_8_repo/Assets/froggerLeft.png", imgSize, imgSize, true, true);
-		imgS1 = new Image("file:src/p4_group_8_repo/Assets/froggerDown.png", imgSize, imgSize, true, true);
-		imgD1 = new Image("file:src/p4_group_8_repo/Assets/froggerRight.png", imgSize, imgSize, true, true);
-		imgW2 = new Image("file:src/p4_group_8_repo/Assets/froggerUpJump.png", imgSize, imgSize, true, true);
-		imgA2 = new Image("file:src/p4_group_8_repo/Assets/froggerLeftJump.png", imgSize, imgSize, true, true);
-		imgS2 = new Image("file:src/p4_group_8_repo/Assets/froggerDownJump.png", imgSize, imgSize, true, true);
-		imgD2 = new Image("file:src/p4_group_8_repo/Assets/froggerRightJump.png", imgSize, imgSize, true, true);
+		imgW1 = new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/froggerUp.png", imgSize, imgSize, true, true);
+		imgA1 = new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/froggerLeft.png", imgSize, imgSize, true, true);
+		imgS1 = new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/froggerDown.png", imgSize, imgSize, true, true);
+		imgD1 = new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/froggerRight.png", imgSize, imgSize, true, true);
+		imgW2 = new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/froggerUpJump.png", imgSize, imgSize, true, true);
+		imgA2 = new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/froggerLeftJump.png", imgSize, imgSize, true, true);
+		imgS2 = new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/froggerDownJump.png", imgSize, imgSize, true, true);
+		imgD2 = new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/froggerRightJump.png", imgSize, imgSize, true, true);
 		setOnKeyPressed(new EventHandler<KeyEvent>() {
 			public void handle(KeyEvent event) {
 				if (noMove) {
@@ -226,20 +226,20 @@ public class Animal extends Actor {
 						carD++;
 					}
 					if (carD == 1) {
-						setImage(new Image("file:src/p4_group_8_repo/Assets/cardeath1.png", imgSize, imgSize, true, true));
+						setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/cardeath1.png", imgSize, imgSize, true, true));
 					}
 					if (carD == 2) {
-						setImage(new Image("file:src/p4_group_8_repo/Assets/cardeath2.png", imgSize, imgSize, true, true));
+						setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/cardeath2.png", imgSize, imgSize, true, true));
 					}
 					if (carD == 3) {
-						setImage(new Image("file:src/p4_group_8_repo/Assets/cardeath3.png", imgSize, imgSize, true, true));
+						setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/cardeath3.png", imgSize, imgSize, true, true));
 					}
 					if (carD == 4) {
 						setX(300);
 						setY(679.8 + movement);
 						carDeath = false;
 						carD = 0;
-						setImage(new Image("file:src/p4_group_8_repo/Assets/froggerUp.png", imgSize, imgSize, true, true));
+						setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/froggerUp.png", imgSize, imgSize, true, true));
 						noMove = false;
 						if (points > 50) {
 							points -= 50;
@@ -254,23 +254,23 @@ public class Animal extends Actor {
 						carD++;
 					}
 					if (carD == 1) {
-						setImage(new Image("file:src/p4_group_8_repo/Assets/waterdeath1.png", imgSize, imgSize, true, true));
+						setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/waterdeath1.png", imgSize, imgSize, true, true));
 					}
 					if (carD == 2) {
-						setImage(new Image("file:src/p4_group_8_repo/Assets/waterdeath2.png", imgSize, imgSize, true, true));
+						setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/waterdeath2.png", imgSize, imgSize, true, true));
 					}
 					if (carD == 3) {
-						setImage(new Image("file:src/p4_group_8_repo/Assets/waterdeath3.png", imgSize, imgSize, true, true));
+						setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/waterdeath3.png", imgSize, imgSize, true, true));
 					}
 					if (carD == 4) {
-						setImage(new Image("file:src/p4_group_8_repo/Assets/waterdeath4.png", imgSize, imgSize, true, true));
+						setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/waterdeath4.png", imgSize, imgSize, true, true));
 					}
 					if (carD == 5) {
 						setX(300);
 						setY(679.8 + movement);
 						waterDeath = false;
 						carD = 0;
-						setImage(new Image("file:src/p4_group_8_repo/Assets/froggerUp.png", imgSize, imgSize, true, true));
+						setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/froggerUp.png", imgSize, imgSize, true, true));
 						noMove = false;
 						if (points > 50) {
 							points -= 50;
