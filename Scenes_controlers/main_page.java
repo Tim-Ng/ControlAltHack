@@ -22,16 +22,14 @@ public class main_page{
         startButton.setLayoutY(250);
         startButton.setLayoutX(100);
         startButton.setMinSize(100,100);
-        Button InfoPageButton = new Button ("Start Game");
+        Button InfoPageButton = new Button ("Game Info");
         InfoPageButton.setLayoutY(150);
         InfoPageButton.setLayoutX(100);
         InfoPageButton.setMinSize(100,100);
         mainStage.getChildren().addAll(froggerback,startButton,InfoPageButton);
         mainScene = new Scene(mainStage,600,800);
         startButton.setOnAction(e->main.setScene("Stage1Game"));
-    }
-    public Scene getScene()
-    {
-        return mainScene;
+        InfoPageButton.setOnAction(e->main.setScene("InfoStage"));
+        main.setMap("Main_Scene",mainScene);
     }
 }

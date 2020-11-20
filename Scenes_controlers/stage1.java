@@ -3,8 +3,11 @@ package p4_group_8_repo.Scenes_controlers;
 import javafx.animation.AnimationTimer;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
+import javafx.stage.Stage;
 import p4_group_8_repo.Main;
 import p4_group_8_repo.Object_Controlers.*;
+
+import java.util.Objects;
 
 public class stage1 {
     private Main main;
@@ -15,6 +18,9 @@ public class stage1 {
     public  stage1(Main main)
     {
         this.main = main;
+        inputToStage();
+    }
+    public void inputToStage(){
         Stage1 = new MyStage();
         BackgroundImage froggerback = new BackgroundImage("file:src/p4_group_8_repo/Assets/iKogsKW.png");
         Stage1.add(froggerback);
@@ -80,13 +86,8 @@ public class stage1 {
         //background.add(obstacle2);
         Stage1.start();
         gameScene1 =new Scene(Stage1,600,800);
-        this.start();
+        main.setMap("Stage1Game",gameScene1);
     }
-    public Scene getGameScene1()
-    {
-        return gameScene1;
-    }
-
     public void stop() {
         timer.stop();
     }
@@ -113,18 +114,25 @@ public class stage1 {
                     Stage1.stopMusic();
                     stop();
                     Stage1.stop();
-                    Alert alert = new Alert(Alert.AlertType.INFORMATION);
-                    alert.setTitle("You Have Won The Game!");
-                    alert.setHeaderText("Your High Score: "+animal.getPoints()+"!");
-                    alert.setContentText("Highest Possible Score: 800");
-                    alert.show();
+                    main.setHighScore(animal.getPoints());
+                    ResetStage1();
+                    main.setScene("HighScore");
+                    //Alert alert = new Alert(Alert.AlertType.INFORMATION);
+                    //alert.setTitle("You Have Won The Game!");
+                    //alert.setHeaderText("Your High Score: "+animal.getPoints()+"!");
+                    //alert.setContentText("Highest Possible Score: 800");
+                    //alert.show();
                 }
             }
         };
     }
     public void start() {
-        //background.playMusic();
+        //Stage1.playMusic();
         createTimer();
         timer.start();
+    }
+    public void ResetStage1(){
+        Stage1.getChildren().clear();
+        inputToStage();
     }
 }

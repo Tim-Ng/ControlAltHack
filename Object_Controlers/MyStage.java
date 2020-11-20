@@ -38,7 +38,9 @@ public class MyStage extends World {
 	}
 	
 	public void stopMusic() {
-		mediaPlayer.stop();
+		if (mediaPlayer != null){
+			mediaPlayer.stop();
+		}
 	}
 
 }
