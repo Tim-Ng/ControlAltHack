@@ -14,18 +14,18 @@ public class highScorePage {
     private Main main;
     private MyStage highScorePageStage;
     private Scene highScoreScene;
-    public highScorePage(Main main){
+    public highScorePage(Main main,String whichHighScore_file,String codeKey){
         this.main = main;
-        HighscoreManager highScoreManager = new HighscoreManager();
-        setScene(highScoreManager,false,0);
+        HighscoreManager highScoreManager = new HighscoreManager(whichHighScore_file);
+        setScene(highScoreManager,false,0,codeKey);
     }
-    public highScorePage(Main main,int getPoints){
+    public highScorePage(Main main,int getPoints,String whichHighScore_file,String codeKey){
         this.main = main;
-        HighscoreManager highScoreManager = new HighscoreManager();
+        HighscoreManager highScoreManager = new HighscoreManager(whichHighScore_file);
         highScoreManager.addScore(getPoints);
-        setScene(highScoreManager,true,getPoints);
+        setScene(highScoreManager,true,getPoints,codeKey);
     }
-    private void setScene(HighscoreManager highscoreManager,boolean viewing,int getPoints){
+    private void setScene(HighscoreManager highscoreManager,boolean viewing,int getPoints,String codeKey){
         System.out.print(highscoreManager.getHighscoreString());
         highScorePageStage = new MyStage();
 
@@ -33,7 +33,6 @@ public class highScorePage {
         Button BackButton = BackButtonClass.getButton();
 
         //Text
-        highScoreScene = new Scene(highScorePageStage,600,800);
         if (viewing){
             Label YoureScore = new Label(Integer.toString(getPoints));
             YoureScore.setLayoutX(300);
@@ -51,6 +50,7 @@ public class highScorePage {
         highScorePageStage.start();
         BackButton.setOnAction(e->main.setScene("Main_Scene"));
 
-        main.setMap("HighScore",highScoreScene);
+        highScoreScene = new Scene(highScorePageStage,600,800);
+        main.setMap(codeKey,highScoreScene);
     }
 }

@@ -114,9 +114,9 @@ public class stage1 {
                     Stage1.stopMusic();
                     stop();
                     Stage1.stop();
-                    main.setHighScore(animal.getPoints());
+                    main.setHighScoreStage1(animal.getPoints(),"scoresStage1.dat","HighScoreStage1");
                     ResetStage1();
-                    main.setScene("HighScore");
+                    main.setScene("HighScoreStage1");
                     //Alert alert = new Alert(Alert.AlertType.INFORMATION);
                     //alert.setTitle("You Have Won The Game!");
                     //alert.setHeaderText("Your High Score: "+animal.getPoints()+"!");

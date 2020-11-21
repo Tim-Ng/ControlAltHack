@@ -19,7 +19,6 @@ public class info_page {
         infoStage = new MyStage();
         infoAnimal = new Animal("file:src/p4_group_8_repo/Assets/froggerUp.png",300.0,0.0,600.0,300.0);
         ScrollPane pageScroll = new ScrollPane();
-
         ButtonClass BackButtonClass = new ButtonClass("file:src/p4_group_8_repo/Assets/ButtonImages/BackButton.png",120,30,0,0);
         Button BackButton = BackButtonClass.getButton();
 

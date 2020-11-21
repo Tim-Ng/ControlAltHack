@@ -21,8 +21,8 @@ public class main_page{
     {
         this.main = main;
         mainStage = new MyStage();
-        BackgroundImage froggerback = new BackgroundImage("file:src/p4_group_8_repo/Assets/BackGrounds/mainPageBackground.png");
-        mainStage.add(froggerback);
+        BackgroundImage mainPageBackGround = new BackgroundImage("file:src/p4_group_8_repo/Assets/BackGrounds/mainPageBackground.png");
+        mainStage.add(mainPageBackGround);
 
         ButtonClass startButtonClass = new ButtonClass("file:src/p4_group_8_repo/Assets/ButtonImages/startGameButton.png",180,45,200,350);
         Button startButton = startButtonClass.getButton();
@@ -44,9 +44,9 @@ public class main_page{
         mainStage.getChildren().addAll(startButton,InfoPageButton,HighScorePageButton);
         mainStage.start();
         mainScene = new Scene(mainStage,600,800);
-        startButton.setOnAction(e->main.setScene("Stage1Game"));
+        startButton.setOnAction(e->main.setScene("Choose_Level"));
         InfoPageButton.setOnAction(e->main.setScene("InfoStage"));
-        HighScorePageButton.setOnAction(e->main.setScene("HighScore"));
+        HighScorePageButton.setOnAction(e->main.setScene("Choose_HighScore"));
         main.setMap("Main_Scene",mainScene);
     }
 }

@@ -8,13 +8,14 @@ public class HighscoreManager {
     // An arraylist of the type "score" we will use to work with the scores inside the class
     private ArrayList<Score> scores;
     // The name of the file where the highscores will be saved
-    private static final String HIGHSCORE_FILE = "scores.dat";
+    private static String HIGHSCORE_FILE = null;
 
     //Initialising an in and outputStream for working with the file
     ObjectOutputStream outputStream = null;
     ObjectInputStream inputStream = null;
 
-    public HighscoreManager() {
+    public HighscoreManager(String whichHighScore_file) {
+        HIGHSCORE_FILE = whichHighScore_file;
         //initialising the scores-arraylist
         scores = new ArrayList<Score>();
     }
