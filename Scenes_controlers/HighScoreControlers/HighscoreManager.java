@@ -1,5 +1,7 @@
 package p4_group_8_repo.Scenes_controlers.HighScoreControlers;
 
+import p4_group_8_repo.Object_Controlers.Digit;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -69,28 +71,17 @@ public class HighscoreManager {
             }
         }
     }
-    public String getHighscoreString() {
+    public ArrayList<Score> getHighscoreList() {
         loadScoreFile();
-        String highscoreString = "";
-        int max = 10;
-
-        int i = 0;
-        int x = scores.size();
-        if (x > max) {
-            x = max;
-        }
-        while (i < x) {
-            highscoreString += (i + 1) + "\t\t" + scores.get(i).getScore() + "\n";
-            i++;
-        }
-        return highscoreString;
+        sortListAndReverse();
+        return scores;
     }
     public void sortListAndReverse(){
         for (int i = 0; i < scores.size()-1; i++)
         {
             for(int j = 0; j < scores.size()-1; j++)
             {
-                if(scores.get(i).getScore() > scores.get(j + 1).getScore())
+                if(scores.get(j).getScore() > scores.get(j + 1).getScore())
                 {
                     Collections.swap(scores,(j+1),j);
                 }

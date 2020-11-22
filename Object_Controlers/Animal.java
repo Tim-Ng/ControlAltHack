@@ -7,6 +7,8 @@ import javafx.event.EventHandler;
 import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import p4_group_8_repo.Scenes_controlers.coordinateArea;
+import p4_group_8_repo.Scenes_controlers.waterArea;
 
 
 public class Animal extends Actor {
@@ -33,7 +35,9 @@ public class Animal extends Actor {
 	int carD = 0;
 	double w = 800;
 	ArrayList<End> inter = new ArrayList<End>();
-	public Animal(String imageLink) {
+	waterArea waterDeathArea;
+	public Animal(String imageLink,waterArea waterDeathArea) {
+		this.waterDeathArea = waterDeathArea;
 		canDieOne = true;
 		setImage(new Image(imageLink, imgSize, imgSize, true, true));
 		setX(300);
@@ -135,8 +139,8 @@ public class Animal extends Actor {
 	public Animal(String imageLink,double Maxx1,double Maxy1,double Maxx2,double Maxy2) {
 		canDieOne = false;
 		setImage(new Image(imageLink, imgSize, imgSize, true, true));
-		setX(450);
-		setY(200);
+		setX(Maxx1 + ((Maxx2-Maxx1 )/2));
+		setY(Maxy1 + ((Maxy2-Maxx1)/2));
 		imgW1 = new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/froggerUp.png", imgSize, imgSize, true, true);
 		imgA1 = new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/froggerLeft.png", imgSize, imgSize, true, true);
 		imgS1 = new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/froggerDown.png", imgSize, imgSize, true, true);
@@ -207,103 +211,100 @@ public class Animal extends Actor {
 		});
 	}
 
-
 	@Override
 	public void act(long now) {
 		if (canDieOne) {
-			if (false) {
-				int bounds = 0;
-				if (getY() < 0 || getY() > 734) {
+			int bounds = 0;
+			if (getY() < 0 || getY() > 734) {
+				setX(300);
+				setY(679.8 + movement);
+			}
+			if (getX() < 0) {
+				move(movement * 2, 0);
+			}
+			if (carDeath) {
+				noMove = true;
+				if ((now) % 11 == 0) {
+					carD++;
+				}
+				if (carD == 1) {
+					setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/cardeath1.png", imgSize, imgSize, true, true));
+				}
+				if (carD == 2) {
+					setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/cardeath2.png", imgSize, imgSize, true, true));
+				}
+				if (carD == 3) {
+					setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/cardeath3.png", imgSize, imgSize, true, true));
+				}
+				if (carD == 4) {
 					setX(300);
 					setY(679.8 + movement);
-				}
-				if (getX() < 0) {
-					move(movement * 2, 0);
-				}
-				if (carDeath) {
-					noMove = true;
-					if ((now) % 11 == 0) {
-						carD++;
+					carDeath = false;
+					carD = 0;
+					setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/froggerUp.png", imgSize, imgSize, true, true));
+					noMove = false;
+					if (points > 50) {
+						points -= 50;
+						changeScore = true;
 					}
-					if (carD == 1) {
-						setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/cardeath1.png", imgSize, imgSize, true, true));
-					}
-					if (carD == 2) {
-						setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/cardeath2.png", imgSize, imgSize, true, true));
-					}
-					if (carD == 3) {
-						setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/cardeath3.png", imgSize, imgSize, true, true));
-					}
-					if (carD == 4) {
-						setX(300);
-						setY(679.8 + movement);
-						carDeath = false;
-						carD = 0;
-						setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/froggerUp.png", imgSize, imgSize, true, true));
-						noMove = false;
-						if (points > 50) {
-							points -= 50;
-							changeScore = true;
-						}
-					}
-
-				}
-				if (waterDeath) {
-					noMove = true;
-					if ((now) % 11 == 0) {
-						carD++;
-					}
-					if (carD == 1) {
-						setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/waterdeath1.png", imgSize, imgSize, true, true));
-					}
-					if (carD == 2) {
-						setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/waterdeath2.png", imgSize, imgSize, true, true));
-					}
-					if (carD == 3) {
-						setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/waterdeath3.png", imgSize, imgSize, true, true));
-					}
-					if (carD == 4) {
-						setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/waterdeath4.png", imgSize, imgSize, true, true));
-					}
-					if (carD == 5) {
-						setX(300);
-						setY(679.8 + movement);
-						waterDeath = false;
-						carD = 0;
-						setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/froggerUp.png", imgSize, imgSize, true, true));
-						noMove = false;
-						if (points > 50) {
-							points -= 50;
-							changeScore = true;
-						}
-					}
-
 				}
 
-				if (getX() > 600) {
-					move(-movement * 2, 0);
+			}
+			if (waterDeath) {
+				noMove = true;
+				if ((now) % 11 == 0) {
+					carD++;
 				}
-				if (getIntersectingObjects(Obstacle.class).size() >= 1) {
-					carDeath = true;
+				if (carD == 1) {
+					setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/waterdeath1.png", imgSize, imgSize, true, true));
 				}
-				if (getX() == 240 && getY() == 82) {
-					stop = true;
+				if (carD == 2) {
+					setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/waterdeath2.png", imgSize, imgSize, true, true));
 				}
-				if (getIntersectingObjects(Log.class).size() >= 1 && !noMove) {
-					if (getIntersectingObjects(Log.class).get(0).getLeft())
-						move(-2, 0);
-					else
-						move(.75, 0);
-				} else if (getIntersectingObjects(Turtle.class).size() >= 1 && !noMove) {
+				if (carD == 3) {
+					setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/waterdeath3.png", imgSize, imgSize, true, true));
+				}
+				if (carD == 4) {
+					setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/waterdeath4.png", imgSize, imgSize, true, true));
+				}
+				if (carD == 5) {
+					setX(300);
+					setY(679.8 + movement);
+					waterDeath = false;
+					carD = 0;
+					setImage(new Image("file:src/p4_group_8_repo/Assets/FrogImagePosition/froggerUp.png", imgSize, imgSize, true, true));
+					noMove = false;
+					if (points > 50) {
+						points -= 50;
+						changeScore = true;
+					}
+				}
+
+			}
+
+			if (getX() > 600) {
+				move(-movement * 2, 0);
+			}
+			if (getIntersectingObjects(Obstacle.class).size() >= 1) {
+				carDeath = true;
+			}
+			if (getX() == 240 && getY() == 82) {
+				stop = true;
+			}
+			if (getIntersectingObjects(Log.class).size() >= 1 && !noMove) {
+				if (getIntersectingObjects(Log.class).get(0).getLeft())
+					move(-2, 0);
+				else
+					move(.75, 0);
+			} else if (getIntersectingObjects(Turtle.class).size() >= 1 && !noMove) {
+				move(-1, 0);
+			} else if (getIntersectingObjects(WetTurtle.class).size() >= 1) {
+				if (getIntersectingObjects(WetTurtle.class).get(0).isSunk()) {
+					waterDeath = true;
+				} else {
 					move(-1, 0);
-				} else if (getIntersectingObjects(WetTurtle.class).size() >= 1) {
-					if (getIntersectingObjects(WetTurtle.class).get(0).isSunk()) {
-						waterDeath = true;
-					} else {
-						move(-1, 0);
-					}
 				}
-			} if (getIntersectingObjects(End.class).size() >= 1) { //Remeber to edit back
+			} else if (getIntersectingObjects(End.class).size() >= 1) {
 				inter = (ArrayList<End>) getIntersectingObjects(End.class);
 				if (getIntersectingObjects(End.class).get(0).isActivated()) {
 					end--;
@@ -316,7 +317,7 @@ public class Animal extends Actor {
 				end++;
 				setX(300);
 				setY(679.8 + movement);
-			} else if (getY() < 413) {
+			} else if (waterDeathArea.checkCoordinate(getX(), getY())) {
 				waterDeath = true;
 				//setX(300);
 				//setY(679.8+movement);
@@ -326,7 +327,7 @@ public class Animal extends Actor {
 	public boolean getStop() {
 		return end==5;
 	}
-	
+
 	public int getPoints() {
 		return points;
 	}

@@ -22,7 +22,7 @@ public class ChooseWhichHighScorePage {
         ButtonClass firstLvButtonClass = new ButtonClass("file:src/p4_group_8_repo/Assets/WhichLevelButton/Level1Button.png",100,100);
         Button firstLvButton = firstLvButtonClass.getButton();
 
-        ButtonClass secondLvButtonClass = new ButtonClass("file:src/p4_group_8_repo/Assets/WhichLevelButton/Level1Button.png",100,100);
+        ButtonClass secondLvButtonClass = new ButtonClass("file:src/p4_group_8_repo/Assets/WhichLevelButton/Level2Button.png",100,100);
         Button secondLvButton = secondLvButtonClass.getButton();
 
         gridForButtons.add(firstLvButton,0,0,1,1);
@@ -32,6 +32,7 @@ public class ChooseWhichHighScorePage {
         chooseHighScoreScene = new Scene(chooseHighScoreStage,600,800);
 
         firstLvButton.setOnAction(e->main.setScene("HighScoreStage1"));
+        secondLvButton.setOnAction(e->main.setScene("HighScoreStage2"));
         BackButton.setOnAction(e->main.setScene("Main_Scene"));
         main.setMap("Choose_HighScore",chooseHighScoreScene);
     }

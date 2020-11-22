@@ -17,5 +17,13 @@ public class Digit extends Actor{
 		setX(x);
 		setY(y);
 	}
+	public Digit(int n, int dim, int x, int y,String which) {
+		im1 = new Image("file:src/p4_group_8_repo/Assets/ScoreNumberImages/"+n+which+".png", dim, dim, true, true);
+		setImage(im1);
+		setFitHeight(55);
+		setFitWidth(55);
+		setX(x);
+		setY(y);
+	}
 	
 }
