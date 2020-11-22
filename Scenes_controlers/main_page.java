@@ -45,7 +45,7 @@ public class main_page{
         mainStage.start();
         mainScene = new Scene(mainStage,600,800);
         startButton.setOnAction(e->main.setScene("Choose_Level"));
-        InfoPageButton.setOnAction(e->main.setScene("InfoStage"));
+        InfoPageButton.setOnAction(e->main.setScene("Info1Stage"));
         HighScorePageButton.setOnAction(e->main.setScene("Choose_HighScore"));
         main.setMap("Main_Scene",mainScene);
     }

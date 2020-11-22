@@ -7,26 +7,34 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.GridPane;
-import javafx.scene.layout.StackPane;
+import javafx.scene.control.ScrollPane;
+import javafx.scene.layout.Pane;
+import javafx.scene.layout.VBox;
 import p4_group_8_repo.Main;
 import p4_group_8_repo.Object_Controlers.Animal;
+import p4_group_8_repo.Object_Controlers.BackgroundImage;
 import p4_group_8_repo.Object_Controlers.MyStage;
 
 import javax.swing.*;
 import javafx.scene.control.Button;
+import p4_group_8_repo.Object_Controlers.Obstacle;
+
 import java.awt.*;
 
-public class info_page{
+public class info_page1 {
     private Main main;
     private MyStage infoStage;
     private Scene infoScene;
     private Animal infoAnimal;
-    public info_page(Main main){
+    public info_page1(Main main){
         this.main = main;
         infoStage = new MyStage();
-        ScrollPane pageScroll = new ScrollPane();
+        BackgroundImage infoPageBackGround = new BackgroundImage("file:src/p4_group_8_repo/Assets/BackGrounds/infoPage1BackGround.png");
+        infoStage.add(infoPageBackGround);
         ButtonClass BackButtonClass = new ButtonClass("file:src/p4_group_8_repo/Assets/ButtonImages/BackButton.png",120,30,0,0);
         Button BackButton = BackButtonClass.getButton();
+        ButtonClass nextButtonClass = new ButtonClass("file:src/p4_group_8_repo/Assets/ButtonImages/nextInfoPage.png",120,30,460,0);
+        Button nextButton = nextButtonClass.getButton();
 
         GridPane gridKeys = new GridPane();
         Image Wwhite = new Image("file:src/p4_group_8_repo/Assets/InfoPage/Wwhite.png", 50, 50, true, true);
@@ -45,6 +53,7 @@ public class info_page{
         gridKeys.add(Akey,0,1);
         gridKeys.add(Skey,1,1);
         gridKeys.add(Dkey,2,1);
+
         infoStage.setOnKeyPressed(new EventHandler<KeyEvent>() {
             public void handle(KeyEvent event) {
                 switch (event.getCode()) {
@@ -67,22 +76,27 @@ public class info_page{
             }
         });
         gridKeys.setLayoutY(150);
-        gridKeys.setLayoutX(50);
-        //coordinateArea Border = new coordinateArea(200,50,400,250);
-        coordinateArea Border = new coordinateArea(0,0,600,800);
-        infoAnimal = new Animal("file:src/p4_group_8_repo/Assets/froggerUp.png",new waterArea(),(300),(150),Border);
+        gridKeys.setLayoutX(100);
+        coordinateArea Border = new coordinateArea(350,125,550,305);
+        infoAnimal = new Animal("file:src/p4_group_8_repo/Assets/froggerUp.png",new waterArea(),(450),(215),Border);
         Image FrogArea = new Image("file:src/p4_group_8_repo/Assets/InfoPage/Wwhite.png", 100, 100, true, true);
         ImageView FrogBack = new ImageView(FrogArea);
         FrogBack.setLayoutX(250);
         FrogBack.setLayoutY(100);
-
-        infoStage.add(new PushingWall(100,360,-4,200,50));
-        infoStage.getChildren().addAll(BackButton,gridKeys);
+        infoStage.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/truck1"+"Right.png", 600, 535, 2, 120, 120));
+        infoStage.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/car1Left.png", 100, 580, -2, 50, 50));
+        infoStage.add(new wall(100,660,100,50));
+        infoStage.add(new wall(300,660,100,50));
+        infoStage.add(new PushingWall(200,730,2,100,50));
+        infoStage.add(new PushingWall(500,730,2,100,50));
+        infoStage.add(new PushingWall(0,730,2,100,50));
+        infoStage.getChildren().addAll(BackButton,nextButton,gridKeys);
         infoStage.add(infoAnimal);
         infoStage.start();
         infoScene =new Scene (infoStage,600,800);
         BackButton.setOnAction(e->main.setScene("Main_Scene"));
-        main.setMap("InfoStage",infoScene);
+        nextButton.setOnAction(e->main.setScene("Info2Stage"));
+        main.setMap("Info1Stage",infoScene);
 
     }
 }

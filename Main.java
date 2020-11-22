@@ -12,7 +12,8 @@ public class Main extends Application {
 	private Stage primaryStage;
 	public static void main(String[] args) { launch(args); }
 	main_page MainPageScene = new main_page(this);
-	info_page infopageScene = new info_page(this);
+	info_page1 infopage1Scene = new info_page1(this);
+	infopage2 infopage2Scene = new infopage2(this);
 	ChooseLevel chooseLevelPage = new ChooseLevel(this);
 	stage1 Stage1 = new stage1(this);
 	stage2 Stage2 = new stage2(this);
