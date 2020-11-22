@@ -67,9 +67,10 @@ public class stage1 {
         Stage1.add(new End(141 + 141-13,96));
         Stage1.add(new End(141 + 141-13+141-13+1,96));
         Stage1.add(new End(141 + 141-13+141-13+141-13+3,96));
-        coordinateArea Area1 = new coordinateArea(0,0,600,413);
+        coordinateArea Area1 = new coordinateArea(0,150,600,413);
         waterArea waterDeath = new waterArea(Area1);
-        animal = new Animal("file:src/p4_group_8_repo/Assets/froggerUp.png",waterDeath);
+        coordinateArea Border = new coordinateArea(0,100,600,734);
+        animal = new Animal("file:src/p4_group_8_repo/Assets/froggerUp.png",waterDeath,300,679.8,Border);
         Stage1.add(animal);
         Stage1.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/truck1"+"Right.png", 0, 649, 1, 120, 120));
         Stage1.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/truck1"+"Right.png", 300, 649, 1, 120, 120));

@@ -60,10 +60,11 @@ public class stage2 {
         Stage2.add(new End(141 + 141-13,96));
         Stage2.add(new End(141 + 141-13+141-13+1,96));
         Stage2.add(new End(141 + 141-13+141-13+141-13+3,96));
-        coordinateArea Area1 = new coordinateArea(0,0,600,413);
-        coordinateArea Area2 = new coordinateArea(0,490,600,690);
-        waterArea waterDeath = new waterArea(Area1,Area2);
-        animal = new Animal("file:src/p4_group_8_repo/Assets/froggerUp.png",waterDeath);
+        coordinateArea WaterArea1 = new coordinateArea(0,150,600,413);
+        coordinateArea WaterArea2 = new coordinateArea(0,490,600,690);
+        waterArea waterDeath = new waterArea(WaterArea1,WaterArea2);
+        coordinateArea Border = new coordinateArea(0,100,600,734);
+        animal = new Animal("file:src/p4_group_8_repo/Assets/froggerUp.png",waterDeath,300,679.8,Border);
         Stage2.add(animal);
         Stage2.start();
         gameScene2 =new Scene(Stage2,600,800);

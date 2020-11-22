@@ -12,11 +12,12 @@ public class Main extends Application {
 	private Stage primaryStage;
 	public static void main(String[] args) { launch(args); }
 	main_page MainPageScene = new main_page(this);
-	stage1 Stage1 = new stage1(this);
 	info_page infopageScene = new info_page(this);
 	ChooseLevel chooseLevelPage = new ChooseLevel(this);
-	ChooseWhichHighScorePage chooseWhichHighScorePage = new ChooseWhichHighScorePage(this);
+	stage1 Stage1 = new stage1(this);
 	stage2 Stage2 = new stage2(this);
+	stage3 Stage3 = new stage3(this);
+	ChooseWhichHighScorePage chooseWhichHighScorePage = new ChooseWhichHighScorePage(this);
 	highScorePage HighSchool;
 	@Override
 	public void start(Stage primaryStage) throws Exception {
@@ -27,6 +28,7 @@ public class Main extends Application {
 	public void resetHighScore(){
 		highScorePage HighScoreStage1 = new highScorePage(this,"scoresStage1.dat","HighScoreStage1","file:src/p4_group_8_repo/Assets/BackGrounds/HighScoreBackgroundWithoutScore1.png");
 		highScorePage HighScoreStage2 = new highScorePage(this,"scoresStage2.dat","HighScoreStage2","file:src/p4_group_8_repo/Assets/BackGrounds/HighScoreBackgroundWithoutScore2.png");
+		highScorePage HighScoreStage3 = new highScorePage(this,"scoresStage3.dat","HighScoreStage3","file:src/p4_group_8_repo/Assets/BackGrounds/HighScoreBackgroundWithoutScore3.png");
 	}
 	public void setScene(String whichScene){
 		if (whichScene == "Stage1Game"){
@@ -34,6 +36,9 @@ public class Main extends Application {
 		}
 		else if (whichScene == "Stage2Game"){
 			Stage2.start();
+		}
+		else if (whichScene == "Stage3Game"){
+			Stage3.start();
 		}
 		primaryStage.setScene(this.sceneFinder.get(whichScene));
 		primaryStage.show();

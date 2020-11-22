@@ -25,14 +25,19 @@ public class ChooseLevel {
         ButtonClass secondLvButtonClass = new ButtonClass("file:src/p4_group_8_repo/Assets/WhichLevelButton/Level2Button.png",100,100);
         Button secondLvButton = secondLvButtonClass.getButton();
 
+        ButtonClass thirdLvButtonClass = new ButtonClass("file:src/p4_group_8_repo/Assets/WhichLevelButton/Level3Button.png",100,100);
+        Button thirdLvButton = thirdLvButtonClass.getButton();
+
         gridForButtons.add(firstLvButton,0,0,1,1);
         gridForButtons.add(secondLvButton,1, 0, 1, 1);
+        gridForButtons.add(thirdLvButton,2, 0, 1, 1);
         gridForButtons.setLayoutY(225);
         chooseLevelStage.getChildren().addAll(BackButton,gridForButtons);
         chooseLevelScene = new Scene(chooseLevelStage,600,800);
 
         firstLvButton.setOnAction(e->main.setScene("Stage1Game"));
         secondLvButton.setOnAction(e->main.setScene("Stage2Game"));
+        thirdLvButton.setOnAction(e->main.setScene("Stage3Game"));
         BackButton.setOnAction(e->main.setScene("Main_Scene"));
         main.setMap("Choose_Level",chooseLevelScene);
     }

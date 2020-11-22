@@ -66,17 +66,18 @@ public class info_page{
                 }
             }
         });
-        StackPane pane = new StackPane(Wkey);
         gridKeys.setLayoutY(150);
         gridKeys.setLayoutX(50);
-
-        infoAnimal = new Animal("file:src/p4_group_8_repo/Assets/froggerUp.png",250.0,150,350,250);
+        //coordinateArea Border = new coordinateArea(200,50,400,250);
+        coordinateArea Border = new coordinateArea(0,0,600,800);
+        infoAnimal = new Animal("file:src/p4_group_8_repo/Assets/froggerUp.png",new waterArea(),(300),(150),Border);
         Image FrogArea = new Image("file:src/p4_group_8_repo/Assets/InfoPage/Wwhite.png", 100, 100, true, true);
         ImageView FrogBack = new ImageView(FrogArea);
         FrogBack.setLayoutX(250);
         FrogBack.setLayoutY(100);
 
-        infoStage.getChildren().addAll(BackButton,gridKeys,FrogBack);
+        infoStage.add(new PushingWall(100,360,-4,200,50));
+        infoStage.getChildren().addAll(BackButton,gridKeys);
         infoStage.add(infoAnimal);
         infoStage.start();
         infoScene =new Scene (infoStage,600,800);

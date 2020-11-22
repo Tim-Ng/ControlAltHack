@@ -4,6 +4,9 @@ import java.util.ArrayList;
 
 public class waterArea {
     private ArrayList<coordinateArea> areaList = new ArrayList<>();
+    waterArea (){
+
+    }
     waterArea (coordinateArea...Coordinates){
         for (int i = 0; i < Coordinates.length;i++){
             areaList.add(Coordinates[i]);
