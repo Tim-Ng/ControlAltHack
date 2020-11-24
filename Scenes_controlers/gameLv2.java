@@ -5,15 +5,13 @@ import javafx.scene.Scene;
 import p4_group_8_repo.Main;
 import p4_group_8_repo.Object_Controlers.*;
 
-public class stage2 {
-    private Main main;
+public class gameLv2 implements GameScene{
     private Animal animal;
     private MyStage Stage2;
     private Scene gameScene2;
     private AnimationTimer timer;
-    public  stage2(Main main)
+    public gameLv2()
     {
-        this.main = main;
         inputToStage();
     }
     public void inputToStage(){
@@ -68,7 +66,6 @@ public class stage2 {
         Stage2.add(animal);
         Stage2.start();
         gameScene2 =new Scene(Stage2,600,800);
-        main.setMap("Stage2Game",gameScene2);
     }
     public void stop() {
         timer.stop();
@@ -96,9 +93,9 @@ public class stage2 {
                     Stage2.stopMusic();
                     stop();
                     Stage2.stop();
-                    main.setHighScoreStage1(animal.getPoints(),"scoresStage2.dat","HighScoreStage2","file:src/p4_group_8_repo/Assets/BackGrounds/HighScoreWithScoreBackground2.png");
-                    ResetStage2();
-                    main.setScene("HighScoreStage2");
+                    Main.sceneControler.startHighScoreScene(Main.HighScore2,animal.getPoints());
+                    ResetStage();
+
                     //Alert alert = new Alert(Alert.AlertType.INFORMATION);
                     //alert.setTitle("You Have Won The Game!");
                     //alert.setHeaderText("Your High Score: "+animal.getPoints()+"!");
@@ -113,8 +110,11 @@ public class stage2 {
         createTimer();
         timer.start();
     }
-    public void ResetStage2(){
+    public void ResetStage(){
         Stage2.getChildren().clear();
         inputToStage();
+    }
+    public Scene getScene(){
+        return gameScene2;
     }
 }

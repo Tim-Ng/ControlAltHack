@@ -8,11 +8,9 @@ import p4_group_8_repo.Object_Controlers.BackgroundImage;
 import p4_group_8_repo.Object_Controlers.MyStage;
 
 public class ChooseWhichHighScorePage {
-    private Main main;
     private MyStage chooseHighScoreStage;
     private Scene chooseHighScoreScene;
-    public ChooseWhichHighScorePage(Main main){
-        this.main = main;
+    public ChooseWhichHighScorePage(){
         chooseHighScoreStage = new MyStage();
         BackgroundImage chooseLevelBackground = new BackgroundImage("file:src/p4_group_8_repo/Assets/BackGrounds/HighScoreLevelsSelect.png");
         chooseHighScoreStage.add(chooseLevelBackground);
@@ -35,10 +33,13 @@ public class ChooseWhichHighScorePage {
         chooseHighScoreStage.getChildren().addAll(BackButton,gridForButtons);
         chooseHighScoreScene = new Scene(chooseHighScoreStage,600,800);
 
-        firstLvButton.setOnAction(e->main.setScene("HighScoreStage1"));
-        secondLvButton.setOnAction(e->main.setScene("HighScoreStage2"));
-        thirdLvButton.setOnAction(e->main.setScene("HighScoreStage3"));
-        BackButton.setOnAction(e->main.setScene("Main_Scene"));
-        main.setMap("Choose_HighScore",chooseHighScoreScene);
+        firstLvButton.setOnAction(e->Main.sceneControler.startHighScoreScene(Main.HighScore1));
+        secondLvButton.setOnAction(e->Main.sceneControler.startHighScoreScene(Main.HighScore2));
+        thirdLvButton.setOnAction(e->Main.sceneControler.startHighScoreScene(Main.HighScore3));
+        BackButton.setOnAction(e->Main.sceneControler.startPageScene(Main.MainPage));
+    }
+
+    public Scene getChooseHighScoreScene() {
+        return chooseHighScoreScene;
     }
 }

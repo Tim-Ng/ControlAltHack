@@ -16,43 +16,27 @@ import p4_group_8_repo.Scenes_controlers.HighScoreControlers.Score;
 import javafx.scene.control.ScrollPane;
 import java.util.ArrayList;
 
-public class highScorePage {
-    private Main main;
+public class highScorePage implements GetHighScoreScene{
     private MyStage highScorePageStage;
     private Scene highScoreScene;
-    public highScorePage(Main main,String whichHighScore_file,String codeKey,String BackGround){
-        this.main = main;
-        highScorePageStage = new MyStage();
-        BackgroundImage highScoreWithOutScore = new BackgroundImage(BackGround);
-        highScorePageStage.add(highScoreWithOutScore);
-        HighscoreManager highScoreManager = new HighscoreManager(whichHighScore_file);
-        setScene(highScoreManager,false,0,codeKey,highScorePageStage,false);
+    private String File;
+    private String BackGroundNoNewPoints;
+    private String BackGroundWithNewPoints;
+    public highScorePage(String File,String BackGroundNoNewPoints,String BackGroundWithNewPoints){
+        this.File =File;
+        this.BackGroundNoNewPoints =BackGroundNoNewPoints;
+        this.BackGroundWithNewPoints = BackGroundWithNewPoints;
     }
-
-    public highScorePage(Main main,int getPoints,String whichHighScore_file,String codeKey,String ImageBackGround){
-        this.main = main;
+    private void setScene(int getPoints,Boolean ifScore,String whichBackGround){
         highScorePageStage = new MyStage();
-        BackgroundImage highScoreWithScore = new BackgroundImage(ImageBackGround);
-        highScorePageStage.add(highScoreWithScore);
-        HighscoreManager highScoreManager = new HighscoreManager(whichHighScore_file);
-        highScoreManager.addScore(getPoints);
-        int holdpoints = getPoints;
-        int shift = 0;
-        while (holdpoints > 0) {
-            int d = holdpoints / 10;
-            int k = holdpoints - d * 10;
-            holdpoints = d;
-            highScorePageStage.add(new Digit(k, 30, 460 - shift, 200, "frog"));
-            shift += 40;
-        }
-        setScene(highScoreManager,true,getPoints,codeKey,highScorePageStage,true);
-    }
-    private void setScene(HighscoreManager highscoreManager,boolean viewing,int getPoints,String codeKey,MyStage highScorePageStage,Boolean ifScore){
+        BackgroundImage background = new BackgroundImage(whichBackGround);
+        highScorePageStage.add(background);
+        HighscoreManager highScoreManager = new HighscoreManager(File);
         ButtonClass BackButtonClass = new ButtonClass("file:src/p4_group_8_repo/Assets/ButtonImages/BackButton.png",120,30,0,0);
         Button BackButton = BackButtonClass.getButton();
         Boolean tempBool = ifScore;
         VBox list_high_scoreBox = new VBox();
-        ArrayList<Score> scores = highscoreManager.getHighscoreList();
+        ArrayList<Score> scores = highScoreManager.getHighscoreList();
         int max = 10;
         int i = 0;
         int x = scores.size();
@@ -90,11 +74,16 @@ public class highScorePage {
 
         highScorePageStage.getChildren().addAll(BackButton,scrollPane);
         highScorePageStage.start();
-        BackButton.setOnAction(e->{main.setScene("Main_Scene");
-            main.resetHighScore();});
-
+        BackButton.setOnAction(e->{Main.sceneControler.startPageScene(Main.MainPage);});
         highScorePageStage.start();
         highScoreScene = new Scene(highScorePageStage,600,800);
-        main.setMap(codeKey,highScoreScene);
+    }
+    public Scene getScene(){
+        setScene(0,false,BackGroundNoNewPoints);
+        return highScoreScene;
+    }
+    public Scene getScene(int points){
+        setScene(points,true,BackGroundWithNewPoints);
+        return highScoreScene;
     }
 }

@@ -14,12 +14,10 @@ import p4_group_8_repo.Object_Controlers.MyStage;
 import p4_group_8_repo.Object_Controlers.Obstacle;
 
 public class main_page{
-    private Main main;
     private MyStage mainStage;
     private Scene mainScene;
-    public main_page(Main main)
+    public main_page()
     {
-        this.main = main;
         mainStage = new MyStage();
         BackgroundImage mainPageBackGround = new BackgroundImage("file:src/p4_group_8_repo/Assets/BackGrounds/mainPageBackground.png");
         mainStage.add(mainPageBackGround);
@@ -44,9 +42,9 @@ public class main_page{
         mainStage.getChildren().addAll(startButton,InfoPageButton,HighScorePageButton);
         mainStage.start();
         mainScene = new Scene(mainStage,600,800);
-        startButton.setOnAction(e->main.setScene("Choose_Level"));
-        InfoPageButton.setOnAction(e->main.setScene("Info1Stage"));
-        HighScorePageButton.setOnAction(e->main.setScene("Choose_HighScore"));
-        main.setMap("Main_Scene",mainScene);
+        startButton.setOnAction(e->Main.sceneControler.startPageScene(Main.ChooseGameLv));
+        InfoPageButton.setOnAction(e->Main.sceneControler.startPageScene(Main.InfoPage1));
+        HighScorePageButton.setOnAction(e->Main.sceneControler.startPageScene(Main.ChooseHighScoreLv));
     }
+    public Scene getScene(){ return mainScene;}
 }

@@ -4,30 +4,18 @@ import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
-import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.GridPane;
-import javafx.scene.control.ScrollPane;
-import javafx.scene.layout.Pane;
-import javafx.scene.layout.VBox;
 import p4_group_8_repo.Main;
-import p4_group_8_repo.Object_Controlers.Animal;
-import p4_group_8_repo.Object_Controlers.BackgroundImage;
-import p4_group_8_repo.Object_Controlers.MyStage;
+import p4_group_8_repo.Object_Controlers.*;
 
-import javax.swing.*;
 import javafx.scene.control.Button;
-import p4_group_8_repo.Object_Controlers.Obstacle;
-
-import java.awt.*;
 
 public class info_page1 {
-    private Main main;
     private MyStage infoStage;
     private Scene infoScene;
     private Animal infoAnimal;
-    public info_page1(Main main){
-        this.main = main;
+    public info_page1(){
         infoStage = new MyStage();
         BackgroundImage infoPageBackGround = new BackgroundImage("file:src/p4_group_8_repo/Assets/BackGrounds/infoPage1BackGround.png");
         infoStage.add(infoPageBackGround);
@@ -94,9 +82,10 @@ public class info_page1 {
         infoStage.add(infoAnimal);
         infoStage.start();
         infoScene =new Scene (infoStage,600,800);
-        BackButton.setOnAction(e->main.setScene("Main_Scene"));
-        nextButton.setOnAction(e->main.setScene("Info2Stage"));
-        main.setMap("Info1Stage",infoScene);
-
+        BackButton.setOnAction(e->Main.sceneControler.startPageScene(Main.MainPage));
+        nextButton.setOnAction(e->Main.sceneControler.startPageScene(Main.InfoPage2));
+    }
+    public Scene getInfo1Scene(){
+        return infoScene;
     }
 }

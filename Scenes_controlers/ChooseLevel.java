@@ -8,11 +8,9 @@ import p4_group_8_repo.Object_Controlers.BackgroundImage;
 import p4_group_8_repo.Object_Controlers.MyStage;
 
 public class ChooseLevel {
-    private Main main;
     private MyStage chooseLevelStage;
     private Scene chooseLevelScene;
-    public ChooseLevel(Main main){
-        this.main = main;
+    public ChooseLevel(){
         chooseLevelStage = new MyStage();
         BackgroundImage chooseLevelBackground = new BackgroundImage("file:src/p4_group_8_repo/Assets/BackGrounds/SelectLvBackground.png");
         chooseLevelStage.add(chooseLevelBackground);
@@ -35,10 +33,13 @@ public class ChooseLevel {
         chooseLevelStage.getChildren().addAll(BackButton,gridForButtons);
         chooseLevelScene = new Scene(chooseLevelStage,600,800);
 
-        firstLvButton.setOnAction(e->main.setScene("Stage1Game"));
-        secondLvButton.setOnAction(e->main.setScene("Stage2Game"));
-        thirdLvButton.setOnAction(e->main.setScene("Stage3Game"));
-        BackButton.setOnAction(e->main.setScene("Main_Scene"));
-        main.setMap("Choose_Level",chooseLevelScene);
+        firstLvButton.setOnAction(e->Main.sceneControler.startGameScene(Main.Game1));
+        secondLvButton.setOnAction(e->Main.sceneControler.startGameScene(Main.Game2));
+        thirdLvButton.setOnAction(e->Main.sceneControler.startGameScene(Main.Game3));
+        BackButton.setOnAction(e->Main.sceneControler.startPageScene(Main.MainPage));
+    }
+
+    public Scene getChooseLevelScene() {
+        return chooseLevelScene;
     }
 }

@@ -12,12 +12,10 @@ import p4_group_8_repo.Main;
 import p4_group_8_repo.Object_Controlers.*;
 
 public class infopage2 {
-    private Main main;
     private MyStage infoStage;
     private Scene infoScene;
     private Animal infoAnimal;
-    public infopage2(Main main){
-        this.main = main;
+    public infopage2(){
         infoStage = new MyStage();
         BackgroundImage infoPageBackGround = new BackgroundImage("file:src/p4_group_8_repo/Assets/BackGrounds/infoPage2BackGround.png");
         infoStage.add(infoPageBackGround);
@@ -41,8 +39,9 @@ public class infopage2 {
         infoStage.start();
         infoStage.getChildren().addAll(BackButton);
         infoScene =new Scene (infoStage,600,800);
-        BackButton.setOnAction(e->main.setScene("Info1Stage"));
-        main.setMap("Info2Stage",infoScene);
-
+        BackButton.setOnAction(e->Main.sceneControler.startPageScene(Main.InfoPage1));
+    }
+    public Scene getInfo2Scene(){
+        return infoScene;
     }
 }

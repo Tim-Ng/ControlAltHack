@@ -9,7 +9,6 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import p4_group_8_repo.Scenes_controlers.PushingWall;
 import p4_group_8_repo.Scenes_controlers.coordinateArea;
-import p4_group_8_repo.Scenes_controlers.wall;
 import p4_group_8_repo.Scenes_controlers.waterArea;
 
 
@@ -24,7 +23,6 @@ public class Animal extends Actor {
 	Image imgD2;
 	int points = 0;
 	int end = 0;
-	private boolean canDieOne;
 	private boolean second = false;
 	boolean noMove = false;
 	double movement = 13.3333333*2;
@@ -34,6 +32,10 @@ public class Animal extends Actor {
 	boolean waterDeath = false;
 	boolean stop = false;
 	boolean changeScore = false;
+	/***
+	 * For easier testing change god mode to true
+	 * */
+	private boolean GodMode = false;
 	int carD = 0;
 	private double SpawnPositionX;
 	private double SpawnPositionY;
@@ -44,7 +46,6 @@ public class Animal extends Actor {
 	public Animal(String imageLink, waterArea waterDeathArea,double SpawnPositionX, double SpawnPositionY, coordinateArea Border) {
 		this.waterDeathArea = waterDeathArea;
 		this.Border = Border;
-		canDieOne = true;
 		setImage(new Image(imageLink, imgSize, imgSize, true, true));
 		this.SpawnPositionX = SpawnPositionX;
 		setX(SpawnPositionX); //300
@@ -67,29 +68,41 @@ public class Animal extends Actor {
 				if (second) {
 					if (event.getCode() == KeyCode.W) {
 						move(0, -movement);
+						if (isInWall()&& !GodMode){
+							move(0, movement);
+						}
 		                changeScore = false;
 		                setImage(imgW1);
 		                second = false;
 		            }
 		            else if (event.getCode() == KeyCode.A) {
 						move(-movementX, 0);
+						if (isInWall()&& !GodMode){
+							move(movementX, 0);
+						}
 		            	 setImage(imgA1);
 		            	 second = false;
 		            }
 		            else if (event.getCode() == KeyCode.S) {
 						move(0, movement);
+						if (isInWall()&& !GodMode){
+							move(0, -movement);
+						}
 		            	 setImage(imgS1);
 		            	 second = false;
 		            }
 		            else if (event.getCode() == KeyCode.D) {
 						move(movementX, 0);
+						if (isInWall()&& !GodMode){
+							move(0, -movement);
+						}
 		            	 setImage(imgD1);
 		            	 second = false;
 		            }
 				}
 				else if (event.getCode() == KeyCode.W) {
 					move(0, -movement);
-					if (isInWall()){
+					if (isInWall()&& !GodMode){
 						move(0, movement);
 					}
 	                setImage(imgW2);
@@ -97,7 +110,7 @@ public class Animal extends Actor {
 	            }
 	            else if (event.getCode() == KeyCode.A) {
 					move(-movementX, 0);
-					if (isInWall()){
+					if (isInWall()&& !GodMode){
 						move(movementX, 0);
 					}
 	            	 setImage(imgA2);
@@ -105,7 +118,7 @@ public class Animal extends Actor {
 	            }
 	            else if (event.getCode() == KeyCode.S) {
 					move(0, movement);
-					if (isInWall()){
+					if (isInWall()&& !GodMode){
 						move(0, -movement);
 					}
 	            	 setImage(imgS2);
@@ -113,7 +126,7 @@ public class Animal extends Actor {
 	            }
 	            else if (event.getCode() == KeyCode.D) {
 					move(movementX, 0);
-					if (isInWall()){
+					if (isInWall()&& !GodMode){
 						move(-movementX, 0);
 					}
 	            	 setImage(imgD2);
@@ -121,7 +134,7 @@ public class Animal extends Actor {
 	            }
 	        }
 			}
-		});	
+		});
 		setOnKeyReleased(new EventHandler<KeyEvent>() {
 			public void handle(KeyEvent event) {
 				if (noMove) {}
@@ -133,33 +146,21 @@ public class Animal extends Actor {
 						points+=10;
 					}
 	                move(0, -movement);
-					if (isInWall()){
-						move(0, movement);
-					}
 	                setImage(imgW1);
 	                second = false;
 	            }
 	            else if (event.getCode() == KeyCode.A) {	            	
 	            	 move(-movementX, 0);
-					if (isInWall()){
-						move(movementX, 0);
-					}
 	            	 setImage(imgA1);
 	            	 second = false;
 	            }
 	            else if (event.getCode() == KeyCode.S) {	            	
 	            	 move(0, movement);
-					if (isInWall()){
-						move(0, -movement);
-					}
 	            	 setImage(imgS1);
 	            	 second = false;
 	            }
 	            else if (event.getCode() == KeyCode.D) {	            	
 	            	 move(movementX, 0);
-					if (isInWall()){
-						move(-movementX, 0);
-					}
 	            	 setImage(imgD1);
 	            	 second = false;
 	            }
@@ -183,7 +184,7 @@ public class Animal extends Actor {
 		if (getX() < Border.getX1()) {
 			move(movement * 2, 0);
 		}
-		if (carDeath) {
+		if (carDeath && !GodMode) {
 			noMove = true;
 			if ((now) % 11 == 0) {
 				carD++;
@@ -211,7 +212,7 @@ public class Animal extends Actor {
 			}
 
 		}
-		if (waterDeath) {
+		if (waterDeath&& !GodMode) {
 			noMove = true;
 			if ((now) % 11 == 0) {
 				carD++;
@@ -283,7 +284,7 @@ public class Animal extends Actor {
 			//setX(300);
 			//setY(679.8+movement);
 		}
-		else if (getIntersectingObjects(PushingWall.class).size()>=1 && !noMove){
+		else if (getIntersectingObjects(PushingWall.class).size()>=1 && !noMove && !GodMode){
 			move(1*(getIntersectingObjects(PushingWall.class).get(0).getSpeed()), 0);
 			if (getX()<0 || getX()>600){
 				carDeath = true;

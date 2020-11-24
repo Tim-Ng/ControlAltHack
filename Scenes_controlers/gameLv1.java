@@ -9,15 +9,13 @@ import p4_group_8_repo.Object_Controlers.*;
 
 import java.util.Objects;
 
-public class stage1 {
-    private Main main;
+public class gameLv1 implements GameScene{
     private Animal animal;
     private MyStage Stage1;
     private Scene gameScene1;
     private AnimationTimer timer;
-    public  stage1(Main main)
+    public gameLv1()
     {
-        this.main = main;
         inputToStage();
     }
     public void inputToStage(){
@@ -89,7 +87,9 @@ public class stage1 {
         //background.add(obstacle2);
         Stage1.start();
         gameScene1 =new Scene(Stage1,600,800);
-        main.setMap("Stage1Game",gameScene1);
+    }
+    public Scene getScene(){
+        return gameScene1;
     }
     public void stop() {
         timer.stop();
@@ -117,9 +117,9 @@ public class stage1 {
                     Stage1.stopMusic();
                     stop();
                     Stage1.stop();
-                    main.setHighScoreStage1(animal.getPoints(),"scoresStage1.dat","HighScoreStage1","file:src/p4_group_8_repo/Assets/BackGrounds/HighScoreWithScoreBackground1.png");
-                    ResetStage1();
-                    main.setScene("HighScoreStage1");
+                    Main.sceneControler.startHighScoreScene(Main.HighScore1,animal.getPoints());
+                    ResetStage();
+
                     //Alert alert = new Alert(Alert.AlertType.INFORMATION);
                     //alert.setTitle("You Have Won The Game!");
                     //alert.setHeaderText("Your High Score: "+animal.getPoints()+"!");
@@ -134,7 +134,7 @@ public class stage1 {
         createTimer();
         timer.start();
     }
-    public void ResetStage1(){
+    public void ResetStage(){
         Stage1.getChildren().clear();
         inputToStage();
     }
