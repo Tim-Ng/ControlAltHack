@@ -5,15 +5,36 @@ import javafx.scene.Scene;
 import p4_group_8_repo.Main;
 import p4_group_8_repo.Object_Controlers.*;
 
+/***
+ * This is to set the page of the game level 3
+ */
 public class gameLv3 implements GameScene{
+    /***
+     * Hold the class Animal for the avatar
+     */
     private Animal animal;
+    /***
+     * This is to hold the elements of the page of the game level 3
+     */
     private MyStage Stage3;
+    /***
+     * This is to hold the Scene of the page of the game level 3
+     */
     private Scene gameScene3;
+    /***
+     * Hold Animation timer
+     */
     private AnimationTimer timer;
+    /***
+     * Call the function inputToStage() to start arranging the elements and set the Scene
+     */
     public gameLv3()
     {
         inputToStage();
     }
+    /***
+     * To start arranging the elements and set the Scene
+     */
     public void inputToStage(){
         Stage3 = new MyStage();
         BackgroundImage Stage3back = new BackgroundImage("file:src/p4_group_8_repo/Assets/BackGrounds/stage3BackGround.png");
@@ -57,10 +78,16 @@ public class gameLv3 implements GameScene{
         Stage3.start();
         gameScene3 =new Scene(Stage3,600,800);
     }
+    /***
+     * To stop the timer of the game
+     */
     public void stop() {
         timer.stop();
     }
-
+    /***
+     * To set the images and display the scores of the game
+     * @param n The score to output
+     */
     public void setNumber(int n) {
         int shift = 0;
         while (n > 0) {
@@ -71,6 +98,9 @@ public class gameLv3 implements GameScene{
             shift+=30;
         }
     }
+    /***
+     * To create and start the timer for the game
+     */
     public void createTimer() {
         timer = new AnimationTimer() {
             @Override
@@ -95,15 +125,25 @@ public class gameLv3 implements GameScene{
             }
         };
     }
+    /***
+     * To start the game and music
+     */
     public void start() {
         //Stage1.playMusic();
         createTimer();
         timer.start();
     }
+    /***
+     * To rest the game so that the game is ready to play again
+     */
     public void ResetStage(){
         Stage3.getChildren().clear();
         inputToStage();
     }
+    /***
+     * To get the Scene of the page of the game level 3
+     * @return Scene of the page of the game level 3
+     */
     public Scene getScene(){
         return gameScene3;
     }

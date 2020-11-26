@@ -10,19 +10,32 @@ import p4_group_8_repo.Main;
 import p4_group_8_repo.Object_Controlers.*;
 
 import javafx.scene.control.Button;
-
+/***
+ * This is to set the page of info page 1
+ */
 public class info_page1 {
+    /***
+     * This is to hold the elements of the page of info page 1
+     */
     private MyStage infoStage;
+    /***
+     * This is to hold the Scene of the page of info page 1
+     */
     private Scene infoScene;
+    /***
+     * Hold the class Animal for the avatar
+     */
     private Animal infoAnimal;
+    /***
+     * To start arranging the elements and set the Scene
+     */
     public info_page1(){
         infoStage = new MyStage();
         BackgroundImage infoPageBackGround = new BackgroundImage("file:src/p4_group_8_repo/Assets/BackGrounds/infoPage1BackGround.png");
         infoStage.add(infoPageBackGround);
-        ButtonClass BackButtonClass = new ButtonClass("file:src/p4_group_8_repo/Assets/ButtonImages/BackButton.png",120,30,0,0);
-        Button BackButton = BackButtonClass.getButton();
-        ButtonClass nextButtonClass = new ButtonClass("file:src/p4_group_8_repo/Assets/ButtonImages/nextInfoPage.png",120,30,460,0);
-        Button nextButton = nextButtonClass.getButton();
+        Button BackButton= new ButtonClass("file:src/p4_group_8_repo/Assets/ButtonImages/BackButton.png",120,30,0,0);
+
+        Button nextButton = new ButtonClass("file:src/p4_group_8_repo/Assets/ButtonImages/nextInfoPage.png",120,30,460,0);
 
         GridPane gridKeys = new GridPane();
         Image Wwhite = new Image("file:src/p4_group_8_repo/Assets/InfoPage/Wwhite.png", 50, 50, true, true);
@@ -85,6 +98,10 @@ public class info_page1 {
         BackButton.setOnAction(e->Main.sceneControler.startPageScene(Main.MainPage));
         nextButton.setOnAction(e->Main.sceneControler.startPageScene(Main.InfoPage2));
     }
+    /***
+     * To get the Scene of the page of info page 1
+     * @return Scene of the page of info page 1
+     */
     public Scene getInfo1Scene(){
         return infoScene;
     }

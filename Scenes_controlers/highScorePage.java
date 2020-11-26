@@ -2,38 +2,67 @@ package p4_group_8_repo.Scenes_controlers;
 
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.scene.paint.Color;
 import javafx.scene.text.Font;
 import javafx.scene.text.Text;
 import p4_group_8_repo.Main;
 import p4_group_8_repo.Object_Controlers.BackgroundImage;
-import p4_group_8_repo.Object_Controlers.Digit;
 import p4_group_8_repo.Object_Controlers.MyStage;
 import p4_group_8_repo.Scenes_controlers.HighScoreControlers.HighscoreManager;
 import p4_group_8_repo.Scenes_controlers.HighScoreControlers.Score;
 import javafx.scene.control.ScrollPane;
 import java.util.ArrayList;
 
+/***
+ * This is to set the page for all high score pages
+ */
 public class highScorePage implements GetHighScoreScene{
+    /***
+     * This is to hold the elements of the page of high scores
+     */
     private MyStage highScorePageStage;
+    /***
+     * This is to hold the Scene of the page of high scores
+     */
     private Scene highScoreScene;
+    /***
+     * This is to hold the file path of the stored scores
+     */
     private String File;
+    /***
+     * This is to hold the file path for the background without new score
+     */
     private String BackGroundNoNewPoints;
+    /***
+     * This is to hold the file path for the background with new score
+     */
     private String BackGroundWithNewPoints;
+
+    /***
+     * To set which level high score level
+     * @param File to set the file path of the stored scores
+     * @param BackGroundNoNewPoints to set the file path for the background without new score
+     * @param BackGroundWithNewPoints to set the file path for the background with new score
+     */
     public highScorePage(String File,String BackGroundNoNewPoints,String BackGroundWithNewPoints){
         this.File =File;
         this.BackGroundNoNewPoints =BackGroundNoNewPoints;
         this.BackGroundWithNewPoints = BackGroundWithNewPoints;
     }
+
+    /***
+     * To start arranging the elements and set the Scene
+     * @param getPoints the input of new scores
+     * @param ifScore if there is new scores then this is true else false
+     * @param whichBackGround to choose with background to use either with new score or without new score
+     */
     private void setScene(int getPoints,Boolean ifScore,String whichBackGround){
         highScorePageStage = new MyStage();
         BackgroundImage background = new BackgroundImage(whichBackGround);
         highScorePageStage.add(background);
         HighscoreManager highScoreManager = new HighscoreManager(File);
-        ButtonClass BackButtonClass = new ButtonClass("file:src/p4_group_8_repo/Assets/ButtonImages/BackButton.png",120,30,0,0);
-        Button BackButton = BackButtonClass.getButton();
+        Button BackButton = new ButtonClass("file:src/p4_group_8_repo/Assets/ButtonImages/BackButton.png",120,30,0,0);
         Boolean tempBool = ifScore;
         VBox list_high_scoreBox = new VBox();
         ArrayList<Score> scores = highScoreManager.getHighscoreList();
@@ -70,18 +99,25 @@ public class highScorePage implements GetHighScoreScene{
             scrollPane.setLayoutY(240);
         }
         scrollPane.setStyle("-fx-background: transparent; -fx-background-color: transparent; -fx-padding: 0; -fx-background-insets: 0;");
-
-
         highScorePageStage.getChildren().addAll(BackButton,scrollPane);
         highScorePageStage.start();
         BackButton.setOnAction(e->{Main.sceneControler.startPageScene(Main.MainPage);});
         highScorePageStage.start();
         highScoreScene = new Scene(highScorePageStage,600,800);
     }
+
+    /***
+     * Get scene without new score
+     * @return return scene without new score
+     */
     public Scene getScene(){
         setScene(0,false,BackGroundNoNewPoints);
         return highScoreScene;
     }
+    /***
+     * Get scene with new score
+     * @return return scene with new score
+     */
     public Scene getScene(int points){
         setScene(points,true,BackGroundWithNewPoints);
         return highScoreScene;

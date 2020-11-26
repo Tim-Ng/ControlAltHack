@@ -2,6 +2,9 @@ package p4_group_8_repo.Object_Controlers;
 
 import javafx.scene.image.Image;
 
+/***
+ * This class is to convert numbers to presented images
+ */
 public class Digit extends Actor{
 	/***
 	 * image size

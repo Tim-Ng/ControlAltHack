@@ -6,7 +6,9 @@ import p4_group_8_repo.World;
 
 import java.util.ArrayList;
 
-
+/***
+ * This class is to set Actors that controls movement and interaction
+ */
 public abstract class Actor extends ImageView{
     /***
      * move the Actor

@@ -3,6 +3,9 @@ package p4_group_8_repo.Object_Controlers;
 import javafx.scene.image.Image;
 import p4_group_8_repo.Object_Controlers.Actor;
 
+/***
+ * This class is to set and control the Obstacles
+ */
 public class Obstacle extends Actor {
 	/***
 	 * the speed of the obstacle

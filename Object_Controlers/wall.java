@@ -6,7 +6,9 @@ import javafx.scene.paint.Color;
 import javafx.scene.shape.Rectangle;
 import p4_group_8_repo.Object_Controlers.Actor;
 
-
+/***
+ * This function is to set and control the Walls
+ */
 public class wall extends Actor {
     /***
      * Override act in Actor

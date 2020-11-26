@@ -7,6 +7,9 @@ import javafx.scene.media.MediaPlayer;
 import javafx.util.Duration;
 import p4_group_8_repo.World;
 
+/***
+ * This class is to set and control the stage in the of the world
+ */
 public class MyStage extends World {
 	/***
 	 * The file path of the music

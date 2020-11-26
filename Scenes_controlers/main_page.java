@@ -12,24 +12,30 @@ import p4_group_8_repo.Object_Controlers.Actor;
 import p4_group_8_repo.Object_Controlers.BackgroundImage;
 import p4_group_8_repo.Object_Controlers.MyStage;
 import p4_group_8_repo.Object_Controlers.Obstacle;
-
+/***
+ * This is to set the page of main page
+ */
 public class main_page{
+    /***
+     * This is to hold the elements of the page of main page
+     */
     private MyStage mainStage;
+    /***
+     * This is to hold the Scene of the page of main page
+     */
     private Scene mainScene;
+    /***
+     * To start arranging the elements and set the Scene
+     */
     public main_page()
     {
         mainStage = new MyStage();
         BackgroundImage mainPageBackGround = new BackgroundImage("file:src/p4_group_8_repo/Assets/BackGrounds/mainPageBackground.png");
         mainStage.add(mainPageBackGround);
 
-        ButtonClass startButtonClass = new ButtonClass("file:src/p4_group_8_repo/Assets/ButtonImages/startGameButton.png",180,45,200,350);
-        Button startButton = startButtonClass.getButton();
-
-        ButtonClass InfoPageButtonClass = new ButtonClass("file:src/p4_group_8_repo/Assets/ButtonImages/InfoGameButton.png",180,45,200,400);
-        Button InfoPageButton = InfoPageButtonClass.getButton();
-
-        ButtonClass HighScorePageButtonClass = new ButtonClass("file:src/p4_group_8_repo/Assets/ButtonImages/HighScoreButton.png",180,45,200,450);
-        Button HighScorePageButton = HighScorePageButtonClass.getButton();
+        Button startButton = new ButtonClass("file:src/p4_group_8_repo/Assets/ButtonImages/startGameButton.png",180,45,200,350);
+        Button InfoPageButton = new ButtonClass("file:src/p4_group_8_repo/Assets/ButtonImages/InfoGameButton.png",180,45,200,400);
+        Button HighScorePageButton = new ButtonClass("file:src/p4_group_8_repo/Assets/ButtonImages/HighScoreButton.png",180,45,200,450);
 
         mainStage.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/car1Left.png", 100, 730, -1, 50, 50));
         mainStage.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/car1Left.png", 250, 730, -1, 50, 50));
@@ -46,5 +52,9 @@ public class main_page{
         InfoPageButton.setOnAction(e->Main.sceneControler.startPageScene(Main.InfoPage1));
         HighScorePageButton.setOnAction(e->Main.sceneControler.startPageScene(Main.ChooseHighScoreLv));
     }
+    /***
+     * To get the Scene of the page of main page
+     * @return Scene of the page of main page
+     */
     public Scene getScene(){ return mainScene;}
 }

@@ -2,6 +2,9 @@ package p4_group_8_repo.Object_Controlers;
 
 import javafx.scene.image.Image;
 
+/***
+ * This class is to set the background
+  */
 public class BackgroundImage extends Actor{
 
 	/***

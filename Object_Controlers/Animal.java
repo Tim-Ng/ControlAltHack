@@ -11,7 +11,9 @@ import p4_group_8_repo.Scenes_controlers.PushingWall;
 import p4_group_8_repo.Scenes_controlers.coordinateArea;
 import p4_group_8_repo.Scenes_controlers.waterArea;
 
-
+/***
+ * This class is to create the user's avatar and control the avatar
+ */
 public class Animal extends Actor {
 	/***
 	 * Frog image Up

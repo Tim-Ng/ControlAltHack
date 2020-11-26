@@ -1,9 +1,21 @@
 package p4_group_8_repo.Scenes_controlers;
 
 import javafx.scene.Scene;
-import p4_group_8_repo.Object_Controlers.MyStage;
 
+/***
+ * Interface for GameScene
+ */
 public interface GetHighScoreScene {
+    /***
+     * To get Scene of the high score Level
+     * @return return Scene of the high score Level without new points
+     */
     public Scene getScene();
+
+    /***
+     * To get Scene of the high score Level
+     * @param Points Input the new point that is scored
+     * @return return Scene of the high score Level with new points
+     */
     public Scene getScene(int Points);
 }
