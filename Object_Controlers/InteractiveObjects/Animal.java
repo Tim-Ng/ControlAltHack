@@ -7,9 +7,6 @@ import javafx.event.EventHandler;
 import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
-import p4_group_8_repo.Scenes_controlers.PushingWall;
-import p4_group_8_repo.Scenes_controlers.coordinateArea;
-import p4_group_8_repo.Scenes_controlers.waterArea;
 
 /***
  * This class is to create the user's avatar and control the avatar
@@ -94,7 +91,7 @@ public class Animal extends Actor {
 	/***
 	 * For easier testing change god mode to true
 	 * */
-	private boolean GodMode = false;
+	private boolean GodMode = true;
 	/***
 	 *  Car death animation handler
 	 */

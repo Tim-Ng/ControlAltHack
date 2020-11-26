@@ -1,4 +1,4 @@
-package p4_group_8_repo.Scenes_controlers;
+package p4_group_8_repo.Object_Controlers;
 
 import javafx.scene.image.Image;
 import p4_group_8_repo.Object_Controlers.Actor;

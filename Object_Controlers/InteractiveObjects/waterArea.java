@@ -1,4 +1,4 @@
-package p4_group_8_repo.Scenes_controlers;
+package p4_group_8_repo.Object_Controlers;
 
 import java.util.ArrayList;
 
@@ -14,15 +14,13 @@ public class waterArea {
     /***
      * empty list
      */
-    waterArea (){
-
-    }
+    public waterArea (){ }
 
     /***
      * Input multiple coordinatesArea
      * @param Coordinates the coordinates of the water area
      */
-    waterArea (coordinateArea...Coordinates){
+    public waterArea (coordinateArea...Coordinates){
         for (int i = 0; i < Coordinates.length;i++){
             areaList.add(Coordinates[i]);
         }

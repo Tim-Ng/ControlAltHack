@@ -1,4 +1,4 @@
-package p4_group_8_repo.Scenes_controlers;
+package p4_group_8_repo.SceneClasses.info_pageSceneClasses;
 
 import javafx.scene.Scene;
 

@@ -1,4 +1,4 @@
-package p4_group_8_repo.Scenes_controlers;
+package p4_group_8_repo.SceneClasses;
 
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -9,6 +9,8 @@ import javafx.scene.text.Text;
 import p4_group_8_repo.Main;
 import p4_group_8_repo.Object_Controlers.BackgroundImage;
 import p4_group_8_repo.Object_Controlers.MyStage;
+import p4_group_8_repo.Scenes_controlers.ButtonClass;
+import p4_group_8_repo.Scenes_controlers.GetHighScoreScene;
 import p4_group_8_repo.Scenes_controlers.HighScoreControlers.HighscoreManager;
 import p4_group_8_repo.Scenes_controlers.HighScoreControlers.Score;
 import javafx.scene.control.ScrollPane;
@@ -17,7 +19,7 @@ import java.util.ArrayList;
 /***
  * This is to set the page for all high score pages
  */
-public class highScorePage implements GetHighScoreScene{
+public class highScorePage implements GetHighScoreScene {
     /***
      * This is to hold the elements of the page of high scores
      */

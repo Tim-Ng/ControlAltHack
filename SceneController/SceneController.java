@@ -1,7 +1,9 @@
-package p4_group_8_repo.Scenes_controlers;
+package p4_group_8_repo.SceneControler;
 
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import p4_group_8_repo.SceneClasses.gameSceneClasses.GameScene;
+import p4_group_8_repo.SceneClasses.HighScore.HighScoreControlers.GetHighScoreScene;
 
 import java.util.HashMap;
 
@@ -71,7 +73,9 @@ public class SceneControler {
         primaryStage.show();
         primaryStage.setResizable(false);
     }
-
+    public int getHighestScore(String whichScene){
+        return this.sceneHighScoreFinder.get(whichScene).getHighestScore();
+    }
     /***
      * To set the pages that are not game or high score scenes into scenePageFinder
      * @param inputKey the Key to set

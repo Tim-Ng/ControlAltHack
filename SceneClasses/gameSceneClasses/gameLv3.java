@@ -1,14 +1,18 @@
-package p4_group_8_repo.Scenes_controlers;
+package p4_group_8_repo.SceneClasses;
 
 import javafx.animation.AnimationTimer;
 import javafx.scene.Scene;
 import p4_group_8_repo.Main;
 import p4_group_8_repo.Object_Controlers.*;
+import p4_group_8_repo.Scenes_controlers.GameScene;
+import p4_group_8_repo.Scenes_controlers.PushingWall;
+import p4_group_8_repo.Scenes_controlers.coordinateArea;
+import p4_group_8_repo.Scenes_controlers.waterArea;
 
 /***
  * This is to set the page of the game level 3
  */
-public class gameLv3 implements GameScene{
+public class gameLv3 implements GameScene {
     /***
      * Hold the class Animal for the avatar
      */

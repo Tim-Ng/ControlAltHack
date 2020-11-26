@@ -1,4 +1,4 @@
-package p4_group_8_repo.Scenes_controlers;
+package p4_group_8_repo.Object_Controlers;
 
 /***
  * To hold the value of coordinates of a 4 corner area with is the coordinates of the top left corner X1,Y1 and bottom right corner X2,Y2

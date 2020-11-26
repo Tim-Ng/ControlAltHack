@@ -1,4 +1,4 @@
-package p4_group_8_repo.Scenes_controlers;
+package p4_group_8_repo.SceneClasses;
 
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
@@ -10,6 +10,8 @@ import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.GridPane;
 import p4_group_8_repo.Main;
 import p4_group_8_repo.Object_Controlers.*;
+import p4_group_8_repo.Scenes_controlers.ButtonClass;
+
 /***
  * This is to set the page of info page 2
  */

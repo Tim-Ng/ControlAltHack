@@ -1,4 +1,4 @@
-package p4_group_8_repo.Scenes_controlers;
+package p4_group_8_repo.SceneClasses;
 
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
@@ -10,6 +10,11 @@ import p4_group_8_repo.Main;
 import p4_group_8_repo.Object_Controlers.*;
 
 import javafx.scene.control.Button;
+import p4_group_8_repo.Scenes_controlers.ButtonClass;
+import p4_group_8_repo.Scenes_controlers.PushingWall;
+import p4_group_8_repo.Scenes_controlers.coordinateArea;
+import p4_group_8_repo.Scenes_controlers.waterArea;
+
 /***
  * This is to set the page of info page 1
  */
