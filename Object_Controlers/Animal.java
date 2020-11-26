@@ -13,36 +13,122 @@ import p4_group_8_repo.Scenes_controlers.waterArea;
 
 
 public class Animal extends Actor {
-	Image imgW1;
-	Image imgA1;
-	Image imgS1;
-	Image imgD1;
-	Image imgW2;
-	Image imgA2;
-	Image imgS2;
-	Image imgD2;
-	int points = 0;
-	int end = 0;
+	/***
+	 * Frog image Up
+	 */
+	private Image imgW1;
+	/***
+	 * Frog image Left
+	 */
+	private Image imgA1;
+	/***
+	 * Frog image Down
+	 */
+	private Image imgS1;
+	/***
+	 * Frog image Right
+	 */
+	private Image imgD1;
+	/***
+	 * Frog image Up Jump
+	 */
+	private Image imgW2;
+	/***
+	 * Frog image Left Jump
+	 */
+	private Image imgA2;
+	/***
+	 * Frog image Down Jump
+	 */
+	private Image imgS2;
+	/***
+	 * Frog image Right Jump
+	 */
+	private Image imgD2;
+	/***
+	 * current points
+	 */
+	private int points = 0;
+	/***
+	 * How many ends has been meet
+	 */
+	private int end = 0;
+	/***
+	 * If the key is pressed on the second time = true else = false
+	 */
 	private boolean second = false;
-	boolean noMove = false;
-	double movement = 13.3333333*2;
-	double movementX = 10.666666*2;
-	int imgSize = 40;
-	boolean carDeath = false;
-	boolean waterDeath = false;
-	boolean stop = false;
-	boolean changeScore = false;
+	/***
+	 *  If there is movement will = to false else = true
+	 */
+	private boolean noMove = false;
+	/***
+	 * The amount of movement for Y axis
+	 */
+	private double movement = 13.3333333*2;
+	/***
+	 * The amount of movement for X axis
+	 */
+	private double movementX = 10.666666*2;
+	/***
+	 * Image size
+	 */
+	private int imgSize = 40;
+	/***
+	 * If interact with car then carDeath = true else = false
+	 */
+	private boolean carDeath = false;
+	/***
+	 * If interact with water then waterDeath = true else = false
+	 */
+	private boolean waterDeath = false;
+	/***
+	 * If the game is stopped then stop = true else = false
+	 */
+	private boolean stop = false;
+	/***
+	 * If there is the change in the score than changeScore = true else = false
+	 */
+	private boolean changeScore = false;
 	/***
 	 * For easier testing change god mode to true
 	 * */
 	private boolean GodMode = false;
-	int carD = 0;
+	/***
+	 *  Car death animation handler
+	 */
+	private int carD = 0;
+	/***
+	 * Spawn position X
+	 * */
 	private double SpawnPositionX;
+	/***
+	 * Spawn position Y
+	 * */
 	private double SpawnPositionY;
+	/***
+	 * The coordinateArea class with hold the border of the game.
+	 * */
 	private coordinateArea Border;
-	double w = 800;
-	ArrayList<End> inter = new ArrayList<End>();
-	waterArea waterDeathArea;
+	/***
+	 * Top most Y the Animal has traveled
+	 * */
+	private double w = 800;
+	/***
+	 * Hold an arraylist of all the End classes
+	 */
+	private ArrayList<End> inter = new ArrayList<End>();
+	/***
+	 * The waterArea class with hold the water areas of the game.
+	 * */
+	private waterArea waterDeathArea;
+
+	/***
+	 * @param imageLink set the start image of the Animal
+	 * @param waterDeathArea waterArea class which will check if your in water
+	 * @param SpawnPositionX spawn X position of the Animal
+	 * @param SpawnPositionY spawn Y position of the Animal
+	 * @param Border takes in coordinateArea class, the border of the map that the Animal cannot go pass
+	 */
 	public Animal(String imageLink, waterArea waterDeathArea,double SpawnPositionX, double SpawnPositionY, coordinateArea Border) {
 		this.waterDeathArea = waterDeathArea;
 		this.Border = Border;
@@ -170,6 +256,10 @@ public class Animal extends Actor {
 		});
 	}
 
+	/***
+	 * This will check the position of the animal and act accordingly. For example card death in border and so on
+	 * @param now The timestamp of the current frame given in nanoseconds. This value will be the same for all AnimationTimers called during one frame.
+	 */
 	@Override
 	public void act(long now) {
 		int bounds = 0;
@@ -291,14 +381,27 @@ public class Animal extends Actor {
 			}
 		}
 	}
+
+	/***
+	 * Check if all is done
+	 * @return return true if all of the end goal is done else false
+	 */
 	public boolean getStop() {
 		return end==5;
 	}
 
+	/***
+	 * To get current points
+	 * @return current points in int
+	 */
 	public int getPoints() {
 		return points;
 	}
-	
+
+	/***
+	 * Will detect if the score changed
+	 * @return true if the score did not change
+	 */
 	public boolean changeScore() {
 		if (changeScore) {
 			changeScore = false;
@@ -306,6 +409,11 @@ public class Animal extends Actor {
 		}
 		return false;
 	}
+
+	/***
+	 *
+	 * @return true if the animal is dectected touching a wall or in wall else false
+	 */
 	public boolean isInWall(){
 		if (getIntersectingObjects(wall.class).size() >= 1){
 			 return true;

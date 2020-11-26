@@ -8,12 +8,23 @@ import javafx.util.Duration;
 import p4_group_8_repo.World;
 
 public class MyStage extends World {
-	MediaPlayer mediaPlayer;
+	/***
+	 * The file path of the music
+	 */
+	private MediaPlayer mediaPlayer;
+
+	/***
+	 * Override the act of the world
+	 * @param now current time
+	 */
 	@Override
 	public void act(long now) {
 		
 	}
-	
+
+	/***
+	 *
+	 */
 	public MyStage() {
 		
 //		mediaPlayer.play();
@@ -28,7 +39,10 @@ public class MyStage extends World {
 //		});
 //		mediaPlayer.play();
 	}
-	
+
+	/***
+	 * this will call to play the music
+	 */
 	public void playMusic() {
 		String musicFile = "src/p4_group_8_repo/Assets/Frogger Main Song Theme (loop).mp3";
 		Media sound = new Media(new File(musicFile).toURI().toString());
@@ -36,7 +50,10 @@ public class MyStage extends World {
 		mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
 	    mediaPlayer.play();
 	}
-	
+
+	/***
+	 * this will call to stop the music
+	 */
 	public void stopMusic() {
 		if (mediaPlayer != null){
 			mediaPlayer.stop();
