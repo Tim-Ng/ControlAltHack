@@ -1,4 +1,4 @@
-package p4_group_8_repo;
+package p4_group_8_repo.Object_Controlers;
 
 
 import java.util.ArrayList;
@@ -12,7 +12,6 @@ import javafx.scene.Node;
 import javafx.scene.Scene;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.Pane;
-import p4_group_8_repo.Object_Controlers.Actor;
 
 
 public abstract class World extends Pane {

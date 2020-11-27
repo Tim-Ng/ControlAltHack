@@ -1,13 +1,11 @@
-package p4_group_8_repo.SceneClasses;
+package p4_group_8_repo.SceneClasses.gameSceneClasses;
 
 import javafx.animation.AnimationTimer;
 import javafx.scene.Scene;
+import javafx.scene.control.Button;
 import p4_group_8_repo.Main;
 import p4_group_8_repo.Object_Controlers.*;
-import p4_group_8_repo.Scenes_controlers.GameScene;
-import p4_group_8_repo.Scenes_controlers.PushingWall;
-import p4_group_8_repo.Scenes_controlers.coordinateArea;
-import p4_group_8_repo.Scenes_controlers.waterArea;
+import p4_group_8_repo.Object_Controlers.InteractiveObjects.*;
 
 /***
  * This is to set the page of the game level 3
@@ -43,6 +41,9 @@ public class gameLv3 implements GameScene {
         Stage3 = new MyStage();
         BackgroundImage Stage3back = new BackgroundImage("file:src/p4_group_8_repo/Assets/BackGrounds/stage3BackGround.png");
         Stage3.add(Stage3back);
+        Button BackButton= new ButtonClass("file:src/p4_group_8_repo/Assets/ButtonImages/BackButton.png",120,30,0,0);
+        Stage3.getChildren().add(BackButton);
+        BackButton.setOnAction(e->quitGame());
         Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/truck1"+"Right.png", 300, 180, 2, 120, 120));
         Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/truck1"+"Right.png", 600, 180, 2, 120, 120));
         Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/car1Left.png", 100, 220, -2, 50, 50));
@@ -58,11 +59,11 @@ public class gameLv3 implements GameScene {
         Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/car1Left.png", 100, 649, -2, 50, 50));
         Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/car1Left.png", 250, 649, -2, 50, 50));
         Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/car1Left.png", 550, 649, -2, 50, 50));
-        Stage3.add(new End(13,96));
-        Stage3.add(new End(141,96));
-        Stage3.add(new End(141 + 141-13,96));
-        Stage3.add(new End(141 + 141-13+141-13+1,96));
-        Stage3.add(new End(141 + 141-13+141-13+141-13+3,96));
+        Stage3.add(new End(8,96));
+        Stage3.add(new End(141-5,96));
+        Stage3.add(new End(141 + 141-16,96));
+        Stage3.add(new End(141 + 141-16+141-16+1,96));
+        Stage3.add(new End(141 + 141-16+141-13+141-16+3,96));
 
         Stage3.add(new PushingWall(200,440,-1,100,50));
         Stage3.add(new PushingWall(500,440,-1,100,50));
@@ -77,6 +78,7 @@ public class gameLv3 implements GameScene {
         coordinateArea WaterArea3 = new coordinateArea(460,400,600,550);
         waterArea waterDeath = new waterArea(WaterArea1,WaterArea2,WaterArea3);
         coordinateArea Border = new coordinateArea(0,100,600,734);
+        Stage3.add(new Digit(0, 40, 290, 40));
         animal = new Animal("file:src/p4_group_8_repo/Assets/froggerUp.png",waterDeath,300,679.8,Border);
         Stage3.add(animal);
         Stage3.start();
@@ -98,7 +100,7 @@ public class gameLv3 implements GameScene {
             int d = n / 10;
             int k = n - d * 10;
             n = d;
-            Stage3.add(new Digit(k, 30, 570 - shift, 25));
+            Stage3.add(new Digit(k, 40, 290 - shift, 40));
             shift+=30;
         }
     }
@@ -117,7 +119,7 @@ public class gameLv3 implements GameScene {
                     System.out.print("STOPP:");
                     Stage3.stopMusic();
                     stop();
-                    Main.sceneControler.startHighScoreScene(Main.HighScore3,animal.getPoints());
+                    Main.sceneController.startHighScoreScene(Main.HighScore3,animal.getPoints());
                     ResetStage();
 
                     //Alert alert = new Alert(Alert.AlertType.INFORMATION);
@@ -134,6 +136,16 @@ public class gameLv3 implements GameScene {
      */
     public void start() {
         //Stage1.playMusic();
+        int holdpoint = Main.sceneController.getHighestScore(Main.HighScore3);
+        int shift = 0;
+        Stage3.add(new Digit(0, 40, 570, 40));
+        while (holdpoint > 0) {
+            int d = holdpoint / 10;
+            int k = holdpoint - d * 10;
+            holdpoint = d;
+            Stage3.add(new Digit(k, 40, 570 - shift, 40));
+            shift += 40;
+        }
         createTimer();
         timer.start();
     }
@@ -150,5 +162,12 @@ public class gameLv3 implements GameScene {
      */
     public Scene getScene(){
         return gameScene3;
+    }
+    public void quitGame(){
+        Stage3.stopMusic();
+        stop();
+        Stage3.stop();
+        Main.sceneController.startPageScene(Main.MainPage);
+        ResetStage();
     }
 }

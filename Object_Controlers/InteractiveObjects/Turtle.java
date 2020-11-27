@@ -1,11 +1,12 @@
-package p4_group_8_repo.Object_Controlers;
+package p4_group_8_repo.Object_Controlers.InteractiveObjects;
 
 import javafx.scene.image.Image;
+import p4_group_8_repo.Object_Controlers.Actor;
 
 /***
  * This class is to set and control the Turtles
  */
-public class Turtle extends Actor{
+public class Turtle extends Actor {
 	/***
 	 * hold the image of the TurtleAnimation1
 	 */

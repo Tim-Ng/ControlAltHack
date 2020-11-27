@@ -1,4 +1,4 @@
-package p4_group_8_repo.SceneControler;
+package p4_group_8_repo.SceneController;
 
 import javafx.scene.Scene;
 import javafx.stage.Stage;
@@ -10,7 +10,7 @@ import java.util.HashMap;
 /***
  * This is the class to control the Scenes
  */
-public class SceneControler {
+public class SceneController {
     /***
      * Hold the HashMap of the Scene for pages that are not game or high score pages
      */
@@ -32,7 +32,7 @@ public class SceneControler {
      * To set the variable of the primaryStage
      * @param primaryStage the primaryStage which holds the main scene
      */
-    public SceneControler(Stage primaryStage) {
+    public SceneController(Stage primaryStage) {
         this.primaryStage = primaryStage;
     }
 

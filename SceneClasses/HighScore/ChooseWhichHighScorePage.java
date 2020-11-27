@@ -1,4 +1,4 @@
-package p4_group_8_repo.SceneClasses;
+package p4_group_8_repo.SceneClasses.HighScore;
 
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -31,10 +31,10 @@ public class ChooseWhichHighScorePage {
         chooseHighScoreStage.getChildren().addAll(BackButton,gridForButtons);
         chooseHighScoreScene = new Scene(chooseHighScoreStage,600,800);
 
-        firstLvButton.setOnAction(e->Main.sceneControler.startHighScoreScene(Main.HighScore1));
-        secondLvButton.setOnAction(e->Main.sceneControler.startHighScoreScene(Main.HighScore2));
-        thirdLvButton.setOnAction(e->Main.sceneControler.startHighScoreScene(Main.HighScore3));
-        BackButton.setOnAction(e->Main.sceneControler.startPageScene(Main.MainPage));
+        firstLvButton.setOnAction(e->Main.sceneController.startHighScoreScene(Main.HighScore1));
+        secondLvButton.setOnAction(e->Main.sceneController.startHighScoreScene(Main.HighScore2));
+        thirdLvButton.setOnAction(e->Main.sceneController.startHighScoreScene(Main.HighScore3));
+        BackButton.setOnAction(e->Main.sceneController.startPageScene(Main.MainPage));
     }
 
     public Scene getChooseHighScoreScene() {

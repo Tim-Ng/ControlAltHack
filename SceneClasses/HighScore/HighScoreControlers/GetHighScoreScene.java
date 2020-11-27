@@ -1,4 +1,4 @@
-package p4_group_8_repo.SceneClasses.info_pageSceneClasses;
+package p4_group_8_repo.SceneClasses.HighScore.HighScoreControlers;
 
 import javafx.scene.Scene;
 
@@ -18,4 +18,9 @@ public interface GetHighScoreScene {
      * @return return Scene of the high score Level with new points
      */
     public Scene getScene(int Points);
+    /***
+     * To get the highest score number
+     * @return return highest score
+     */
+    public int getHighestScore();
 }

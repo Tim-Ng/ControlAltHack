@@ -1,16 +1,13 @@
-package p4_group_8_repo.SceneClasses;
+package p4_group_8_repo.SceneClasses.info_pageSceneClasses;
 
-import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.control.ScrollPane;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.input.KeyEvent;
-import javafx.scene.layout.GridPane;
 import p4_group_8_repo.Main;
 import p4_group_8_repo.Object_Controlers.*;
-import p4_group_8_repo.Scenes_controlers.ButtonClass;
+import p4_group_8_repo.Object_Controlers.ButtonClass;
+import p4_group_8_repo.Object_Controlers.InteractiveObjects.Log;
+import p4_group_8_repo.Object_Controlers.InteractiveObjects.Turtle;
+import p4_group_8_repo.Object_Controlers.InteractiveObjects.WetTurtle;
 
 /***
  * This is to set the page of info page 2
@@ -50,7 +47,7 @@ public class infopage2 {
         infoStage.start();
         infoStage.getChildren().addAll(BackButton);
         infoScene =new Scene (infoStage,600,800);
-        BackButton.setOnAction(e->Main.sceneControler.startPageScene(Main.InfoPage1));
+        BackButton.setOnAction(e->Main.sceneController.startPageScene(Main.InfoPage1));
     }
     /***
      * To get the Scene of the page of info page 2

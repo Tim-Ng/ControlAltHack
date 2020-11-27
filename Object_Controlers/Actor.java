@@ -1,8 +1,6 @@
 package p4_group_8_repo.Object_Controlers;
 
 import javafx.scene.image.ImageView;
-import javafx.scene.input.InputEvent;
-import p4_group_8_repo.World;
 
 import java.util.ArrayList;
 

@@ -1,4 +1,4 @@
-package p4_group_8_repo.Object_Controlers;
+package p4_group_8_repo.Object_Controlers.InteractiveObjects;
 
 import java.util.ArrayList;
 
@@ -7,6 +7,7 @@ import javafx.event.EventHandler;
 import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
+import p4_group_8_repo.Object_Controlers.Actor;
 
 /***
  * This class is to create the user's avatar and control the avatar
@@ -91,7 +92,7 @@ public class Animal extends Actor {
 	/***
 	 * For easier testing change god mode to true
 	 * */
-	private boolean GodMode = true;
+	private boolean GodMode = false;
 	/***
 	 *  Car death animation handler
 	 */

@@ -5,7 +5,7 @@ import javafx.scene.image.Image;
 /***
  * This class is to set the background
   */
-public class BackgroundImage extends Actor{
+public class BackgroundImage extends Actor {
 
 	/***
 	 * Overriding act for actor

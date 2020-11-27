@@ -1,4 +1,4 @@
-package p4_group_8_repo.SceneClasses;
+package p4_group_8_repo.SceneClasses.gameSceneClasses;
 
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
@@ -40,10 +40,10 @@ public class ChooseLevel {
         chooseLevelStage.getChildren().addAll(BackButton,gridForButtons);
         chooseLevelScene = new Scene(chooseLevelStage,600,800);
 
-        firstLvButton.setOnAction(e->Main.sceneControler.startGameScene(Main.Game1));
-        secondLvButton.setOnAction(e->Main.sceneControler.startGameScene(Main.Game2));
-        thirdLvButton.setOnAction(e->Main.sceneControler.startGameScene(Main.Game3));
-        BackButton.setOnAction(e->Main.sceneControler.startPageScene(Main.MainPage));
+        firstLvButton.setOnAction(e->Main.sceneController.startGameScene(Main.Game1));
+        secondLvButton.setOnAction(e->Main.sceneController.startGameScene(Main.Game2));
+        thirdLvButton.setOnAction(e->Main.sceneController.startGameScene(Main.Game3));
+        BackButton.setOnAction(e->Main.sceneController.startPageScene(Main.MainPage));
     }
 
     /***

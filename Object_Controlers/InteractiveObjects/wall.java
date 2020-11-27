@@ -1,9 +1,6 @@
-package p4_group_8_repo.Object_Controlers;
+package p4_group_8_repo.Object_Controlers.InteractiveObjects;
 
 import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.scene.paint.Color;
-import javafx.scene.shape.Rectangle;
 import p4_group_8_repo.Object_Controlers.Actor;
 
 /***

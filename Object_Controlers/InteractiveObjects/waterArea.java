@@ -1,4 +1,4 @@
-package p4_group_8_repo.Object_Controlers;
+package p4_group_8_repo.Object_Controlers.InteractiveObjects;
 
 import java.util.ArrayList;
 

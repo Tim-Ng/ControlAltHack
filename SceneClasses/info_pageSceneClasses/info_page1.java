@@ -1,4 +1,4 @@
-package p4_group_8_repo.SceneClasses;
+package p4_group_8_repo.SceneClasses.info_pageSceneClasses;
 
 import javafx.event.EventHandler;
 import javafx.scene.Scene;
@@ -10,10 +10,8 @@ import p4_group_8_repo.Main;
 import p4_group_8_repo.Object_Controlers.*;
 
 import javafx.scene.control.Button;
-import p4_group_8_repo.Scenes_controlers.ButtonClass;
-import p4_group_8_repo.Scenes_controlers.PushingWall;
-import p4_group_8_repo.Scenes_controlers.coordinateArea;
-import p4_group_8_repo.Scenes_controlers.waterArea;
+import p4_group_8_repo.Object_Controlers.ButtonClass;
+import p4_group_8_repo.Object_Controlers.InteractiveObjects.*;
 
 /***
  * This is to set the page of info page 1
@@ -100,8 +98,8 @@ public class info_page1 {
         infoStage.add(infoAnimal);
         infoStage.start();
         infoScene =new Scene (infoStage,600,800);
-        BackButton.setOnAction(e->Main.sceneControler.startPageScene(Main.MainPage));
-        nextButton.setOnAction(e->Main.sceneControler.startPageScene(Main.InfoPage2));
+        BackButton.setOnAction(e->Main.sceneController.startPageScene(Main.MainPage));
+        nextButton.setOnAction(e->Main.sceneController.startPageScene(Main.InfoPage2));
     }
     /***
      * To get the Scene of the page of info page 1

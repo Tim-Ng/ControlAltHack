@@ -1,17 +1,13 @@
-package p4_group_8_repo.Scenes_controlers;
+package p4_group_8_repo.SceneClasses;
 
-import javafx.event.ActionEvent;
-import javafx.event.EventHandler;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
-import javafx.scene.image.Image;
-import javafx.scene.image.ImageView;
-import javafx.stage.Stage;
 import p4_group_8_repo.Main;
-import p4_group_8_repo.Object_Controlers.Actor;
 import p4_group_8_repo.Object_Controlers.BackgroundImage;
 import p4_group_8_repo.Object_Controlers.MyStage;
-import p4_group_8_repo.Object_Controlers.Obstacle;
+import p4_group_8_repo.Object_Controlers.InteractiveObjects.Obstacle;
+import p4_group_8_repo.Object_Controlers.ButtonClass;
+
 /***
  * This is to set the page of main page
  */
@@ -48,9 +44,9 @@ public class main_page{
         mainStage.getChildren().addAll(startButton,InfoPageButton,HighScorePageButton);
         mainStage.start();
         mainScene = new Scene(mainStage,600,800);
-        startButton.setOnAction(e->Main.sceneControler.startPageScene(Main.ChooseGameLv));
-        InfoPageButton.setOnAction(e->Main.sceneControler.startPageScene(Main.InfoPage1));
-        HighScorePageButton.setOnAction(e->Main.sceneControler.startPageScene(Main.ChooseHighScoreLv));
+        startButton.setOnAction(e->Main.sceneController.startPageScene(Main.ChooseGameLv));
+        InfoPageButton.setOnAction(e->Main.sceneController.startPageScene(Main.InfoPage1));
+        HighScorePageButton.setOnAction(e->Main.sceneController.startPageScene(Main.ChooseHighScoreLv));
     }
     /***
      * To get the Scene of the page of main page

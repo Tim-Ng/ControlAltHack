@@ -5,7 +5,7 @@ import javafx.scene.image.Image;
 /***
  * This class is to convert numbers to presented images
  */
-public class Digit extends Actor{
+public class Digit extends Actor {
 	/***
 	 * image size
 	 */
