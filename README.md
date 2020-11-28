@@ -1,6 +1,7 @@
 # Screenshot of Game
 ![alt text](https://raw.githubusercontent.com/hirish99/Frogger-Arcade-Game/master/arcade.png)
-#Refactorizing
+
+# Refactorizing
 First the images used for the game are place into an "Assets" package and they are further grouped in to more packages according to their usage.\
 The packages are:
 * BackGrounds       [Package] - for background images
@@ -28,7 +29,7 @@ Second the classes according their functions. Which are the "Object_Controllers"
 * Actor                             [Class]
 * MyStage                           [Class]
 * World                             [Class]
-\
+
 "SceneClasses" contains the classes for the Scenes:
 * gameSceneClasses [Pagckage] that has 5 classes:
     * ChooseLevel                   [Class]
@@ -52,6 +53,7 @@ Second the classes according their functions. Which are the "Object_Controllers"
     * infopage2                     [Class]
 * ButtonClass                       [Class]
 * main_page                         [Class]
+
 "SceneController" contains the classes for the Scene Controller class:
 * SceneController                   [Class]
-#Add Scene Controller
+# Add Scene Controller
