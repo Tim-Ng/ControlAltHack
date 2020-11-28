@@ -1,4 +1,4 @@
-package p4_group_8_repo.Object_Controlers.InteractiveObjects;
+package p4_group_8_repo.Object_Controllers.InteractiveObjects;
 
 import java.util.ArrayList;
 
@@ -7,7 +7,7 @@ import javafx.event.EventHandler;
 import javafx.scene.image.Image;
 import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
-import p4_group_8_repo.Object_Controlers.Actor;
+import p4_group_8_repo.Object_Controllers.Actor;
 
 /***
  * This class is to create the user's avatar and control the avatar

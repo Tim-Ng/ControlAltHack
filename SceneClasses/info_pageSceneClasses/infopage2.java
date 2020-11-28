@@ -3,11 +3,12 @@ package p4_group_8_repo.SceneClasses.info_pageSceneClasses;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import p4_group_8_repo.Main;
-import p4_group_8_repo.Object_Controlers.*;
-import p4_group_8_repo.Object_Controlers.ButtonClass;
-import p4_group_8_repo.Object_Controlers.InteractiveObjects.Log;
-import p4_group_8_repo.Object_Controlers.InteractiveObjects.Turtle;
-import p4_group_8_repo.Object_Controlers.InteractiveObjects.WetTurtle;
+import p4_group_8_repo.Object_Controllers.*;
+import p4_group_8_repo.SceneClasses.ButtonClass;
+import p4_group_8_repo.Object_Controllers.InteractiveObjects.BackgroundImage;
+import p4_group_8_repo.Object_Controllers.InteractiveObjects.Log;
+import p4_group_8_repo.Object_Controllers.InteractiveObjects.Turtle;
+import p4_group_8_repo.Object_Controllers.InteractiveObjects.WetTurtle;
 
 /***
  * This is to set the page of info page 2

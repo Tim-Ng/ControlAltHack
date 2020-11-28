@@ -1,7 +1,7 @@
-package p4_group_8_repo.SceneClasses.HighScore.HighScoreControlers;
+package p4_group_8_repo.SceneClasses.HighScore.HighScoreControllers;
 
 import java.io.Serializable;
-import java.util.ArrayList;
+
 /***
  *    Title: Making a simple high-score system
  *    Author: Shaddix

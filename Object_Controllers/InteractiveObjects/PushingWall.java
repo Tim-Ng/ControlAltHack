@@ -1,7 +1,7 @@
-package p4_group_8_repo.Object_Controlers.InteractiveObjects;
+package p4_group_8_repo.Object_Controllers.InteractiveObjects;
 
 import javafx.scene.image.Image;
-import p4_group_8_repo.Object_Controlers.Actor;
+import p4_group_8_repo.Object_Controllers.Actor;
 
 /***
  * This class is to set and control the pushing walls

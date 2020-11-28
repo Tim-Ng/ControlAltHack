@@ -4,9 +4,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.layout.GridPane;
 import p4_group_8_repo.Main;
-import p4_group_8_repo.Object_Controlers.BackgroundImage;
-import p4_group_8_repo.Object_Controlers.MyStage;
-import p4_group_8_repo.Object_Controlers.ButtonClass;
+import p4_group_8_repo.Object_Controllers.InteractiveObjects.BackgroundImage;
+import p4_group_8_repo.Object_Controllers.MyStage;
+import p4_group_8_repo.SceneClasses.ButtonClass;
 
 public class ChooseWhichHighScorePage {
     private MyStage chooseHighScoreStage;

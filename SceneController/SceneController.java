@@ -3,7 +3,7 @@ package p4_group_8_repo.SceneController;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 import p4_group_8_repo.SceneClasses.gameSceneClasses.GameScene;
-import p4_group_8_repo.SceneClasses.HighScore.HighScoreControlers.GetHighScoreScene;
+import p4_group_8_repo.SceneClasses.HighScore.GetHighScoreScene;
 
 import java.util.HashMap;
 

@@ -3,10 +3,9 @@ package p4_group_8_repo.SceneClasses;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import p4_group_8_repo.Main;
-import p4_group_8_repo.Object_Controlers.BackgroundImage;
-import p4_group_8_repo.Object_Controlers.MyStage;
-import p4_group_8_repo.Object_Controlers.InteractiveObjects.Obstacle;
-import p4_group_8_repo.Object_Controlers.ButtonClass;
+import p4_group_8_repo.Object_Controllers.InteractiveObjects.BackgroundImage;
+import p4_group_8_repo.Object_Controllers.MyStage;
+import p4_group_8_repo.Object_Controllers.InteractiveObjects.Obstacle;
 
 /***
  * This is to set the page of main page

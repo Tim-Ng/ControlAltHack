@@ -1,4 +1,4 @@
-package p4_group_8_repo.SceneClasses.HighScore.HighScoreControlers;
+package p4_group_8_repo.SceneClasses.HighScore;
 
 import javafx.scene.Scene;
 

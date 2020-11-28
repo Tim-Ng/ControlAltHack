@@ -7,8 +7,8 @@ import p4_group_8_repo.SceneClasses.HighScore.highScorePage;
 import p4_group_8_repo.SceneClasses.gameSceneClasses.*;
 import p4_group_8_repo.SceneController.SceneController;
 import p4_group_8_repo.SceneClasses.*;
-import p4_group_8_repo.SceneClasses.HighScore.HighScoreControlers.GetHighScoreScene;
-import p4_group_8_repo.SceneClasses.info_pageSceneClasses.info_page1;
+import p4_group_8_repo.SceneClasses.HighScore.GetHighScoreScene;
+import p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage1;
 import p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage2;
 
 /***
@@ -70,7 +70,7 @@ public class Main extends Application {
 	/***
 	 * Hold variable for class info_page1
 	 */
-	private info_page1 infopage1Scene = new info_page1();
+	private infopage1 infopage1Scene = new infopage1();
 	/***
 	 * Hold variable for class infopage2
 	 */

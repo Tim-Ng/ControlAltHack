@@ -7,16 +7,16 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.GridPane;
 import p4_group_8_repo.Main;
-import p4_group_8_repo.Object_Controlers.*;
+import p4_group_8_repo.Object_Controllers.*;
 
 import javafx.scene.control.Button;
-import p4_group_8_repo.Object_Controlers.ButtonClass;
-import p4_group_8_repo.Object_Controlers.InteractiveObjects.*;
+import p4_group_8_repo.SceneClasses.ButtonClass;
+import p4_group_8_repo.Object_Controllers.InteractiveObjects.*;
 
 /***
  * This is to set the page of info page 1
  */
-public class info_page1 {
+public class infopage1 {
     /***
      * This is to hold the elements of the page of info page 1
      */
@@ -32,7 +32,7 @@ public class info_page1 {
     /***
      * To start arranging the elements and set the Scene
      */
-    public info_page1(){
+    public infopage1(){
         infoStage = new MyStage();
         BackgroundImage infoPageBackGround = new BackgroundImage("file:src/p4_group_8_repo/Assets/BackGrounds/infoPage1BackGround.png");
         infoStage.add(infoPageBackGround);

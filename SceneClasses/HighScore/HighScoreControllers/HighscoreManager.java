@@ -1,4 +1,4 @@
-package p4_group_8_repo.SceneClasses.HighScore.HighScoreControlers;
+package p4_group_8_repo.SceneClasses.HighScore.HighScoreControllers;
 
 import java.io.*;
 import java.util.ArrayList;
@@ -24,11 +24,11 @@ public class HighscoreManager {
     /***
      * Hold the outputStream of the file
      */
-    ObjectOutputStream outputStream = null;
+    private ObjectOutputStream outputStream = null;
     /***
      * Hold the inputStream of the file
      */
-    ObjectInputStream inputStream = null;
+    private ObjectInputStream inputStream = null;
 
     /***
      * Set the file path and allocate a space for the scores array list

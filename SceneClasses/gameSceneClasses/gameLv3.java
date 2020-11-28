@@ -4,8 +4,9 @@ import javafx.animation.AnimationTimer;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import p4_group_8_repo.Main;
-import p4_group_8_repo.Object_Controlers.*;
-import p4_group_8_repo.Object_Controlers.InteractiveObjects.*;
+import p4_group_8_repo.Object_Controllers.*;
+import p4_group_8_repo.Object_Controllers.InteractiveObjects.*;
+import p4_group_8_repo.SceneClasses.ButtonClass;
 
 /***
  * This is to set the page of the game level 3
