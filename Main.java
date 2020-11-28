@@ -5,7 +5,7 @@ import javafx.stage.Stage;
 import p4_group_8_repo.SceneClasses.HighScore.ChooseWhichHighScorePage;
 import p4_group_8_repo.SceneClasses.HighScore.highScorePage;
 import p4_group_8_repo.SceneClasses.gameSceneClasses.*;
-import p4_group_8_repo.SceneController.SceneController;
+import p4_group_8_repo.SceneClasses.SceneController.SceneController;
 import p4_group_8_repo.SceneClasses.*;
 import p4_group_8_repo.SceneClasses.HighScore.GetHighScoreScene;
 import p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage1;

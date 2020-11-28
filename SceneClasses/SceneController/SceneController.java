@@ -1,4 +1,4 @@
-package p4_group_8_repo.SceneController;
+package p4_group_8_repo.SceneClasses.SceneController;
 
 import javafx.scene.Scene;
 import javafx.stage.Stage;
