@@ -30,9 +30,9 @@ public class ChooseLevel {
         chooseLevelStage.add(chooseLevelBackground);
         GridPane gridForButtons = new GridPane();
         Button BackButton = new ButtonClass("file:src/p4_group_8_repo/Assets/ButtonImages/BackButton.png",120,30,0,0);
-        Button firstLvButton = new ButtonClass("file:src/p4_group_8_repo/Assets/WhichLevelButton/Level1Button.png",100,100);
-        Button secondLvButton = new ButtonClass("file:src/p4_group_8_repo/Assets/WhichLevelButton/Level2Button.png",100,100);
-        Button thirdLvButton = new ButtonClass("file:src/p4_group_8_repo/Assets/WhichLevelButton/Level3Button.png",100,100);
+        Button firstLvButton = new ButtonClass("file:src/p4_group_8_repo/Assets/ButtonImages/Level1Button.png",100,100);
+        Button secondLvButton = new ButtonClass("file:src/p4_group_8_repo/Assets/ButtonImages/Level2Button.png",100,100);
+        Button thirdLvButton = new ButtonClass("file:src/p4_group_8_repo/Assets/ButtonImages/Level3Button.png",100,100);
         gridForButtons.add(firstLvButton,0,0,1,1);
         gridForButtons.add(secondLvButton,1, 0, 1, 1);
         gridForButtons.add(thirdLvButton,2, 0, 1, 1);
