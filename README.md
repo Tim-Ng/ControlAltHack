@@ -1,5 +1,5 @@
 # Screenshot of Game
-![alt text](https://raw.githubusercontent.com/hirish99/Frogger-Arcade-Game/master/arcade.png)
+![](Assets/MainPageImage.png)
 
 # Refactorizing
 The images/texture for the game is place in "Assets" package and further group according to where is it used. \
