@@ -64,7 +64,7 @@ Second the classes according their functions. Which are the "Object_Controllers"
 The **Main** class creates objects of main_page,infopage1,infopage2,ChooseLevel,GameScene,
  ChooseWhichHighScorePage and highScorePage, then sends it to the "SceneController" class
  to be stored and used later on. \
- Using a scene controller allows the program to switch scenes easily. \
+ Using a scene controller allows the program to switch scenes easily.
  
 # Add High Score Controller 
 These classes are modified from "Auther:Shaddix" which is available from [this link](http://forum.codecall.net/topic/50071-ystem/) . \
