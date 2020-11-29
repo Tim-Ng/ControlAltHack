@@ -84,7 +84,9 @@ This class is used in the "walls","moving wall","Animla" and "waterArea" classes
 The previous water area and border of "Animal" class are fixed, which in turn limits the creativity to create new levels.\
 Therefore, the "Animal" class is modified by using "coordinateArea" object for the border and "waterArea" object for the water areas.\
 The "waterArea" holds an array of "coordinateArea" objects and check if the coordinate of x and y is within any of the coordinates define
-in the "coordinateArea" object.
+in the "coordinateArea" object. \
+The previous animal class allows the player to enter and send to spawn of any activated End. Therefore, the code is modified
+So that it could not enter the activated End.
 
 # Add new Obstacles
 To enhance the experience of the game "walls" and "moving wall" are added. \

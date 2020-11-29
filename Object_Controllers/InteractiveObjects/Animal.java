@@ -358,17 +358,15 @@ public class Animal extends Actor {
 			}
 		} else if (getIntersectingObjects(End.class).size() >= 1) {
 			inter = (ArrayList<End>) getIntersectingObjects(End.class);
-			if (getIntersectingObjects(End.class).get(0).isActivated()) {
-				end--;
-				points -= 50;
+			if (!getIntersectingObjects(End.class).get(0).isActivated()) {
+				points += 50;
+				changeScore = true;
+				end++;
+				w = 800;
+				getIntersectingObjects(End.class).get(0).setEnd();
+				setX(SpawnPositionX);
+				setY(SpawnPositionY + movement);
 			}
-			points += 50;
-			changeScore = true;
-			w = 800;
-			getIntersectingObjects(End.class).get(0).setEnd();
-			end++;
-			setX(SpawnPositionX);
-			setY(SpawnPositionY + movement);
 		} else if (waterDeathArea.checkCoordinate(getX(), getY())) {
 			waterDeath = true;
 			//setX(300);
