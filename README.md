@@ -3,7 +3,7 @@
 
 # Refactorizing
 The images/texture for the game is place in "Assets" package and further group according to where is it used. \
-The controllers for the objects are place in the "Object_Controllers" package and further group according to usage. \
+The class controllers for the objects are place in the "Object_Controllers" package and further group according to usage. \
 The classes that are used for the scene/page are place in "SceneClasses" package and further group according to the type. \
 First the images used for the game are place into an "Assets" package and they are further grouped in to more packages according to their usage.\
 The packages are:
@@ -87,6 +87,11 @@ These classes holds objects of the class "coordinateArea".
 
 
 # Add Scene Controller
-The **Main** class creates objects of main_page,infopage1,infopage2,ChooseLevel,GameScene
-,ChooseWhichHighScorePage and highScorePage
+The **Main** class creates objects of main_page,infopage1,infopage2,ChooseLevel,GameScene,
+ ChooseWhichHighScorePage and highScorePage, then sends it to the "SceneController" class
+ to be stored and used later on. \ 
+Using a scene controller allows the program to switch scenes more easily.
+
+# Added current highest score during game
+
 
