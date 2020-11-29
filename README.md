@@ -60,6 +60,12 @@ Second the classes according their functions. Which are the "Object_Controllers"
 "SceneController" contains the classes for the Scene Controller class:
 * SceneController                   [Class]
 
+# Add Scene Controller
+The **Main** class creates objects of main_page,infopage1,infopage2,ChooseLevel,GameScene,
+ ChooseWhichHighScorePage and highScorePage, then sends it to the "SceneController" class
+ to be stored and used later on. \
+ Using a scene controller allows the program to switch scenes easily. \
+ 
 # Add High Score Controller 
 These classes are modified from "Auther:Shaddix" which is available from [this link](http://forum.codecall.net/topic/50071-ystem/) . \
 The high score controller includes 2 classes "HighscoreManager" and "Score".\
@@ -86,12 +92,11 @@ The classes that controls them are "wall" and "PushingWall". \
 These classes holds objects of the class "coordinateArea". 
 
 
-# Add Scene Controller
-The **Main** class creates objects of main_page,infopage1,infopage2,ChooseLevel,GameScene,
- ChooseWhichHighScorePage and highScorePage, then sends it to the "SceneController" class
- to be stored and used later on. \ 
-Using a scene controller allows the program to switch scenes more easily.
+ # To create new levels
+ The way to create new levels can found in the package named Template in the package that contains other 2 
+ package that are photoShopFiles for file to edit the UI images and GameLv which is a template of a game level with all
+ the instructions.
 
 # Added current highest score during game
-
+This is so that the player can view the current highest score while playing the game.
 
