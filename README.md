@@ -89,8 +89,9 @@ in the "coordinateArea" object.
 # Add new Obstacles
 To enhance the experience of the game "walls" and "moving wall" are added. \
 The classes that controls them are "wall" and "PushingWall". \
-These classes holds objects of the class "coordinateArea". 
-
+These classes holds objects of the class "coordinateArea". \
+Wall don't allows the player to go through it. \
+PushingWall will move and push the player when in contact.
 
  # To create new levels
  The way to create new levels can found in the package named Template in the package that contains other 2 
