@@ -163,7 +163,7 @@ public class Animal extends Actor {
 		            }
 		            else if (event.getCode() == KeyCode.A) {
 						move(-movementX, 0);
-						if (isInWall()&& !GodMode){
+						if (isInWall()){
 							move(movementX, 0);
 						}
 		            	 setImage(imgA1);
@@ -171,7 +171,7 @@ public class Animal extends Actor {
 		            }
 		            else if (event.getCode() == KeyCode.S) {
 						move(0, movement);
-						if (isInWall()&& !GodMode){
+						if (isInWall()){
 							move(0, -movement);
 						}
 		            	 setImage(imgS1);
@@ -179,8 +179,8 @@ public class Animal extends Actor {
 		            }
 		            else if (event.getCode() == KeyCode.D) {
 						move(movementX, 0);
-						if (isInWall()&& !GodMode){
-							move(0, -movement);
+						if (isInWall()){
+							move(-movementX,0);
 						}
 		            	 setImage(imgD1);
 		            	 second = false;
@@ -188,7 +188,7 @@ public class Animal extends Actor {
 				}
 				else if (event.getCode() == KeyCode.W) {
 					move(0, -movement);
-					if (isInWall()&& !GodMode){
+					if (isInWall()){
 						move(0, movement);
 					}
 	                setImage(imgW2);
@@ -196,7 +196,7 @@ public class Animal extends Actor {
 	            }
 	            else if (event.getCode() == KeyCode.A) {
 					move(-movementX, 0);
-					if (isInWall()&& !GodMode){
+					if (isInWall()){
 						move(movementX, 0);
 					}
 	            	 setImage(imgA2);
@@ -204,7 +204,7 @@ public class Animal extends Actor {
 	            }
 	            else if (event.getCode() == KeyCode.S) {
 					move(0, movement);
-					if (isInWall()&& !GodMode){
+					if (isInWall()){
 						move(0, -movement);
 					}
 	            	 setImage(imgS2);
@@ -212,7 +212,7 @@ public class Animal extends Actor {
 	            }
 	            else if (event.getCode() == KeyCode.D) {
 					move(movementX, 0);
-					if (isInWall()&& !GodMode){
+					if (isInWall()){
 						move(-movementX, 0);
 					}
 	            	 setImage(imgD2);
@@ -232,21 +232,33 @@ public class Animal extends Actor {
 						points+=10;
 					}
 	                move(0, -movement);
+					if (isInWall()){
+						move(0, movement);
+					}
 	                setImage(imgW1);
 	                second = false;
 	            }
 	            else if (event.getCode() == KeyCode.A) {	            	
 	            	 move(-movementX, 0);
+					if (isInWall()){
+						move(movementX, 0);
+					}
 	            	 setImage(imgA1);
 	            	 second = false;
 	            }
 	            else if (event.getCode() == KeyCode.S) {	            	
 	            	 move(0, movement);
+					if (isInWall()){
+						move(0, -movement);
+					}
 	            	 setImage(imgS1);
 	            	 second = false;
 	            }
 	            else if (event.getCode() == KeyCode.D) {	            	
 	            	 move(movementX, 0);
+					if (isInWall()){
+						move(-movementX, 0);
+					}
 	            	 setImage(imgD1);
 	            	 second = false;
 	            }
