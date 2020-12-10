@@ -9,7 +9,7 @@ The classes that are used for the scene/page are place in "SceneClasses" package
 # Add Scene Controller
 The **Main** class creates objects of main_page,infopage1,infopage2,ChooseLevel,GameScene,
  ChooseWhichHighScorePage and highScorePage, then sends it to the "SceneController" class
- to be stored and used later on. \
+ to be stored and used later on.  \
  Using a scene controller allows the program to switch scenes easily. 
  
 # Add High Score Controller 
