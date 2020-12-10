@@ -12,6 +12,9 @@ The **Main** class creates objects of main_page,infopage1,infopage2,ChooseLevel,
  to be stored and used later on.  \
  Using a scene controller allows the program to switch scenes easily. 
  
+# Added Main Page
+Button to change scene to main_page,infopage1,ChooseLevel,GameScene and to mute or unmute music.
+
 # Add High Score Controller 
 These classes are modified from "Auther:Shaddix" which is available from [this link](http://forum.codecall.net/topic/50071-ystem/) . \
 The high score controller includes 2 classes "HighscoreManager" and "Score".\
@@ -48,4 +51,5 @@ PushingWall will move and push the player when in contact.
 
 # Added current highest score during game
 This is so that the player can view the current highest score while playing the game.
+
 

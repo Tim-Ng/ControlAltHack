@@ -90,10 +90,6 @@ public class Animal extends Actor {
 	 */
 	private boolean changeScore = false;
 	/***
-	 * For easier testing change god mode to true
-	 * */
-	private boolean GodMode = false;
-	/***
 	 *  Car death animation handler
 	 */
 	private int carD = 0;
@@ -154,7 +150,7 @@ public class Animal extends Actor {
 				if (second) {
 					if (event.getCode() == KeyCode.W) {
 						move(0, -movement);
-						if (isInWall()&& !GodMode){
+						if (isInWall()){
 							move(0, movement);
 						}
 		                changeScore = false;
@@ -286,7 +282,7 @@ public class Animal extends Actor {
 		if (getX() < Border.getX1()) {
 			move(movement * 2, 0);
 		}
-		if (carDeath && !GodMode) {
+		if (carDeath) {
 			noMove = true;
 			if ((now) % 11 == 0) {
 				carD++;
@@ -314,7 +310,7 @@ public class Animal extends Actor {
 			}
 
 		}
-		if (waterDeath&& !GodMode) {
+		if (waterDeath) {
 			noMove = true;
 			if ((now) % 11 == 0) {
 				carD++;
@@ -352,9 +348,6 @@ public class Animal extends Actor {
 		if (getIntersectingObjects(Obstacle.class).size() >= 1) {
 			carDeath = true;
 		}
-			/*if (getX() == 240 && getY() == 82) {
-				stop = true;
-			}*/
 		if (getIntersectingObjects(Log.class).size() >= 1 && !noMove) {
 			if (getIntersectingObjects(Log.class).get(0).getLeft())
 				move(-2, 0);
@@ -384,7 +377,7 @@ public class Animal extends Actor {
 			//setX(300);
 			//setY(679.8+movement);
 		}
-		else if (getIntersectingObjects(PushingWall.class).size()>=1 && !noMove && !GodMode){
+		else if (getIntersectingObjects(PushingWall.class).size()>=1 && !noMove){
 			move(1*(getIntersectingObjects(PushingWall.class).get(0).getSpeed()), 0);
 			if (getX()<0 || getX()>600){
 				carDeath = true;
@@ -421,7 +414,7 @@ public class Animal extends Actor {
 	}
 
 	/***
-	 *
+	 * To check if in wall.
 	 * @return true if the animal is dectected touching a wall or in wall else false
 	 */
 	public boolean isInWall(){

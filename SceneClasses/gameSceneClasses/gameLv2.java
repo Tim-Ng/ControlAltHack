@@ -7,6 +7,7 @@ import p4_group_8_repo.Main;
 import p4_group_8_repo.Object_Controllers.*;
 import p4_group_8_repo.Object_Controllers.InteractiveObjects.*;
 import p4_group_8_repo.SceneClasses.ButtonClass;
+import p4_group_8_repo.SceneClasses.main_page;
 
 /***
  * This is to set the page of the game level 2
@@ -91,7 +92,6 @@ public class gameLv2 implements GameScene {
         Stage2.add(new Digit(0, 40, 290, 40));
         animal = new Animal("file:src/p4_group_8_repo/Assets/froggerUp.png",waterDeath,300,679.8,Border);
         Stage2.add(animal);
-        Stage2.start();
         gameScene2 =new Scene(Stage2,600,800);
     }
     /***
@@ -145,7 +145,10 @@ public class gameLv2 implements GameScene {
      * To start the game and music
      */
     public void start() {
-        //Stage1.playMusic();
+        if (main_page.MusicOn){
+            Stage2.playMusic();
+        }
+        Stage2.start();
         int holdpoint = Main.sceneController.getHighestScore(Main.HighScore2);
         int shift = 0;
         Stage2.add(new Digit(0, 40, 570, 40));

@@ -7,6 +7,7 @@ import p4_group_8_repo.Main;
 import p4_group_8_repo.Object_Controllers.*;
 import p4_group_8_repo.Object_Controllers.InteractiveObjects.*;
 import p4_group_8_repo.SceneClasses.ButtonClass;
+import p4_group_8_repo.SceneClasses.main_page;
 
 /***
  * This is to set the page of the game level 1
@@ -109,7 +110,6 @@ public class gameLv1 implements GameScene {
         //background.add(obstacle);
         //background.add(obstacle1);
         //background.add(obstacle2);
-        Stage1.start();
         gameScene1 =new Scene(Stage1,600,800);
     }
     /***
@@ -174,7 +174,10 @@ public class gameLv1 implements GameScene {
      * To start the game and music
      */
     public void start() {
-        //Stage1.playMusic();
+        if (main_page.MusicOn){
+            Stage1.playMusic();
+        }
+        Stage1.start();
         int holdpoint = Main.sceneController.getHighestScore(Main.HighScore1);
         int shift = 0;
         Stage1.add(new Digit(0, 40, 570, 40));

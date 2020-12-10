@@ -8,6 +8,7 @@ import p4_group_8_repo.Object_Controllers.*;
 import p4_group_8_repo.Object_Controllers.InteractiveObjects.*;
 import p4_group_8_repo.SceneClasses.ButtonClass;
 import p4_group_8_repo.SceneClasses.gameSceneClasses.GameScene;
+import p4_group_8_repo.SceneClasses.main_page;
 
 /***
  * This is a template of a game level.
@@ -181,7 +182,9 @@ public class gameTemplate implements GameScene {
      * To start the game and music
      */
     public void start() {
-        StageName.playMusic();
+        if (main_page.MusicOn){
+            StageName.playMusic();
+        }
         int holdpoint = Main.sceneController.getHighestScore(Main.HighScore1);
         int shift = 0;
         StageName.add(new Digit(0, 40, 570, 40));
