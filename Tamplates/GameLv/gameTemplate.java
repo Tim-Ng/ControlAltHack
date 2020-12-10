@@ -21,7 +21,7 @@ import p4_group_8_repo.SceneClasses.gameSceneClasses.GameScene;
  * Create a high score page for this level with background created using the photoshop files in Main class and its key.
  * Then add it to the scene manage.
  * Exmaple : public static final String HighScoreWhich = "HighScoreLvWhich";
- * Exmaple : private GetHighScoreScene highScoreWhich = new highScorePage("src/p4_group_8_repo/SceneClasses/HighScore/HighScoreDatas/scoresStageWhich.dat","file: <<path to the background without score>>","file: <<path to the background with score>>");
+ * Exmaple : private GetHighScoreScene highScoreWhich = new highScorePage("src/p4_group_8_repo/SceneClasses/HighScore/HighScoreDatas/scoresStageWhich.dat","file: [path to the background without score]","file: [path to the background with score]");
  * Exmaple : sceneController.setHighScoreMap(HighScoreWhich,highScoreWhich);
  * Remeber to edit the code in line 167 to call the correct scene when the game ends
  *

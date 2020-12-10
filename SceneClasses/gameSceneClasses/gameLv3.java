@@ -50,8 +50,8 @@ public class gameLv3 implements GameScene {
         Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/car1Left.png", 100, 220, -2, 50, 50));
         Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/car1Left.png", 250, 220, -2, 50, 50));
         Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/car1Left.png", 550, 220, -2, 50, 50));
-        Stage3.add(new wall(0,280,250,40));
-        Stage3.add(new wall(355,280,250,40));
+        Stage3.add(new wall(0,265,250,40));
+        Stage3.add(new wall(355,265,250,40));
 
         Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/truck1"+"Right.png", 300, 330, 1, 120, 120));
         Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/car1Left.png", 500, 380, -3, 50, 50));

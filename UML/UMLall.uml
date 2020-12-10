@@ -3,779 +3,777 @@
   <ID>JAVA</ID>
   <OriginalElement />
   <nodes>
-    <node x="1870.7608116931349" y="270.5">p4_group_8_repo.Object_Controllers.Actor</node>
-    <node x="272.9999999999998" y="1446.5">p4_group_8_repo.SceneClasses.HighScore.GetHighScoreScene</node>
-    <node x="3145.6164860841045" y="765.5">p4_group_8_repo.Object_Controllers.InteractiveObjects.wall</node>
-    <node x="2371.1164860841045" y="1446.5">p4_group_8_repo.SceneClasses.gameSceneClasses.GameScene</node>
-    <node x="2627.767418199374" y="754.0">p4_group_8_repo.Object_Controllers.InteractiveObjects.waterArea</node>
-    <node x="890.2587283598014" y="2643.0">p4_group_8_repo.SceneClasses.main_page</node>
-    <node x="1066.2587283598014" y="2643.0">p4_group_8_repo.SceneClasses.gameSceneClasses.ChooseLevel</node>
-    <node x="123.91562824096627" y="754.0">p4_group_8_repo.SceneClasses.HighScore.HighScoreControllers.Score</node>
-    <node x="1131.853202513099" y="2991.0">p4_group_8_repo.Main</node>
-    <node x="1983.0968782409664" y="721.0">p4_group_8_repo.Object_Controllers.InteractiveObjects.Turtle</node>
-    <node x="2155.763544907633" y="1435.0">p4_group_8_repo.Object_Controllers.InteractiveObjects.Digit</node>
-    <node x="1390.0170171298553" y="1480.5">p4_group_8_repo.SceneClasses.ButtonClass</node>
-    <node x="868.6083333333333" y="1435.0">p4_group_8_repo.Object_Controllers.MyStage</node>
-    <node x="1826.0968782409664" y="688.0">p4_group_8_repo.Object_Controllers.InteractiveObjects.WetTurtle</node>
-    <node x="2246.8653622454494" y="2544.0">p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv2</node>
-    <node x="1833.7608116931349" y="0.0">p4_group_8_repo.Object_Controllers.World</node>
-    <node x="2644.7223883892416" y="2544.0">p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv3</node>
-    <node x="2642.3711058107824" y="1127.0">p4_group_8_repo.Object_Controllers.InteractiveObjects.Animal</node>
-    <node x="2431.8090848660404" y="732.0">p4_group_8_repo.Object_Controllers.InteractiveObjects.End</node>
-    <node x="1888.0823691797655" y="2544.0">p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv1</node>
-    <node x="630.2587283598014" y="2643.0">p4_group_8_repo.SceneClasses.HighScore.ChooseWhichHighScorePage</node>
-    <node x="1456.2437499999999" y="754.0">p4_group_8_repo.Object_Controllers.InteractiveObjects.Obstacle</node>
-    <node x="1465.8945697617896" y="2643.0">p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage2</node>
-    <node x="1161.7437499999999" y="1468.5">p4_group_8_repo.Object_Controllers.InteractiveObjects.BackgroundImage</node>
-    <node x="1436.2790232201696" y="3684.0">p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage1</node>
-    <node x="2799.704439144116" y="259.0">p4_group_8_repo.Object_Controllers.InteractiveObjects.coordinateArea</node>
-    <node x="1663.0968782409664" y="743.0">p4_group_8_repo.Object_Controllers.InteractiveObjects.Log</node>
-    <node x="356.25872835980135" y="2566.0">p4_group_8_repo.SceneClasses.HighScore.highScorePage</node>
-    <node x="0.0" y="1380.0">p4_group_8_repo.SceneClasses.HighScore.HighScoreControllers.HighscoreManager</node>
-    <node x="2989.6164860841045" y="743.0">p4_group_8_repo.Object_Controllers.InteractiveObjects.PushingWall</node>
+    <node x="2122.6515172783984" y="270.5">p4_group_8_repo.Object_Controllers.Actor</node>
+    <node x="0.0" y="1546.5">p4_group_8_repo.SceneClasses.HighScore.GetHighScoreScene</node>
+    <node x="3016.566927530655" y="755.5">p4_group_8_repo.Object_Controllers.InteractiveObjects.wall</node>
+    <node x="2281.4592002241666" y="1546.5">p4_group_8_repo.SceneClasses.gameSceneClasses.GameScene</node>
+    <node x="2647.2532020404587" y="744.0">p4_group_8_repo.Object_Controllers.InteractiveObjects.waterArea</node>
+    <node x="1143.4254992437748" y="2723.0">p4_group_8_repo.SceneClasses.main_page</node>
+    <node x="655.4254992437748" y="2723.0">p4_group_8_repo.SceneClasses.gameSceneClasses.ChooseLevel</node>
+    <node x="338.6666666666665" y="744.0">p4_group_8_repo.SceneClasses.HighScore.HighScoreControllers.Score</node>
+    <node x="1118.6297979797978" y="3071.0">p4_group_8_repo.Main</node>
+    <node x="1886.3873047993304" y="711.0">p4_group_8_repo.Object_Controllers.InteractiveObjects.Turtle</node>
+    <node x="2060.6814224463888" y="1535.0">p4_group_8_repo.Object_Controllers.InteractiveObjects.Digit</node>
+    <node x="1471.2623047993304" y="1580.5">p4_group_8_repo.SceneClasses.ButtonClass</node>
+    <node x="664.7249999999999" y="1535.0">p4_group_8_repo.Object_Controllers.MyStage</node>
+    <node x="1543.0808981188904" y="678.0">p4_group_8_repo.Object_Controllers.InteractiveObjects.WetTurtle</node>
+    <node x="1853.5241830065356" y="2624.0">p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv2</node>
+    <node x="2085.6515172783984" y="0.0">p4_group_8_repo.Object_Controllers.World</node>
+    <node x="2658.6453238940203" y="2624.0">p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv3</node>
+    <node x="2625.8330532261107" y="1227.0">p4_group_8_repo.Object_Controllers.InteractiveObjects.Animal</node>
+    <node x="2312.1948687071254" y="722.0">p4_group_8_repo.Object_Controllers.InteractiveObjects.End</node>
+    <node x="2150.3744905606873" y="2624.0">p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv1</node>
+    <node x="883.4254992437748" y="2723.0">p4_group_8_repo.SceneClasses.HighScore.ChooseWhichHighScorePage</node>
+    <node x="2502.2532020404587" y="744.0">p4_group_8_repo.Object_Controllers.InteractiveObjects.Obstacle</node>
+    <node x="1343.6998047993304" y="2723.0">p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage2</node>
+    <node x="1097.2055555555553" y="1568.5">p4_group_8_repo.Object_Controllers.InteractiveObjects.BackgroundImage</node>
+    <node x="2050.6411513868643" y="3764.0">p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage1</node>
+    <node x="2843.699719892777" y="259.0">p4_group_8_repo.Object_Controllers.InteractiveObjects.coordinateArea</node>
+    <node x="1724.3873047993304" y="733.0">p4_group_8_repo.Object_Controllers.InteractiveObjects.Log</node>
+    <node x="381.42549924377477" y="2646.0">p4_group_8_repo.SceneClasses.HighScore.highScorePage</node>
+    <node x="203.99999999999955" y="1480.0">p4_group_8_repo.SceneClasses.HighScore.HighScoreControllers.HighscoreManager</node>
+    <node x="3160.566927530655" y="733.0">p4_group_8_repo.Object_Controllers.InteractiveObjects.PushingWall</node>
   </nodes>
   <notes />
   <edges>
     <edge source="p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage2" target="p4_group_8_repo.Object_Controllers.MyStage">
       <point x="-73.9375" y="-49.5" />
-      <point x="1476.4570697617896" y="2274.0" />
-      <point x="975.9416666666668" y="2274.0" />
-      <point x="15.333333333333485" y="60.5" />
+      <point x="1354.2623047993304" y="2334.0" />
+      <point x="772.0583333333334" y="2334.0" />
+      <point x="15.333333333333371" y="60.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage1" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.Animal">
-      <point x="26.40625" y="-60.5" />
-      <point x="1547.1852732201696" y="3614.0" />
-      <point x="2888.736576696106" y="3614.0" />
-      <point x="2888.736576696106" y="2454.0" />
-      <point x="2824.2461058107824" y="2454.0" />
+      <point x="15.84375" y="-60.5" />
+      <point x="2150.9849013868643" y="3684.0" />
+      <point x="2845.7078238940203" y="3684.0" />
+      <point x="2845.7078238940203" y="2524.0" />
+      <point x="2807.7080532261107" y="2524.0" />
       <point x="84.875" y="368.5" />
     </edge>
     <edge source="p4_group_8_repo.Object_Controllers.InteractiveObjects.Digit" target="p4_group_8_repo.Object_Controllers.Actor">
       <point x="0.0" y="-60.5" />
-      <point x="2218.763544907633" y="588.0" />
-      <point x="2032.2608116931349" y="588.0" />
-      <point x="25.5" y="93.0" />
+      <point x="2123.6814224463888" y="598.0" />
+      <point x="2250.1515172783984" y="598.0" />
+      <point x="-8.5" y="93.0" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv1" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.waterArea">
-      <point x="41.5" y="-148.5" />
-      <point x="2012.5823691797655" y="2444.0" />
-      <point x="2145.263544907633" y="2444.0" />
-      <point x="2145.263544907633" y="1087.0" />
-      <point x="2673.4340848660404" y="1087.0" />
-      <point x="-91.33333333333337" y="38.5" />
+      <point x="50.72222222222217" y="-148.5" />
+      <point x="2284.0967127829094" y="2074.0" />
+      <point x="2270.9592002241666" y="2074.0" />
+      <point x="2270.9592002241666" y="1147.0" />
+      <point x="2753.8087575960144" y="1147.0" />
+      <point x="-30.444444444444343" y="38.5" />
     </edge>
     <edge source="p4_group_8_repo.Object_Controllers.InteractiveObjects.Animal" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.Obstacle">
-      <point x="-90.53333333333336" y="-368.5" />
-      <point x="2648.837772477449" y="997.0" />
-      <point x="1567.8437499999998" y="997.0" />
-      <point x="49.59999999999991" y="38.5" />
+      <point x="0.0" y="-368.5" />
+      <point x="2722.8330532261107" y="967.0" />
+      <point x="2564.2532020404587" y="967.0" />
+      <point x="0.0" y="38.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.ChooseLevel" target="p4_group_8_repo.Main">
-      <point x="69.33333333333348" y="49.5" />
-      <point x="1239.5920616931348" y="2861.0" />
-      <point x="1318.9895661494625" y="2861.0" />
-      <point x="8.136363636363512" y="-291.5" />
+      <point x="69.33333333333326" y="49.5" />
+      <point x="828.758832577108" y="3001.0" />
+      <point x="1208.1297979797978" y="3001.0" />
+      <point x="-89.5" y="-291.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv1" target="p4_group_8_repo.Object_Controllers.MyStage">
       <point x="-78.38888888888891" y="-148.5" />
-      <point x="1892.6934802908768" y="2194.0" />
-      <point x="996.3861111111112" y="2194.0" />
-      <point x="35.77777777777783" y="60.5" />
+      <point x="2154.9856016717986" y="2214.0" />
+      <point x="812.9472222222221" y="2214.0" />
+      <point x="56.222222222222285" y="60.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.HighScore.highScorePage" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.BackgroundImage">
-      <point x="37.94999999999982" y="-126.5" />
-      <point x="520.7087283598012" y="2324.0" />
-      <point x="1175.7437499999999" y="2324.0" />
+      <point x="37.950000000000045" y="-126.5" />
+      <point x="545.8754992437748" y="2414.0" />
+      <point x="1111.2055555555553" y="2414.0" />
       <point x="-70.0" y="27.0" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage1" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.BackgroundImage">
-      <point x="-36.96875" y="-60.5" />
-      <point x="1483.8102732201696" y="3624.0" />
-      <point x="619.7587283598014" y="3624.0" />
-      <point x="619.7587283598014" y="2344.0" />
-      <point x="1194.4104166666664" y="2344.0" />
-      <point x="-51.333333333333485" y="27.0" />
+      <point x="-58.09375" y="-60.5" />
+      <point x="2077.0474013868643" y="3724.0" />
+      <point x="354.2888888888888" y="3724.0" />
+      <point x="354.2888888888888" y="2404.0" />
+      <point x="1101.8722222222218" y="2404.0" />
+      <point x="-79.33333333333348" y="27.0" />
     </edge>
     <edge source="p4_group_8_repo.Object_Controllers.InteractiveObjects.Turtle" target="p4_group_8_repo.Object_Controllers.Actor">
       <point x="-31.0" y="-71.5" />
-      <point x="2014.0968782409664" y="608.0" />
-      <point x="1998.2608116931349" y="608.0" />
-      <point x="-8.5" y="93.0" />
+      <point x="1917.3873047993304" y="578.0" />
+      <point x="2216.1515172783984" y="578.0" />
+      <point x="-42.5" y="93.0" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv3" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.coordinateArea">
-      <point x="68.35294117647061" y="-148.5" />
-      <point x="2796.0753295657123" y="2514.0" />
-      <point x="3303.2757998095944" y="2514.0" />
-      <point x="3303.2757998095944" y="518.0" />
-      <point x="2913.037772477449" y="518.0" />
-      <point x="33.33333333333337" y="104.5" />
+      <point x="68.35294117647072" y="-148.5" />
+      <point x="2809.9982650704915" y="2594.0" />
+      <point x="3338.9449912561454" y="2594.0" />
+      <point x="3338.9449912561454" y="518.0" />
+      <point x="2957.0330532261105" y="518.0" />
+      <point x="33.333333333333485" y="104.5" />
     </edge>
     <edge source="p4_group_8_repo.Object_Controllers.InteractiveObjects.Animal" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.coordinateArea">
-      <point x="51.73333333333335" y="-368.5" />
-      <point x="2791.104439144116" y="1077.0" />
-      <point x="2912.267418199374" y="1077.0" />
-      <point x="2912.267418199374" y="668.0" />
-      <point x="2886.3711058107824" y="668.0" />
-      <point x="6.6666666666667425" y="104.5" />
+      <point x="64.66666666666652" y="-368.5" />
+      <point x="2787.4997198927767" y="1187.0" />
+      <point x="2942.7532020404587" y="1187.0" />
+      <point x="20.0" y="104.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.ChooseLevel" target="p4_group_8_repo.SceneClasses.ButtonClass">
-      <point x="83.19999999999982" y="-49.5" />
-      <point x="1253.4587283598012" y="2444.0" />
-      <point x="1442.905906018744" y="2444.0" />
-      <point x="-15.111111111111313" y="15.0" />
+      <point x="83.19999999999999" y="-49.5" />
+      <point x="842.6254992437748" y="2494.0" />
+      <point x="1493.9289714659972" y="2494.0" />
+      <point x="-45.33333333333326" y="15.0" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv3" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.PushingWall">
-      <point x="48.82352941176475" y="-148.5" />
-      <point x="2776.5459178010065" y="2494.0" />
-      <point x="3057.6164860841045" y="2494.0" />
+      <point x="58.58823529411757" y="-148.5" />
+      <point x="2800.2335591881383" y="2584.0" />
+      <point x="3228.566927530655" y="2584.0" />
       <point x="0.0" y="49.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage1" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.wall">
-      <point x="58.09375" y="-60.5" />
-      <point x="1578.8727732201696" y="3644.0" />
-      <point x="3345.1655056919476" y="3644.0" />
-      <point x="3345.1655056919476" y="1027.0" />
-      <point x="3248.9498194174375" y="1027.0" />
+      <point x="47.53125" y="-60.5" />
+      <point x="2182.6724013868643" y="3714.0" />
+      <point x="3380.834697138498" y="3714.0" />
+      <point x="3380.834697138498" y="917.0" />
+      <point x="3119.9002608639885" y="917.0" />
       <point x="41.33333333333326" y="27.0" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.main_page" target="p4_group_8_repo.Object_Controllers.MyStage">
-      <point x="-39.0" y="-49.5" />
-      <point x="929.2587283598014" y="2304.0" />
-      <point x="935.0527777777777" y="2304.0" />
-      <point x="-25.555555555555657" y="60.5" />
+      <point x="-65.0" y="-49.5" />
+      <point x="1156.4254992437748" y="2374.0" />
+      <point x="751.6138888888888" y="2374.0" />
+      <point x="-5.111111111111086" y="60.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv1" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.Obstacle">
-      <point x="-32.27777777777783" y="-148.5" />
-      <point x="1938.8045914019876" y="2144.0" />
-      <point x="1581.0968782409664" y="2144.0" />
-      <point x="1581.0968782409664" y="1087.0" />
-      <point x="1518.2437499999999" y="1087.0" />
-      <point x="0.0" y="38.5" />
+      <point x="32.27777777777783" y="-148.5" />
+      <point x="2265.652268338465" y="2094.0" />
+      <point x="2252.5147557797222" y="2094.0" />
+      <point x="2252.5147557797222" y="1107.0" />
+      <point x="2539.453202040459" y="1107.0" />
+      <point x="-24.799999999999955" y="38.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage2" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.BackgroundImage">
       <point x="-31.6875" y="-49.5" />
-      <point x="1518.7070697617896" y="2254.0" />
-      <point x="1259.7437499999999" y="2254.0" />
+      <point x="1396.5123047993304" y="2314.0" />
+      <point x="1195.2055555555553" y="2314.0" />
       <point x="14.0" y="27.0" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage1" target="p4_group_8_repo.Object_Controllers.MyStage">
-      <point x="-58.09375" y="-60.5" />
-      <point x="1462.6852732201696" y="3644.0" />
-      <point x="324.19622835980135" y="3644.0" />
-      <point x="324.19622835980135" y="2254.0" />
-      <point x="883.9416666666668" y="2254.0" />
-      <point x="-76.66666666666652" y="60.5" />
+      <point x="-68.65625" y="-60.5" />
+      <point x="2066.4849013868643" y="3734.0" />
+      <point x="333.09265961756637" y="3734.0" />
+      <point x="333.09265961756637" y="2364.0" />
+      <point x="680.0583333333332" y="2364.0" />
+      <point x="-76.66666666666674" y="60.5" />
     </edge>
     <edge source="p4_group_8_repo.Object_Controllers.MyStage" target="p4_group_8_repo.Object_Controllers.World">
       <point x="0.0" y="-60.5" />
-      <point x="960.6083333333333" y="234.0" />
-      <point x="1868.7608116931349" y="234.0" />
+      <point x="756.7249999999999" y="234.0" />
+      <point x="2120.6515172783984" y="234.0" />
       <point x="-70.0" y="104.5" />
     </edge>
     <edge source="p4_group_8_repo.Object_Controllers.InteractiveObjects.PushingWall" target="p4_group_8_repo.Object_Controllers.Actor">
       <point x="34.0" y="-49.5" />
-      <point x="3091.6164860841045" y="538.0" />
-      <point x="2117.260811693135" y="538.0" />
-      <point x="110.5" y="93.0" />
+      <point x="3262.566927530655" y="528.0" />
+      <point x="2386.1515172783984" y="528.0" />
+      <point x="127.5" y="93.0" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv2" target="p4_group_8_repo.Object_Controllers.MyStage">
       <point x="-78.11764705882342" y="-148.5" />
-      <point x="2251.747715186626" y="2104.0" />
-      <point x="1016.8305555555555" y="2104.0" />
-      <point x="56.22222222222217" y="60.5" />
+      <point x="1858.4065359477122" y="2294.0" />
+      <point x="792.5027777777777" y="2294.0" />
+      <point x="35.77777777777783" y="60.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv2" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.Digit">
-      <point x="-29.294117647058783" y="-148.5" />
-      <point x="2300.571244598391" y="2054.0" />
-      <point x="2234.513544907633" y="2054.0" />
-      <point x="15.75" y="60.5" />
+      <point x="48.823529411764866" y="-148.5" />
+      <point x="1985.3477124183005" y="2544.0" />
+      <point x="2107.9314224463888" y="2544.0" />
+      <point x="-15.75" y="60.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv2" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.waterArea">
-      <point x="48.82352941176464" y="-148.5" />
-      <point x="2378.6888916572143" y="1974.0" />
-      <point x="2360.6164860841045" y="1974.0" />
-      <point x="2360.6164860841045" y="1107.0" />
-      <point x="2734.322973754929" y="1107.0" />
-      <point x="-30.444444444444457" y="38.5" />
+      <point x="29.29411764705901" y="-148.5" />
+      <point x="1965.8183006535946" y="2514.0" />
+      <point x="2040.4167165640363" y="2514.0" />
+      <point x="2040.4167165640363" y="1117.0" />
+      <point x="2662.475424262681" y="1117.0" />
+      <point x="-121.77777777777783" y="38.5" />
     </edge>
     <edge source="p4_group_8_repo.Object_Controllers.InteractiveObjects.Obstacle" target="p4_group_8_repo.Object_Controllers.Actor">
-      <point x="-31.0" y="-38.5" />
-      <point x="1487.2437499999999" y="558.0" />
-      <point x="1896.2608116931349" y="558.0" />
-      <point x="-110.5" y="93.0" />
+      <point x="-30.999999999999886" y="-38.5" />
+      <point x="2533.2532020404587" y="578.0" />
+      <point x="2301.1515172783984" y="578.0" />
+      <point x="42.5" y="93.0" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv1" target="p4_group_8_repo.SceneClasses.ButtonClass">
       <point x="-41.5" y="-148.5" />
-      <point x="1929.5823691797655" y="2154.0" />
-      <point x="1488.2392393520774" y="2154.0" />
-      <point x="30.22222222222217" y="15.0" />
+      <point x="2191.8744905606873" y="2174.0" />
+      <point x="1584.5956381326637" y="2174.0" />
+      <point x="45.33333333333326" y="15.0" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv3" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.Digit">
-      <point x="-29.294117647058783" y="-148.5" />
-      <point x="2698.428270742183" y="1914.0" />
-      <point x="2266.013544907633" y="1914.0" />
+      <point x="-29.29411764705901" y="-148.5" />
+      <point x="2712.3512062469617" y="2014.0" />
+      <point x="2170.9314224463888" y="2014.0" />
       <point x="47.25" y="60.5" />
     </edge>
     <edge source="p4_group_8_repo.Object_Controllers.InteractiveObjects.End" target="p4_group_8_repo.Object_Controllers.Actor">
       <point x="0.0" y="-60.5" />
-      <point x="2513.3090848660404" y="578.0" />
-      <point x="2049.260811693135" y="578.0" />
-      <point x="42.5" y="93.0" />
+      <point x="2393.6948687071254" y="598.0" />
+      <point x="2267.1515172783984" y="598.0" />
+      <point x="8.5" y="93.0" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.ChooseLevel" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.BackgroundImage">
       <point x="0.0" y="-49.5" />
-      <point x="1170.2587283598014" y="2394.0" />
-      <point x="1241.0770833333333" y="2394.0" />
-      <point x="-4.666666666666515" y="27.0" />
+      <point x="759.4254992437748" y="2444.0" />
+      <point x="1139.2055555555553" y="2444.0" />
+      <point x="-42.0" y="27.0" />
     </edge>
     <edge source="p4_group_8_repo.Object_Controllers.InteractiveObjects.Animal" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.waterArea">
-      <point x="25.866666666666674" y="-368.5" />
+      <point x="25.866666666666788" y="-368.5" />
+      <point x="2748.6997198927775" y="1157.0" />
+      <point x="2784.2532020404587" y="1157.0" />
       <point x="0.0" y="38.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.HighScore.highScorePage" target="p4_group_8_repo.SceneClasses.ButtonClass">
-      <point x="88.55000000000018" y="-126.5" />
-      <point x="571.3087283598015" y="2414.0" />
-      <point x="1397.572572685411" y="2414.0" />
+      <point x="88.54999999999995" y="-126.5" />
+      <point x="596.4754992437747" y="2484.0" />
+      <point x="1478.817860354886" y="2484.0" />
       <point x="-60.44444444444434" y="15.0" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.HighScore.ChooseWhichHighScorePage" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.BackgroundImage">
       <point x="0.0" y="-49.5" />
-      <point x="750.2587283598014" y="2354.0" />
-      <point x="1203.7437499999999" y="2354.0" />
-      <point x="-42.0" y="27.0" />
+      <point x="1003.4254992437748" y="2464.0" />
+      <point x="1157.8722222222218" y="2464.0" />
+      <point x="-23.33333333333337" y="27.0" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv2" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.WetTurtle">
-      <point x="-9.764705882352928" y="-148.5" />
-      <point x="2320.1006563630967" y="2034.0" />
-      <point x="2302.028250789986" y="2034.0" />
-      <point x="2302.028250789986" y="1037.0" />
-      <point x="1911.7218782409664" y="1037.0" />
-      <point x="17.125" y="104.5" />
+      <point x="-29.29411764705901" y="-148.5" />
+      <point x="1907.2300653594766" y="2244.0" />
+      <point x="1617.7623047993304" y="2244.0" />
+      <point x="1617.7623047993304" y="1067.0" />
+      <point x="1594.4558981188904" y="1067.0" />
+      <point x="-17.125" y="104.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv3" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.waterArea">
-      <point x="39.058823529411825" y="-148.5" />
-      <point x="2766.7812119186538" y="2484.0" />
-      <point x="2906.4716911764704" y="2484.0" />
-      <point x="2906.4716911764704" y="1057.0" />
-      <point x="2856.1007515327074" y="1057.0" />
-      <point x="91.33333333333337" y="38.5" />
+      <point x="29.29411764705901" y="-148.5" />
+      <point x="2770.9394415410798" y="2554.0" />
+      <point x="2927.1470588235293" y="2554.0" />
+      <point x="2927.1470588235293" y="1167.0" />
+      <point x="2845.1420909293474" y="1167.0" />
+      <point x="60.88888888888869" y="38.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.main_page" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.BackgroundImage">
-      <point x="13.0" y="-49.5" />
-      <point x="981.2587283598014" y="2374.0" />
-      <point x="1222.4104166666664" y="2374.0" />
-      <point x="-23.333333333333485" y="27.0" />
+      <point x="-13.0" y="-49.5" />
+      <point x="1208.4254992437748" y="2354.0" />
+      <point x="1176.5388888888888" y="2354.0" />
+      <point x="-4.666666666666629" y="27.0" />
     </edge>
     <edge source="p4_group_8_repo.Main" target="p4_group_8_repo.SceneClasses.gameSceneClasses.GameScene">
-      <point x="138.31818181818198" y="-291.5" />
-      <point x="1449.171384331281" y="2951.0" />
-      <point x="2634.2223883892416" y="2951.0" />
-      <point x="2634.2223883892416" y="2484.0" />
-      <point x="2461.1164860841045" y="2484.0" />
+      <point x="138.31818181818176" y="-291.5" />
+      <point x="1435.9479797979795" y="3031.0" />
+      <point x="2602.8328238940203" y="3031.0" />
+      <point x="2602.8328238940203" y="2564.0" />
+      <point x="2371.4592002241666" y="2564.0" />
       <point x="18.0" y="49.0" />
     </edge>
     <edge source="p4_group_8_repo.Object_Controllers.InteractiveObjects.Animal" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.PushingWall">
-      <point x="77.60000000000002" y="-368.5" />
-      <point x="2816.9711058107823" y="1097.0" />
-      <point x="3012.283152750771" y="1097.0" />
+      <point x="90.5333333333333" y="-368.5" />
+      <point x="2813.3663865594435" y="1207.0" />
+      <point x="3183.2335941973215" y="1207.0" />
       <point x="-45.33333333333326" y="49.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.HighScore.highScorePage" target="p4_group_8_repo.SceneClasses.HighScore.HighScoreControllers.Score">
-      <point x="-63.25" y="-126.5" />
-      <point x="419.50872835980135" y="2204.0" />
-      <point x="262.4999999999998" y="2204.0" />
-      <point x="262.4999999999998" y="1087.0" />
-      <point x="230.66562824096627" y="1087.0" />
+      <point x="-37.950000000000045" y="-126.5" />
+      <point x="469.9754992437747" y="2344.0" />
+      <point x="455.49999999999955" y="2344.0" />
+      <point x="455.49999999999955" y="1207.0" />
+      <point x="445.4166666666665" y="1207.0" />
       <point x="45.75" y="38.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage2" target="p4_group_8_repo.SceneClasses.ButtonClass">
-      <point x="10.5625" y="-49.5" />
-      <point x="1560.9570697617896" y="2234.0" />
-      <point x="1458.0170171298553" y="2234.0" />
+      <point x="73.9375" y="-49.5" />
+      <point x="1502.1373047993304" y="2524.0" />
+      <point x="1539.2623047993304" y="2524.0" />
       <point x="0.0" y="15.0" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.HighScore.ChooseWhichHighScorePage" target="p4_group_8_repo.SceneClasses.ButtonClass">
       <point x="96.0" y="-49.5" />
-      <point x="846.2587283598014" y="2424.0" />
-      <point x="1412.6836837965218" y="2424.0" />
-      <point x="-45.333333333333485" y="15.0" />
+      <point x="1099.4254992437748" y="2504.0" />
+      <point x="1509.0400825771083" y="2504.0" />
+      <point x="-30.22222222222217" y="15.0" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv1" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.coordinateArea">
-      <point x="13.833333333333371" y="-148.5" />
-      <point x="1984.915702513099" y="2414.0" />
-      <point x="2117.5968782409664" y="2414.0" />
-      <point x="2117.5968782409664" y="628.0" />
-      <point x="2819.704439144116" y="628.0" />
-      <point x="-60.0" y="104.5" />
+      <point x="13.833333333333258" y="-148.5" />
+      <point x="2247.2078238940203" y="2114.0" />
+      <point x="2234.070311335278" y="2114.0" />
+      <point x="2234.070311335278" y="638.0" />
+      <point x="2890.3663865594435" y="638.0" />
+      <point x="-33.333333333333485" y="104.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv2" target="p4_group_8_repo.SceneClasses.ButtonClass">
       <point x="-39.05882352941171" y="-148.5" />
-      <point x="2290.8065387160377" y="2064.0" />
-      <point x="1503.3503504631888" y="2064.0" />
-      <point x="45.333333333333485" y="15.0" />
+      <point x="1897.465359477124" y="2254.0" />
+      <point x="1569.4845270215526" y="2254.0" />
+      <point x="30.22222222222217" y="15.0" />
     </edge>
     <edge source="p4_group_8_repo.Object_Controllers.InteractiveObjects.Animal" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.Turtle">
-      <point x="-51.73333333333335" y="-368.5" />
-      <point x="2687.6377724774493" y="967.0" />
-      <point x="2091.5968782409664" y="967.0" />
+      <point x="-64.66666666666652" y="-368.5" />
+      <point x="2658.1663865594437" y="1017.0" />
+      <point x="1994.8873047993304" y="1017.0" />
       <point x="46.5" y="71.5" />
     </edge>
     <edge source="p4_group_8_repo.Object_Controllers.World" target="p4_group_8_repo.Object_Controllers.Actor">
       <point x="70.0" y="104.5" />
-      <point x="2008.7608116931349" y="234.0" />
-      <point x="2074.760811693135" y="234.0" />
+      <point x="2260.6515172783984" y="234.0" />
+      <point x="2326.6515172783984" y="234.0" />
       <point x="68.0" y="-93.0" />
     </edge>
     <edge source="p4_group_8_repo.Main" target="p4_group_8_repo.SceneClasses.gameSceneClasses.ChooseLevel">
-      <point x="-24.40909090909099" y="-291.5" />
-      <point x="1286.444111604008" y="2881.0" />
-      <point x="1100.9253950264679" y="2881.0" />
-      <point x="-69.33333333333348" y="49.5" />
+      <point x="-122.0454545454545" y="-291.5" />
+      <point x="1175.5843434343433" y="3021.0" />
+      <point x="690.0921659104415" y="3021.0" />
+      <point x="-69.33333333333331" y="49.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage1" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.waterArea">
       <point x="36.96875" y="-60.5" />
-      <point x="1557.7477732201696" y="3624.0" />
-      <point x="3324.0405056919476" y="3624.0" />
-      <point x="3324.0405056919476" y="1047.0" />
-      <point x="2886.5451959771517" y="1047.0" />
+      <point x="2172.1099013868643" y="3704.0" />
+      <point x="3370.272197138498" y="3704.0" />
+      <point x="3370.272197138498" y="927.0" />
+      <point x="2906.0309798182366" y="927.0" />
       <point x="121.77777777777783" y="38.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.main_page" target="p4_group_8_repo.SceneClasses.ButtonClass">
       <point x="65.0" y="-49.5" />
-      <point x="1033.2587283598014" y="2434.0" />
-      <point x="1427.794794907633" y="2434.0" />
-      <point x="-30.22222222222217" y="15.0" />
+      <point x="1286.4254992437748" y="2514.0" />
+      <point x="1524.1511936882193" y="2514.0" />
+      <point x="-15.111111111111086" y="15.0" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv2" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.End">
-      <point x="29.294117647058783" y="-148.5" />
-      <point x="2359.1594798925084" y="1994.0" />
-      <point x="2341.087074319398" y="1994.0" />
-      <point x="2341.087074319398" y="1067.0" />
-      <point x="2472.5590848660404" y="1067.0" />
-      <point x="-40.75" y="60.5" />
+      <point x="19.529411764705856" y="-148.5" />
+      <point x="1956.0535947712415" y="2504.0" />
+      <point x="2030.6520106816831" y="2504.0" />
+      <point x="2030.6520106816831" y="1077.0" />
+      <point x="2325.7782020404593" y="1077.0" />
+      <point x="-67.91666666666652" y="60.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv1" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.BackgroundImage">
-      <point x="-59.94444444444446" y="-148.5" />
-      <point x="1911.1379247353211" y="2174.0" />
-      <point x="1278.4104166666664" y="2174.0" />
-      <point x="32.666666666666515" y="27.0" />
+      <point x="-59.94444444444457" y="-148.5" />
+      <point x="2173.430046116243" y="2194.0" />
+      <point x="1232.5388888888886" y="2194.0" />
+      <point x="51.33333333333326" y="27.0" />
     </edge>
     <edge source="p4_group_8_repo.Object_Controllers.InteractiveObjects.Animal" target="p4_group_8_repo.Object_Controllers.Actor">
-      <point x="0.0" y="-368.5" />
-      <point x="2739.3711058107824" y="927.0" />
-      <point x="2606.267418199374" y="927.0" />
-      <point x="2606.267418199374" y="568.0" />
-      <point x="2066.260811693135" y="568.0" />
-      <point x="59.5" y="93.0" />
+      <point x="12.933333333333394" y="-368.5" />
+      <point x="2735.766386559444" y="957.0" />
+      <point x="2636.7532020404587" y="957.0" />
+      <point x="2636.7532020404587" y="558.0" />
+      <point x="2335.1515172783984" y="558.0" />
+      <point x="76.5" y="93.0" />
     </edge>
     <edge source="p4_group_8_repo.Main" target="p4_group_8_repo.SceneClasses.HighScore.highScorePage">
       <point x="-154.590909090909" y="-291.5" />
-      <point x="1156.26229342219" y="2961.0" />
-      <point x="419.50872835980135" y="2961.0" />
+      <point x="1143.0388888888888" y="3041.0" />
+      <point x="444.67549924377477" y="3041.0" />
       <point x="-63.25" y="126.5" />
     </edge>
     <edge source="p4_group_8_repo.Object_Controllers.InteractiveObjects.Animal" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.wall">
-      <point x="90.5333333333333" y="-368.5" />
-      <point x="2829.9044391441157" y="1107.0" />
-      <point x="3166.283152750771" y="1107.0" />
+      <point x="77.59999999999991" y="-368.5" />
+      <point x="2800.43305322611" y="1197.0" />
+      <point x="3037.233594197322" y="1197.0" />
       <point x="-41.33333333333326" y="27.0" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv3" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.BackgroundImage">
-      <point x="-58.58823529411768" y="-148.5" />
-      <point x="2669.134153095124" y="1944.0" />
-      <point x="1315.7437499999999" y="1944.0" />
+      <point x="-58.58823529411757" y="-148.5" />
+      <point x="2683.057088599903" y="2044.0" />
+      <point x="1251.2055555555553" y="2044.0" />
       <point x="70.0" y="27.0" />
     </edge>
     <edge source="p4_group_8_repo.Object_Controllers.InteractiveObjects.Animal" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.Log">
-      <point x="-77.60000000000002" y="-368.5" />
-      <point x="2661.7711058107825" y="987.0" />
-      <point x="1787.3468782409664" y="987.0" />
+      <point x="-77.59999999999991" y="-368.5" />
+      <point x="2645.2330532261103" y="1027.0" />
+      <point x="1848.6373047993304" y="1027.0" />
       <point x="53.25" y="49.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage2" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.WetTurtle">
-      <point x="52.8125" y="-49.5" />
-      <point x="1603.2070697617896" y="2214.0" />
-      <point x="1547.5170171298553" y="2214.0" />
-      <point x="1547.5170171298553" y="1107.0" />
-      <point x="1843.2218782409664" y="1107.0" />
+      <point x="10.5625" y="-49.5" />
+      <point x="1438.7623047993304" y="1067.0" />
+      <point x="1560.2058981188904" y="1067.0" />
       <point x="-51.375" y="104.5" />
     </edge>
     <edge source="p4_group_8_repo.Main" target="p4_group_8_repo.SceneClasses.HighScore.GetHighScoreScene">
-      <point x="-170.8636363636365" y="-291.5" />
-      <point x="1139.9895661494625" y="2971.0" />
-      <point x="345.75872835980135" y="2971.0" />
-      <point x="345.75872835980135" y="2234.0" />
-      <point x="318.9999999999998" y="2234.0" />
+      <point x="-170.86363636363626" y="-291.5" />
+      <point x="1126.7661616161615" y="3051.0" />
+      <point x="46.0" y="3051.0" />
       <point x="-46.0" y="49.0" />
     </edge>
     <edge source="p4_group_8_repo.Object_Controllers.InteractiveObjects.BackgroundImage" target="p4_group_8_repo.Object_Controllers.Actor">
       <point x="0.0" y="-27.0" />
-      <point x="1245.7437499999999" y="548.0" />
-      <point x="1879.2608116931349" y="548.0" />
+      <point x="1181.2055555555553" y="528.0" />
+      <point x="2131.1515172783984" y="528.0" />
       <point x="-127.5" y="93.0" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.HighScore.highScorePage" target="p4_group_8_repo.Main">
       <point x="63.25" y="126.5" />
-      <point x="546.0087283598014" y="2951.0" />
-      <point x="1172.535020694917" y="2951.0" />
-      <point x="-138.31818181818198" y="-291.5" />
+      <point x="571.1754992437748" y="3031.0" />
+      <point x="1159.311616161616" y="3031.0" />
+      <point x="-138.31818181818176" y="-291.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage1" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.coordinateArea">
-      <point x="79.21875" y="-60.5" />
-      <point x="1599.9977732201696" y="3664.0" />
-      <point x="3366.2905056919476" y="3664.0" />
-      <point x="3366.2905056919476" y="488.0" />
-      <point x="2953.037772477449" y="488.0" />
-      <point x="73.33333333333337" y="104.5" />
+      <point x="68.65625" y="-60.5" />
+      <point x="2203.7974013868643" y="3734.0" />
+      <point x="3401.959697138498" y="3734.0" />
+      <point x="3401.959697138498" y="498.0" />
+      <point x="2983.699719892777" y="498.0" />
+      <point x="60.0" y="104.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.HighScore.highScorePage" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.Digit">
       <point x="113.84999999999991" y="-126.5" />
-      <point x="596.6087283598013" y="2454.0" />
-      <point x="2171.513544907633" y="2454.0" />
+      <point x="621.7754992437747" y="2534.0" />
+      <point x="2076.4314224463888" y="2534.0" />
       <point x="-47.25" y="60.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv2" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.coordinateArea">
-      <point x="19.529411764705856" y="-148.5" />
-      <point x="2349.3947740101553" y="2004.0" />
-      <point x="2331.322368437045" y="2004.0" />
-      <point x="2331.322368437045" y="648.0" />
-      <point x="2846.3711058107824" y="648.0" />
-      <point x="-33.33333333333337" y="104.5" />
+      <point x="9.764705882353155" y="-148.5" />
+      <point x="1946.2888888888888" y="2494.0" />
+      <point x="2020.8873047993304" y="2494.0" />
+      <point x="2020.8873047993304" y="618.0" />
+      <point x="2863.699719892777" y="618.0" />
+      <point x="-60.0" y="104.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage1" target="p4_group_8_repo.SceneClasses.ButtonClass">
-      <point x="5.28125" y="-60.5" />
-      <point x="1526.0602732201696" y="3594.0" />
-      <point x="1645.3945697617896" y="3594.0" />
-      <point x="1645.3945697617896" y="2204.0" />
-      <point x="1473.1281282409666" y="2204.0" />
-      <point x="15.111111111111313" y="15.0" />
+      <point x="-5.28125" y="-60.5" />
+      <point x="2129.8599013868643" y="3674.0" />
+      <point x="1619.3681588613413" y="3674.0" />
+      <point x="1619.3681588613413" y="2524.0" />
+      <point x="1554.3734159104415" y="2524.0" />
+      <point x="15.111111111111086" y="15.0" />
     </edge>
     <edge source="p4_group_8_repo.Object_Controllers.InteractiveObjects.Log" target="p4_group_8_repo.Object_Controllers.Actor">
       <point x="-35.5" y="-49.5" />
-      <point x="1698.5968782409664" y="578.0" />
-      <point x="1930.2608116931349" y="578.0" />
+      <point x="1759.8873047993304" y="558.0" />
+      <point x="2182.1515172783984" y="558.0" />
       <point x="-76.5" y="93.0" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv3" target="p4_group_8_repo.SceneClasses.ButtonClass">
-      <point x="-39.058823529411825" y="-148.5" />
-      <point x="2688.66356485983" y="1924.0" />
-      <point x="1518.4614615742996" y="1924.0" />
+      <point x="-39.05882352941171" y="-148.5" />
+      <point x="2702.5865003646086" y="2024.0" />
+      <point x="1599.7067492437748" y="2024.0" />
       <point x="60.44444444444434" y="15.0" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv2" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.BackgroundImage">
       <point x="-58.58823529411757" y="-148.5" />
-      <point x="2271.277126951332" y="2084.0" />
-      <point x="1297.0770833333333" y="2084.0" />
-      <point x="51.333333333333485" y="27.0" />
+      <point x="1877.935947712418" y="2274.0" />
+      <point x="1213.8722222222218" y="2274.0" />
+      <point x="32.66666666666663" y="27.0" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv1" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.End">
-      <point x="23.055555555555543" y="-148.5" />
-      <point x="1994.1379247353211" y="2424.0" />
-      <point x="2126.8191004631885" y="2424.0" />
-      <point x="2126.8191004631885" y="1057.0" />
-      <point x="2445.392418199374" y="1057.0" />
-      <point x="-67.91666666666663" y="60.5" />
+      <point x="23.055555555555657" y="-148.5" />
+      <point x="2256.430046116243" y="2104.0" />
+      <point x="2243.2925335575" y="2104.0" />
+      <point x="2243.2925335575" y="1087.0" />
+      <point x="2352.9448687071254" y="1087.0" />
+      <point x="-40.75" y="60.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage2" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.Log">
       <point x="31.6875" y="-49.5" />
-      <point x="1582.0820697617896" y="2224.0" />
-      <point x="1536.5170171298553" y="2224.0" />
-      <point x="1536.5170171298553" y="1097.0" />
-      <point x="1680.8468782409664" y="1097.0" />
+      <point x="1459.8873047993304" y="2474.0" />
+      <point x="1449.7623047993304" y="2474.0" />
+      <point x="1449.7623047993304" y="1077.0" />
+      <point x="1742.1373047993304" y="1077.0" />
       <point x="-53.25" y="49.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage1" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.PushingWall">
-      <point x="47.53125" y="-60.5" />
-      <point x="1568.3102732201696" y="3634.0" />
-      <point x="3334.6030056919476" y="3634.0" />
-      <point x="3334.6030056919476" y="1037.0" />
-      <point x="3102.9498194174375" y="1037.0" />
+      <point x="58.09375" y="-60.5" />
+      <point x="2193.2349013868643" y="3724.0" />
+      <point x="3391.397197138498" y="3724.0" />
+      <point x="3391.397197138498" y="907.0" />
+      <point x="3273.9002608639885" y="907.0" />
       <point x="45.33333333333326" y="49.5" />
     </edge>
     <edge source="p4_group_8_repo.Main" target="p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage2">
-      <point x="24.40909090909099" y="-291.5" />
-      <point x="1335.26229342219" y="2881.0" />
-      <point x="1494.0612364284561" y="2881.0" />
-      <point x="-56.333333333333485" y="49.5" />
+      <point x="24.409090909090878" y="-291.5" />
+      <point x="1322.0388888888888" y="2961.0" />
+      <point x="1371.8664714659972" y="2961.0" />
+      <point x="-56.33333333333337" y="49.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv1" target="p4_group_8_repo.SceneClasses.gameSceneClasses.GameScene">
-      <point x="59.94444444444446" y="-148.5" />
-      <point x="2031.02681362421" y="2474.0" />
-      <point x="2389.1164860841045" y="2474.0" />
-      <point x="-54.0" y="49.0" />
+      <point x="59.94444444444434" y="-148.5" />
+      <point x="2293.3189350051316" y="2564.0" />
+      <point x="2335.4592002241666" y="2564.0" />
+      <point x="-18.0" y="49.0" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv1" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.Log">
-      <point x="-23.055555555555543" y="-148.5" />
-      <point x="1948.02681362421" y="2134.0" />
-      <point x="1716.3468782409664" y="2134.0" />
-      <point x="-17.75" y="49.5" />
+      <point x="-13.833333333333258" y="-148.5" />
+      <point x="2219.5411572273542" y="2144.0" />
+      <point x="2206.4036446686114" y="2144.0" />
+      <point x="2206.4036446686114" y="1057.0" />
+      <point x="1813.1373047993304" y="1057.0" />
+      <point x="17.75" y="49.5" />
     </edge>
     <edge source="p4_group_8_repo.Main" target="p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage1">
       <point x="0.0" y="291.5" />
-      <point x="1310.853202513099" y="3604.0" />
-      <point x="1504.9352732201696" y="3604.0" />
-      <point x="-15.84375" y="-60.5" />
+      <point x="1297.6297979797978" y="3694.0" />
+      <point x="2108.7349013868643" y="3694.0" />
+      <point x="-26.40625" y="-60.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv2" target="p4_group_8_repo.Main">
       <point x="41.5" y="148.5" />
-      <point x="2371.3653622454494" y="2941.0" />
-      <point x="1432.8986570585535" y="2941.0" />
-      <point x="122.0454545454545" y="-291.5" />
+      <point x="1978.0241830065356" y="3001.0" />
+      <point x="1387.1297979797978" y="3001.0" />
+      <point x="89.5" y="-291.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.HighScore.ChooseWhichHighScorePage" target="p4_group_8_repo.Main">
       <point x="80.0" y="49.5" />
-      <point x="830.2587283598014" y="2921.0" />
-      <point x="1221.353202513099" y="2921.0" />
-      <point x="-89.5" y="-291.5" />
+      <point x="1083.4254992437748" y="2971.0" />
+      <point x="1256.9479797979795" y="2971.0" />
+      <point x="-40.681818181818244" y="-291.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage2" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.Turtle">
-      <point x="73.9375" y="-49.5" />
-      <point x="1624.3320697617896" y="2444.0" />
-      <point x="1953.5343782409664" y="2444.0" />
-      <point x="1953.5343782409664" y="1107.0" />
-      <point x="1998.5968782409664" y="1107.0" />
+      <point x="52.8125" y="-49.5" />
+      <point x="1481.0123047993304" y="2464.0" />
+      <point x="1460.7623047993304" y="2464.0" />
+      <point x="1460.7623047993304" y="1087.0" />
+      <point x="1901.8873047993304" y="1087.0" />
       <point x="-46.5" y="71.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv3" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.Animal">
-      <point x="9.764705882352928" y="-148.5" />
-      <point x="2737.4870942715947" y="2454.0" />
-      <point x="2751.4961058107824" y="2454.0" />
+      <point x="0.0" y="-148.5" />
+      <point x="2741.6453238940203" y="1984.0" />
+      <point x="2734.9580532261107" y="1984.0" />
       <point x="12.125" y="368.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.HighScore.highScorePage" target="p4_group_8_repo.SceneClasses.HighScore.GetHighScoreScene">
-      <point x="-37.95000000000027" y="-126.5" />
-      <point x="444.8087283598011" y="2194.0" />
-      <point x="410.9999999999998" y="2194.0" />
+      <point x="-113.85000000000014" y="-126.5" />
+      <point x="394.07549924377463" y="2344.0" />
+      <point x="138.0" y="2344.0" />
       <point x="46.0" y="49.0" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv1" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.WetTurtle">
-      <point x="-4.611111111111086" y="-148.5" />
-      <point x="1966.4712580686546" y="2114.0" />
-      <point x="1877.4718782409664" y="2114.0" />
-      <point x="-17.125" y="104.5" />
+      <point x="-23.055555555555657" y="-148.5" />
+      <point x="2210.3189350051316" y="2154.0" />
+      <point x="2197.1814224463888" y="2154.0" />
+      <point x="2197.1814224463888" y="1067.0" />
+      <point x="1628.7058981188904" y="1067.0" />
+      <point x="17.125" y="104.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv3" target="p4_group_8_repo.Main">
       <point x="41.5" y="148.5" />
-      <point x="2769.2223883892416" y="2971.0" />
-      <point x="1481.7168388767354" y="2971.0" />
-      <point x="170.8636363636365" y="-291.5" />
+      <point x="2783.1453238940203" y="3051.0" />
+      <point x="1468.493434343434" y="3051.0" />
+      <point x="170.86363636363626" y="-291.5" />
     </edge>
     <edge source="p4_group_8_repo.Object_Controllers.InteractiveObjects.WetTurtle" target="p4_group_8_repo.Object_Controllers.Actor">
       <point x="34.25" y="-104.5" />
-      <point x="1928.8468782409664" y="608.0" />
-      <point x="1981.2608116931349" y="608.0" />
-      <point x="-25.5" y="93.0" />
+      <point x="1645.8308981188904" y="548.0" />
+      <point x="2165.1515172783984" y="548.0" />
+      <point x="-93.5" y="93.0" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage2" target="p4_group_8_repo.Main">
-      <point x="56.333333333333485" y="49.5" />
-      <point x="1606.727903095123" y="2901.0" />
-      <point x="1367.8077479676444" y="2901.0" />
+      <point x="56.33333333333337" y="49.5" />
+      <point x="1484.5331381326637" y="2981.0" />
+      <point x="1354.5843434343433" y="2981.0" />
       <point x="56.954545454545496" y="-291.5" />
     </edge>
     <edge source="p4_group_8_repo.Object_Controllers.InteractiveObjects.wall" target="p4_group_8_repo.Object_Controllers.Actor">
       <point x="0.0" y="-27.0" />
-      <point x="3207.6164860841045" y="528.0" />
-      <point x="2134.260811693135" y="528.0" />
-      <point x="127.5" y="93.0" />
+      <point x="3078.566927530655" y="548.0" />
+      <point x="2352.1515172783984" y="548.0" />
+      <point x="93.5" y="93.0" />
     </edge>
     <edge source="p4_group_8_repo.Main" target="p4_group_8_repo.SceneClasses.main_page">
-      <point x="-73.22727272727298" y="-291.5" />
-      <point x="1237.625929785826" y="2911.0" />
-      <point x="916.2587283598014" y="2911.0" />
+      <point x="-24.40909090909099" y="-291.5" />
+      <point x="1273.2207070707068" y="2961.0" />
+      <point x="1169.4254992437748" y="2961.0" />
       <point x="-52.0" y="49.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv3" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.End">
-      <point x="0.0" y="-148.5" />
-      <point x="2727.7223883892416" y="1884.0" />
-      <point x="2554.6164860841045" y="1884.0" />
-      <point x="2554.6164860841045" y="1007.0" />
-      <point x="2499.725751532707" y="1007.0" />
-      <point x="-13.583333333333371" y="60.5" />
+      <point x="-9.764705882353155" y="-148.5" />
+      <point x="2731.880618011667" y="1994.0" />
+      <point x="2445.57684728299" y="1994.0" />
+      <point x="2445.57684728299" y="1087.0" />
+      <point x="2380.1115353737923" y="1087.0" />
+      <point x="-13.583333333333485" y="60.5" />
     </edge>
     <edge source="p4_group_8_repo.Object_Controllers.InteractiveObjects.Animal" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.WetTurtle">
-      <point x="-64.66666666666663" y="-368.5" />
-      <point x="2674.704439144116" y="977.0" />
-      <point x="1945.9718782409664" y="977.0" />
+      <point x="-90.5333333333333" y="-368.5" />
+      <point x="2632.299719892777" y="1037.0" />
+      <point x="1662.9558981188904" y="1037.0" />
       <point x="51.375" y="104.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage1" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.Obstacle">
-      <point x="-79.21875" y="-60.5" />
-      <point x="1441.5602732201696" y="3664.0" />
-      <point x="251.49999999999977" y="3664.0" />
-      <point x="251.49999999999977" y="1097.0" />
-      <point x="1468.64375" y="1097.0" />
-      <point x="-49.59999999999991" y="38.5" />
+      <point x="26.40625" y="-60.5" />
+      <point x="2161.5474013868643" y="3694.0" />
+      <point x="3359.709697138498" y="3694.0" />
+      <point x="3359.709697138498" y="937.0" />
+      <point x="2613.853202040459" y="937.0" />
+      <point x="49.60000000000002" y="38.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv2" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.Animal">
-      <point x="68.3529411764705" y="-148.5" />
-      <point x="2398.21830342192" y="2514.0" />
-      <point x="2702.9961058107824" y="2514.0" />
-      <point x="-36.375" y="368.5" />
+      <point x="68.35294117647072" y="-148.5" />
+      <point x="2004.8771241830063" y="2574.0" />
+      <point x="2637.9580532261107" y="2574.0" />
+      <point x="-84.875" y="368.5" />
     </edge>
     <edge source="p4_group_8_repo.Object_Controllers.Actor" target="p4_group_8_repo.Object_Controllers.World">
       <point x="-68.0" y="-93.0" />
       <point x="0.0" y="104.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.ChooseLevel" target="p4_group_8_repo.Object_Controllers.MyStage">
-      <point x="-83.19999999999982" y="-49.5" />
-      <point x="1087.0587283598015" y="2294.0" />
-      <point x="955.497222222222" y="2294.0" />
-      <point x="-5.111111111111313" y="60.5" />
+      <point x="-83.19999999999993" y="-49.5" />
+      <point x="676.2254992437747" y="2394.0" />
+      <point x="710.7249999999999" y="2394.0" />
+      <point x="-46.0" y="60.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv3" target="p4_group_8_repo.Object_Controllers.MyStage">
-      <point x="-78.11764705882354" y="-148.5" />
-      <point x="2649.604741330418" y="1964.0" />
-      <point x="1037.2749999999999" y="1964.0" />
-      <point x="76.66666666666652" y="60.5" />
+      <point x="-78.11764705882342" y="-148.5" />
+      <point x="2663.527676835197" y="2064.0" />
+      <point x="833.3916666666667" y="2064.0" />
+      <point x="76.66666666666674" y="60.5" />
     </edge>
     <edge source="p4_group_8_repo.Object_Controllers.InteractiveObjects.Animal" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.End">
-      <point x="-38.80000000000007" y="-368.5" />
-      <point x="2700.5711058107827" y="957.0" />
-      <point x="2526.892418199374" y="957.0" />
-      <point x="13.583333333333371" y="60.5" />
+      <point x="-51.733333333333576" y="-368.5" />
+      <point x="2671.099719892777" y="1007.0" />
+      <point x="2407.2782020404593" y="1007.0" />
+      <point x="13.583333333333485" y="60.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv1" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.Digit">
-      <point x="50.72222222222217" y="-148.5" />
-      <point x="2021.8045914019876" y="2464.0" />
-      <point x="2203.013544907633" y="2464.0" />
-      <point x="-15.75" y="60.5" />
+      <point x="-32.27777777777783" y="-148.5" />
+      <point x="2201.0967127829094" y="2164.0" />
+      <point x="2139.4314224463888" y="2164.0" />
+      <point x="15.75" y="60.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.HighScore.HighScoreControllers.HighscoreManager" target="p4_group_8_repo.SceneClasses.HighScore.HighScoreControllers.Score">
       <point x="-80.33333333333348" y="-115.5" />
-      <point x="40.166666666666515" y="1097.0" />
-      <point x="139.16562824096627" y="1097.0" />
+      <point x="244.16666666666606" y="1197.0" />
+      <point x="353.9166666666665" y="1197.0" />
       <point x="-45.75" y="38.5" />
     </edge>
     <edge source="p4_group_8_repo.Object_Controllers.InteractiveObjects.waterArea" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.coordinateArea">
       <point x="-68.5" y="-38.5" />
-      <point x="2696.267418199374" y="658.0" />
-      <point x="2859.704439144116" y="658.0" />
+      <point x="2715.7532020404587" y="648.0" />
+      <point x="2903.699719892777" y="648.0" />
       <point x="-20.0" y="104.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv3" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.wall">
-      <point x="58.58823529411768" y="-148.5" />
-      <point x="2786.310623683359" y="2504.0" />
-      <point x="3207.6164860841045" y="2504.0" />
+      <point x="48.823529411764866" y="-148.5" />
+      <point x="2790.468853305785" y="2574.0" />
+      <point x="3078.566927530655" y="2574.0" />
       <point x="0.0" y="27.0" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv3" target="p4_group_8_repo.SceneClasses.gameSceneClasses.GameScene">
       <point x="-19.529411764705856" y="-148.5" />
-      <point x="2708.1929766245357" y="1904.0" />
-      <point x="2497.1164860841045" y="1904.0" />
+      <point x="2722.115912129315" y="2004.0" />
+      <point x="2407.4592002241666" y="2004.0" />
       <point x="54.0" y="49.0" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage1" target="p4_group_8_repo.Main">
-      <point x="-26.40625" y="-60.5" />
-      <point x="1494.3727732201696" y="3614.0" />
-      <point x="1191.5198691797655" y="3614.0" />
-      <point x="-119.33333333333348" y="291.5" />
+      <point x="-36.96875" y="-60.5" />
+      <point x="2098.1724013868643" y="3704.0" />
+      <point x="1178.2964646464643" y="3704.0" />
+      <point x="-119.33333333333337" y="291.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv2" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.Turtle">
       <point x="0.0" y="-148.5" />
-      <point x="2329.8653622454494" y="2024.0" />
-      <point x="2311.792956672339" y="2024.0" />
-      <point x="2311.792956672339" y="1027.0" />
-      <point x="2060.5968782409664" y="1027.0" />
-      <point x="15.5" y="71.5" />
+      <point x="1936.5241830065356" y="2524.0" />
+      <point x="1932.8873047993304" y="2524.0" />
+      <point x="-15.5" y="71.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.HighScore.highScorePage" target="p4_group_8_repo.SceneClasses.HighScore.HighScoreControllers.HighscoreManager">
-      <point x="-113.84999999999991" y="-126.5" />
-      <point x="368.90872835980144" y="2224.0" />
-      <point x="60.25" y="2224.0" />
+      <point x="-88.54999999999995" y="-126.5" />
+      <point x="419.3754992437748" y="2334.0" />
+      <point x="264.24999999999955" y="2334.0" />
       <point x="-60.25" y="115.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.HighScore.highScorePage" target="p4_group_8_repo.Object_Controllers.MyStage">
       <point x="-12.650000000000091" y="-126.5" />
-      <point x="470.10872835980126" y="2264.0" />
-      <point x="894.163888888889" y="2264.0" />
-      <point x="-66.44444444444434" y="60.5" />
+      <point x="495.2754992437747" y="2374.0" />
+      <point x="690.2805555555556" y="2374.0" />
+      <point x="-66.44444444444446" y="60.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv3" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.Obstacle">
-      <point x="-9.764705882352928" y="-148.5" />
-      <point x="2717.957682506889" y="1894.0" />
-      <point x="2544.8517802017514" y="1894.0" />
-      <point x="2544.8517802017514" y="1017.0" />
-      <point x="1543.0437499999998" y="1017.0" />
+      <point x="19.529411764705856" y="-148.5" />
+      <point x="2761.1747356587266" y="2544.0" />
+      <point x="2830.519327735914" y="2544.0" />
+      <point x="2830.519327735914" y="947.0" />
+      <point x="2589.053202040459" y="947.0" />
       <point x="24.799999999999955" y="38.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv1" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.Animal">
-      <point x="69.16666666666663" y="-148.5" />
-      <point x="2040.2490358464322" y="2494.0" />
-      <point x="2654.4961058107824" y="2494.0" />
-      <point x="-84.875" y="368.5" />
+      <point x="69.16666666666674" y="-148.5" />
+      <point x="2302.5411572273542" y="2594.0" />
+      <point x="2686.4580532261107" y="2594.0" />
+      <point x="-36.375" y="368.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.HighScore.ChooseWhichHighScorePage" target="p4_group_8_repo.Object_Controllers.MyStage">
       <point x="-96.0" y="-49.5" />
-      <point x="654.2587283598014" y="2284.0" />
-      <point x="914.6083333333333" y="2284.0" />
-      <point x="-46.0" y="60.5" />
+      <point x="907.4254992437748" y="2394.0" />
+      <point x="731.1694444444443" y="2394.0" />
+      <point x="-25.555555555555543" y="60.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv2" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.Log">
-      <point x="-19.529411764705856" y="-148.5" />
-      <point x="2310.3359504807436" y="2044.0" />
-      <point x="2292.263544907633" y="2044.0" />
-      <point x="2292.263544907633" y="1047.0" />
-      <point x="1751.8468782409664" y="1047.0" />
-      <point x="17.75" y="49.5" />
+      <point x="-9.764705882353155" y="-148.5" />
+      <point x="1926.7594771241825" y="2224.0" />
+      <point x="1777.6373047993304" y="2224.0" />
+      <point x="-17.75" y="49.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv2" target="p4_group_8_repo.SceneClasses.gameSceneClasses.GameScene">
       <point x="58.58823529411757" y="-148.5" />
-      <point x="2388.453597539567" y="2484.0" />
-      <point x="2425.1164860841045" y="2484.0" />
-      <point x="-18.0" y="49.0" />
+      <point x="1995.1124183006532" y="2554.0" />
+      <point x="2299.4592002241666" y="2554.0" />
+      <point x="-54.0" y="49.0" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.main_page" target="p4_group_8_repo.Main">
       <point x="52.0" y="49.5" />
-      <point x="1020.2587283598014" y="2891.0" />
-      <point x="1270.1713843312805" y="2891.0" />
-      <point x="-40.68181818181847" y="-291.5" />
+      <point x="1273.4254992437748" y="2941.0" />
+      <point x="1305.7661616161613" y="2941.0" />
+      <point x="8.136363636363626" y="-291.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv1" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.Turtle">
-      <point x="4.611111111111086" y="-148.5" />
-      <point x="1975.6934802908768" y="2404.0" />
-      <point x="2029.5968782409664" y="2404.0" />
-      <point x="-15.5" y="71.5" />
+      <point x="-4.611111111111086" y="-148.5" />
+      <point x="2228.763379449576" y="2134.0" />
+      <point x="2215.6258668908335" y="2134.0" />
+      <point x="2215.6258668908335" y="1047.0" />
+      <point x="1963.8873047993304" y="1047.0" />
+      <point x="15.5" y="71.5" />
     </edge>
     <edge source="p4_group_8_repo.Main" target="p4_group_8_repo.SceneClasses.HighScore.ChooseWhichHighScorePage">
-      <point x="-122.0454545454545" y="-291.5" />
-      <point x="1188.8077479676444" y="2941.0" />
-      <point x="670.2587283598014" y="2941.0" />
+      <point x="-73.22727272727275" y="-291.5" />
+      <point x="1224.402525252525" y="2991.0" />
+      <point x="923.4254992437748" y="2991.0" />
       <point x="-80.0" y="49.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.main_page" target="p4_group_8_repo.Object_Controllers.InteractiveObjects.Obstacle">
-      <point x="-65.0" y="-49.5" />
-      <point x="903.2587283598014" y="2234.0" />
-      <point x="855.176044907633" y="2234.0" />
-      <point x="855.176044907633" y="1107.0" />
-      <point x="1493.44375" y="1107.0" />
-      <point x="-24.799999999999955" y="38.5" />
+      <point x="39.0" y="-49.5" />
+      <point x="1260.4254992437748" y="2474.0" />
+      <point x="1315.3201388888888" y="2474.0" />
+      <point x="1315.3201388888888" y="1097.0" />
+      <point x="2514.653202040459" y="1097.0" />
+      <point x="-49.60000000000002" y="38.5" />
     </edge>
     <edge source="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv1" target="p4_group_8_repo.Main">
       <point x="41.5" y="148.5" />
-      <point x="2012.5823691797655" y="2921.0" />
-      <point x="1400.353202513099" y="2921.0" />
-      <point x="89.5" y="-291.5" />
+      <point x="2274.8744905606873" y="3021.0" />
+      <point x="1419.6752525252523" y="3021.0" />
+      <point x="122.0454545454545" y="-291.5" />
     </edge>
     <edge source="p4_group_8_repo.Main" target="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv1">
-      <point x="73.22727272727252" y="-291.5" />
-      <point x="1384.0804752403715" y="2911.0" />
-      <point x="1929.5823691797655" y="2911.0" />
+      <point x="105.77272727272725" y="-291.5" />
+      <point x="1403.402525252525" y="3011.0" />
+      <point x="2191.8744905606873" y="3011.0" />
       <point x="-41.5" y="148.5" />
     </edge>
     <edge source="p4_group_8_repo.Main" target="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv2">
-      <point x="105.77272727272748" y="-291.5" />
-      <point x="1416.6259297858264" y="2931.0" />
-      <point x="2288.3653622454494" y="2931.0" />
+      <point x="73.22727272727275" y="-291.5" />
+      <point x="1370.8570707070705" y="2991.0" />
+      <point x="1895.0241830065356" y="2991.0" />
       <point x="-41.5" y="148.5" />
     </edge>
     <edge source="p4_group_8_repo.Main" target="p4_group_8_repo.SceneClasses.gameSceneClasses.gameLv3">
       <point x="154.590909090909" y="-291.5" />
-      <point x="1465.444111604008" y="2961.0" />
-      <point x="2686.2223883892416" y="2961.0" />
+      <point x="1452.2207070707068" y="3041.0" />
+      <point x="2700.1453238940203" y="3041.0" />
       <point x="-41.5" y="148.5" />
     </edge>
   </edges>
-  <settings layout="Hierarchic Group" zoom="0.40000000000000013" x="1574.1428571428573" y="1049.5238095238087" />
+  <settings layout="Hierarchic Group" zoom="0.5" x="1856.5000000000005" y="1871.8333333333333" />
   <SelectedNodes>
     <node>p4_group_8_repo.Object_Controllers.Actor</node>
   </SelectedNodes>

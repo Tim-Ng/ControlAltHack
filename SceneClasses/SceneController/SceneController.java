@@ -67,6 +67,7 @@ public class SceneController {
     /***
      * To start the high score pages
      * @param whichScene Key for the high score scenes
+     * @param Points the data for the new incoming point.
      */
     public void startHighScoreScene(String whichScene,int Points){
         primaryStage.setScene(this.sceneHighScoreFinder.get(whichScene).getScene(Points));
