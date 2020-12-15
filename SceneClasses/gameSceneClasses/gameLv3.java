@@ -48,16 +48,18 @@ public class gameLv3 implements GameScene {
         BackButton.setOnAction(e->quitGame());
         Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/truck1"+"Right.png", 300, 180, 2, 120, 120));
         Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/truck1"+"Right.png", 600, 180, 2, 120, 120));
-        Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/car1Left.png", 100, 220, -2, 50, 50));
-        Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/car1Left.png", 250, 220, -2, 50, 50));
-        Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/car1Left.png", 550, 220, -2, 50, 50));
-        Stage3.add(new wall(0,265,250,40));
-        Stage3.add(new wall(355,265,250,40) );
+        Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/car1Left.png", 100, 225, -2, 50, 50));
+        Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/car1Left.png", 250, 225, -2, 50, 50));
+        Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/car1Left.png", 550, 225, -2, 50, 50));
+        Stage3.add(new wall(0,275,225,45));
+        Stage3.add(new wall(395,275,225,45) );
 
         Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/truck1"+"Right.png", 300, 330, 1, 120, 120));
         Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/car1Left.png", 500, 380, -3, 50, 50));
 
-        Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/truck1"+"Right.png", 0, 597, 1, 120, 120));
+        Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/truck1"+"Right.png", 225, 550, 1, 120, 120));
+        Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/truck1"+"Right.png", 0, 597, 2, 120, 120));
+        Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/truck1"+"Right.png", 300, 597, 2, 120, 120));
         Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/car1Left.png", 100, 649, -2, 50, 50));
         Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/car1Left.png", 250, 649, -2, 50, 50));
         Stage3.add(new Obstacle("file:src/p4_group_8_repo/Assets/GameObjects/car1Left.png", 550, 649, -2, 50, 50));
@@ -67,17 +69,17 @@ public class gameLv3 implements GameScene {
         Stage3.add(new End(141 + 141-16+141-16+1,96));
         Stage3.add(new End(141 + 141-16+141-13+141-16+3,96));
 
-        Stage3.add(new PushingWall(200,440,-1,100,50));
-        Stage3.add(new PushingWall(500,440,-1,100,50));
-        Stage3.add(new PushingWall(0,440,-1,100,50));
+        Stage3.add(new PushingWall(200,430,-1,100,50));
+        Stage3.add(new PushingWall(500,430,-1,100,50));
+        Stage3.add(new PushingWall(0,430,-1,100,50));
 
-        Stage3.add(new PushingWall(250,500,1,100,50));
-        Stage3.add(new PushingWall(550,500,1,100,50));
-        Stage3.add(new PushingWall(0,500,1,100,50));
+        Stage3.add(new PushingWall(250,485,1,100,50));
+        Stage3.add(new PushingWall(550,485,1,100,50));
+        Stage3.add(new PushingWall(0,485,1,100,50));
 
-        coordinateArea WaterArea1 = new coordinateArea(0,400,100,550);
-        coordinateArea WaterArea2 = new coordinateArea(230,400,350,550);
-        coordinateArea WaterArea3 = new coordinateArea(460,400,600,550);
+        coordinateArea WaterArea1 = new coordinateArea(0,400,100,540);
+        coordinateArea WaterArea2 = new coordinateArea(230,400,350,540);
+        coordinateArea WaterArea3 = new coordinateArea(460,400,600,540);
         waterArea waterDeath = new waterArea(WaterArea1,WaterArea2,WaterArea3);
         coordinateArea Border = new coordinateArea(0,100,600,734);
         Stage3.add(new Digit(0, 40, 290, 40));

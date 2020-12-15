@@ -1,6 +1,7 @@
 package p4_group_8_repo;
 
 import javafx.application.Application;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import p4_group_8_repo.SceneClasses.HighScore.ChooseWhichHighScorePage;
 import p4_group_8_repo.SceneClasses.HighScore.highScorePage;
@@ -12,6 +13,7 @@ import p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage1;
 import p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage2;
 
 /***
+ * Link To git REPO : https://github.com/Tim-Ng/com2042_CW_efyyn2
  * The main class when we start
  */
 public class Main extends Application {
@@ -122,6 +124,7 @@ public class Main extends Application {
 	 */
 	@Override
 	public void start(Stage primaryStage) throws Exception {
+		primaryStage.getIcons().add(new Image("file:src/p4_group_8_repo/Assets/GameObjects/icon-frogger-pixel-512x512.png"));
 		sceneController = new SceneController(primaryStage);
 		sceneController.setPageMap(MainPage,MainPageScene.getScene());
 		sceneController.setPageMap(InfoPage1,infopage1Scene.getInfo1Scene());

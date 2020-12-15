@@ -64,15 +64,15 @@ public class Animal extends Actor {
 	/***
 	 * The amount of movement for Y axis
 	 */
-	private double movement = 13.3333333*2;
+	private final double movement = 13.3333333*2;
 	/***
 	 * The amount of movement for X axis
 	 */
-	private double movementX = 10.666666*2;
+	private final double movementX = 10.666666*2;
 	/***
 	 * Image size
 	 */
-	private int imgSize = 40;
+	private final int imgSize = 40;
 	/***
 	 * If interact with car then carDeath = true else = false
 	 */
