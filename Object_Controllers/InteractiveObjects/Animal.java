@@ -270,7 +270,6 @@ public class Animal extends Actor {
 	 */
 	@Override
 	public void act(long now) {
-		int bounds = 0;
 		if (getY() < Border.getY1()) {
 			move(0, movement * 2);
 			//setX(SpawnPositionX);
