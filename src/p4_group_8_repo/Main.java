@@ -13,8 +13,8 @@ import p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage1;
 import p4_group_8_repo.SceneClasses.info_pageSceneClasses.infopage2;
 
 /***
- * Link To git REPO : https://github.com/Tim-Ng/com2042_CW_efyyn2
  * The main class when we start
+ * <a href="https://github.com/Tim-Ng/com2042_CW_efyyn2">[Link to the git repository]</a>.
  */
 public class Main extends Application {
 	/***
