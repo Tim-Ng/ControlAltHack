@@ -6,7 +6,12 @@
     <groupId>p4_group_8_repo</groupId>
     <artifactId>SoftwareMaintenance</artifactId>
     <version>1.0-SNAPSHOT</version>
-
+    <repositories>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+    </repositories>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.target>1.8</maven.compiler.target>
@@ -35,7 +40,11 @@
             <artifactId>javafx-swing</artifactId>
             <version>11.0.2</version>
         </dependency>
-
+        <dependency>
+            <groupId>com.github.jeluard</groupId>
+            <artifactId>maven-plantuml-plugin</artifactId>
+            <version>7934</version>
+        </dependency>
     </dependencies>
 
     <build>
