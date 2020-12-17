@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: waterAreaTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 0 sec <<< FAILURE! - in waterAreaTest
+waterAreaTest.testIfNotInWaterArea()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at waterAreaTest.testIfNotInWaterArea(waterAreaTest.java:42)
+
+waterAreaTest.testIfInWaterArea()  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.NullPointerException
+	at waterAreaTest.testIfInWaterArea(waterAreaTest.java:29)
+
