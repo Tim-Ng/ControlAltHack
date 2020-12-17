@@ -25,6 +25,7 @@
             <artifactId>javafx-controls</artifactId>
             <version>11.0.2</version>
         </dependency>
+
         <dependency>
             <groupId>com.github.jeluard</groupId>
             <artifactId>maven-plantuml-plugin</artifactId>
@@ -39,11 +40,6 @@
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-swing</artifactId>
             <version>11.0.2</version>
-        </dependency>
-        <dependency>
-            <groupId>com.github.jeluard</groupId>
-            <artifactId>maven-plantuml-plugin</artifactId>
-            <version>7934</version>
         </dependency>
     </dependencies>
 
