@@ -6,7 +6,7 @@ import p4_group_8_repo.Object_Controllers.InteractiveObjects.Animal;
 import p4_group_8_repo.Object_Controllers.InteractiveObjects.coordinateArea;
 import p4_group_8_repo.Object_Controllers.InteractiveObjects.waterArea;
 /***
- * This is the class to test the class For AnimalTest
+ * This is the class to test the class For test.java.AnimalTest
  */
 public class AnimalTest {
     /***

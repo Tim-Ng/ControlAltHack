@@ -14,15 +14,15 @@ public class SceneController {
     /***
      * Hold the HashMap of the Scene for pages that are not game or high score pages
      */
-    private HashMap<String, Scene> scenePageFinder = new HashMap<>();
+    private HashMap<String, Scene> scenePageFinder = new HashMap<String, Scene>();
     /***
      * Hold the HashMap of the GameScene for game pages
      */
-    private HashMap<String, GameScene> sceneGameFinder = new HashMap<>();
+    private HashMap<String, GameScene> sceneGameFinder = new HashMap<String, GameScene>();
     /***
      * Hold the HashMap of the GetHighScoreScene for high score pages
      */
-    private HashMap<String, GetHighScoreScene> sceneHighScoreFinder = new HashMap<>();
+    private HashMap<String, GetHighScoreScene> sceneHighScoreFinder = new HashMap<String, GetHighScoreScene>();
     /***
      * To hold the stage of the primaryState
      */

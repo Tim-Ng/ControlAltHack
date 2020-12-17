@@ -1,7 +1,7 @@
 import org.junit.*;
 import p4_group_8_repo.SceneClasses.HighScore.HighScoreControllers.*;
 /***
- * This is the class to test the class For ScoreTest
+ * This is the class to test the class For test.java.ScoreTest
  */
 public class ScoreTest {
     /***

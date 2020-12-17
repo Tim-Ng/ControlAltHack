@@ -24,6 +24,7 @@ public class Main extends Application {
 	/***
 	 * Holds a Universal key for the main page
 	 */
+
 	public static final String MainPage = "MainPage";
 	/***
 	 * Holds a Universal key for the Info Page 1
@@ -68,47 +69,47 @@ public class Main extends Application {
 	/***
 	 * Hold variable for class main_page
 	 */
-	private  main_page MainPageScene = new main_page();
+	private final main_page MainPageScene = new main_page();
 	/***
 	 * Hold variable for class info_page1
 	 */
-	private infopage1 infopage1Scene = new infopage1();
+	private final infopage1 infopage1Scene = new infopage1();
 	/***
 	 * Hold variable for class infopage2
 	 */
-	private infopage2 infopage2Scene = new infopage2();
+	private final infopage2 infopage2Scene = new infopage2();
 	/***
 	 * Hold variable for class ChooseLevel
 	 */
-	private ChooseLevel chooseLevelPage = new ChooseLevel();
+	private final ChooseLevel chooseLevelPage = new ChooseLevel();
 	/***
 	 * Hold variable for class ChooseWhichHighScorePage
 	 */
-	private ChooseWhichHighScorePage chooseWhichHighScorePage = new ChooseWhichHighScorePage();
+	private final ChooseWhichHighScorePage chooseWhichHighScorePage = new ChooseWhichHighScorePage();
 	/***
 	 * Hold variable for class GameScene for level 1
 	 */
-	private GameScene Gamelv1 = new gameLv1();
+	private final GameScene Gamelv1 = new gameLv1();
 	/***
 	 * Hold variable for class GameScene for level 2
 	 */
-	private GameScene Gamelv2 = new gameLv2();
+	private final GameScene Gamelv2 = new gameLv2();
 	/***
 	 * Hold variable for class GameScene for level 3
 	 */
-	private GameScene Gamelv3 = new gameLv3();
+	private final GameScene Gamelv3 = new gameLv3();
 	/***
 	 * Hold variable for class GetHighScoreScene for level 1
 	 */
-	private GetHighScoreScene highScore1 = new highScorePage("src/p4_group_8_repo/SceneClasses/HighScore/HighScoreDatas/scoresStage1.dat","file:src/p4_group_8_repo/Assets/BackGrounds/HighScoreBackgroundWithoutScore1.png","file:src/p4_group_8_repo/Assets/BackGrounds/HighScoreWithScoreBackground1.png");
+	private final GetHighScoreScene highScore1 = new highScorePage("src/p4_group_8_repo/SceneClasses/HighScore/HighScoreDatas/scoresStage1.dat","file:src/p4_group_8_repo/Assets/BackGrounds/HighScoreBackgroundWithoutScore1.png","file:src/p4_group_8_repo/Assets/BackGrounds/HighScoreWithScoreBackground1.png");
 	/***
 	 * Hold variable for class GetHighScoreScene for level 2
 	 */
-	private GetHighScoreScene highScore2 = new highScorePage("src/p4_group_8_repo/SceneClasses/HighScore/HighScoreDatas/scoresStage2.dat","file:src/p4_group_8_repo/Assets/BackGrounds/HighScoreBackgroundWithoutScore2.png","file:src/p4_group_8_repo/Assets/BackGrounds/HighScoreWithScoreBackground2.png");
+	private final GetHighScoreScene highScore2 = new highScorePage("src/p4_group_8_repo/SceneClasses/HighScore/HighScoreDatas/scoresStage2.dat","file:src/p4_group_8_repo/Assets/BackGrounds/HighScoreBackgroundWithoutScore2.png","file:src/p4_group_8_repo/Assets/BackGrounds/HighScoreWithScoreBackground2.png");
 	/***
 	 * Hold variable for class GetHighScoreScene for level 3
 	 */
-	private GetHighScoreScene highScore3 = new highScorePage("src/p4_group_8_repo/SceneClasses/HighScore/HighScoreDatas/scoresStage3.dat","file:src/p4_group_8_repo/Assets/BackGrounds/HighScoreBackgroundWithoutScore3.png","file:src/p4_group_8_repo/Assets/BackGrounds/HighScoreWithScoreBackground3.png");
+	private final GetHighScoreScene highScore3 = new highScorePage("src/p4_group_8_repo/SceneClasses/HighScore/HighScoreDatas/scoresStage3.dat","file:src/p4_group_8_repo/Assets/BackGrounds/HighScoreBackgroundWithoutScore3.png","file:src/p4_group_8_repo/Assets/BackGrounds/HighScoreWithScoreBackground3.png");
 
 	/**
 	 * The application's entry point

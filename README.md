@@ -1,5 +1,5 @@
 # Screenshot of Game
-![](Assets/MainPageImage.png)
+![](src/p4_group_8_repo/Assets/MainPageImage.png)
 
 # Refactorizing
 The images/texture for the game is place in "Assets" package and further group according to where is it used. \

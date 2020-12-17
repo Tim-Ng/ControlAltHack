@@ -1,7 +1,7 @@
 import org.junit.*;
 import p4_group_8_repo.Object_Controllers.InteractiveObjects.*;
 /***
- * This is the class to test the class For waterAreaTest
+ * This is the class to test the class For test.java.waterAreaTest
  */
 public class waterAreaTest {
     /***
