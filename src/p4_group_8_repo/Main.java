@@ -1,7 +1,6 @@
 package p4_group_8_repo;
 
 import javafx.application.Application;
-import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import p4_group_8_repo.SceneClasses.HighScore.ChooseWhichHighScorePage;
 import p4_group_8_repo.SceneClasses.HighScore.highScorePage;
