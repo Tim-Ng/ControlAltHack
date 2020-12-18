@@ -1,3 +1,6 @@
+# Info
+This game uses java 14,JDK 14,JUnit4 and SDK 11.0.1. \
+
 # Screenshot of Game
 ![](src/p4_group_8_repo/Assets/MainPageImage.png)
 
