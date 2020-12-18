@@ -125,7 +125,6 @@ public class Main extends Application {
 	 */
 	@Override
 	public void start(Stage primaryStage) throws Exception {
-		primaryStage.getIcons().add(new Image("file:src/p4_group_8_repo/Assets/GameObjects/icon-frogger-pixel-512x512.png"));
 		sceneController = new SceneController(primaryStage);
 		sceneController.setPageMap(MainPage,MainPageScene.getScene());
 		sceneController.setPageMap(InfoPage1,infopage1Scene.getInfo1Scene());

@@ -1,6 +1,7 @@
 package p4_group_8_repo.SceneClasses.SceneController;
 
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import p4_group_8_repo.SceneClasses.gameSceneClasses.GameScene;
 import p4_group_8_repo.SceneClasses.HighScore.GetHighScoreScene;
@@ -34,6 +35,9 @@ public class SceneController {
      */
     public SceneController(Stage primaryStage) {
         this.primaryStage = primaryStage;
+        this.primaryStage.getIcons().add(new Image("file:src/p4_group_8_repo/Assets/GameObjects/icon-frogger-pixel-512x512.png"));
+        primaryStage.setTitle("Frogger: 20107125");
+        primaryStage.setResizable(false);
     }
 
     /***
@@ -43,7 +47,6 @@ public class SceneController {
     public void startPageScene(String whichScene){
         primaryStage.setScene(this.scenePageFinder.get(whichScene));
         primaryStage.show();
-        primaryStage.setResizable(false);
     }
     /***
      * To start the pages that are not game or high score scenes
